@@ -1,3 +1,10 @@
+<?php
+$page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 'home';
+$itens = array(
+    'home'=>'Home',
+    'teste'=>'Exempo',
+)
+?>
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -14,7 +21,7 @@
                 <ul>
                     <?php foreach ($itens as $k => $item): ?>
                         <li <?php echo ($k == $page) ? 'class="current"' : "" ?>>
-                            <a href="<?php echo $item ?>"><?php echo $k ?></a>
+                            <a href="?page=<?php echo $k ?>"><?php echo $item ?></a>
                         </li>
                     <?php endforeach ?>
                 </ul>
