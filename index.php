@@ -1,19 +1,18 @@
 <?php
 $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : '404';
 $itens = array(
-'home'=>'Home',
-'premio'=>'O que é o Prêmio?',
-'participar'=>'Como participar',
-'premiacao'=>'Premiação',
-'regulamento'=>'Regulamento',
-'historia'=>'Como escrever a história',
-'fale'=>'Fale conosco',
-'cronograma'=>'Cronograma',
+    'home'=>'Home',
+    'premio'=>'O que é o Prêmio?',
+    'participar'=>'Como participar',
+    'premiacao'=>'Premiação',
+    'regulamento'=>'Regulamento',
+    'historia'=>'Como escrever a história',
+    'fale'=>'Fale conosco',
+    'cronograma'=>'Cronograma',
 );
 
 $ds = DIRECTORY_SEPARATOR;
 $filename = "pages{$ds}{$page}.php";
-
 $include = false;
 if (file_exists($filename))
     $include = true;
@@ -26,9 +25,9 @@ else
 <!DOCTYPE HTML>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Ulalá</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Ulalá</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "{$page}.jpg" ?>')">
@@ -75,7 +74,7 @@ else
 
     <!-- Selectivizr -->
     <!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="js/vendor/selectivizr.js" type="text/javascript"></script>
+        <script src="js/vendor/selectivizr.js" type="text/javascript"></script>
     <![endif]-->
 
     <!-- GreenSock -->
