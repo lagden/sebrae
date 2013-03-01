@@ -1,0 +1,27 @@
+// // Helpers
+// %complemento{
+//     @include inline-block;
+//     *margin-right: .3em;
+//     vertical-align: middle;
+//     padding: 0;
+// }
+
+// [class^="colorido-"],
+// [class*=" colorido-"]{
+//     @extend %complemento;
+//     &:last-child{
+//         *margin-left: 0;
+//     }
+// }
+
+// Social Media
+$bt-layout: smart;
+@import "sprites/bt/*.png";
+@include all-bt-sprites(true);
+// [class^="social-"],
+// [class*=" social-"]{
+//     @extend %complemento;
+//     &:last-child{
+//         *margin-left: 0;
+//     }
+// }

@@ -126,6 +126,18 @@ body{
             border: 1px solid rgba($laranja, 1);
         }
     }
+
+    button{
+        position: relative;
+        @include box-sizing(border-box);
+        @include font-size(12px);
+        outline: none;
+        border: 0;
+        color: white;
+        &:active{
+            top: 1px;
+        };
+    }
 }
 
 // Footer

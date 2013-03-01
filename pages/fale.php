@@ -68,10 +68,10 @@
         <div class="bloco">
             <div class="blocoFrm">
                 <label for="fale_comentario">Comentário*</label>
-                <textarea title="DDD" placeholder="Escreva sua mensagem" id="fale_comentario"></textarea>
+                <textarea title="Comentário" placeholder="Escreva sua mensagem" id="fale_comentario"></textarea>
             </div>
             <div class="blocoFrm">
-                <button type="submit">Enviar</button>
+                <button type="submit" class="bt-inscreva-se">Enviar</button>
             </div>
         </div>
     </form>
