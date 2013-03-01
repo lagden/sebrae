@@ -37,6 +37,15 @@ html{
     font-size: $brand-face;
 }
 
+body{
+    background:{
+        image: image_url('bg1.jpg');
+        repeat: no-repeat;
+        position: 50% 50%;
+        background-size: cover;
+    }
+}
+
 .wrapper{
     @include clear-floats;
     @include helperGrid($gh1, $show);
@@ -45,13 +54,6 @@ html{
     position: relative;
     width: $total-width;
     padding-top: 15px;
-
-    background:{
-        image: image_url('bg1.jpg');
-        repeat: no-repeat;
-        position: 50% 50%;
-        background-size: cover;
-    }
 }
 
 .logo{
@@ -81,6 +83,7 @@ html{
             color: $brand-color;
             display: block;
             padding: 10px 0px 10px;
+            font-style: italic;
         }
         &.current > a{
             cursor: text;
@@ -91,11 +94,18 @@ html{
 }
 
 .auth{
+    @extend .island;
+    padding: 0;
+    position: relative;
+    min-height: 50px;
+    background:{
+        image: image_url('auth.png');
+        repeat: no-repeat;
+        position: 0% 100%;
+    }
     label{
         color: $laranja;
-    }
-    input{
-
+        font-style: italic;
     }
 }
 
