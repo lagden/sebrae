@@ -4311,16 +4311,16 @@ html.flexbox {
   float: left;
   width: 1080px; }
 
-/* line 6, ../sass/_geral.scss */
+/* line 7, ../sass/_geral.scss */
 html {
   color: #626262;
   font-size: 16px; }
 
-/* line 11, ../sass/_geral.scss */
+/* line 12, ../sass/_geral.scss */
 body {
   font-family: "Lato", "Helvetica Neue", sans-serif; }
 
-/* line 15, ../sass/_geral.scss */
+/* line 16, ../sass/_geral.scss */
 .main {
   width: 100%;
   min-width: 1080px;
@@ -4330,7 +4330,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0%; }
 
-/* line 27, ../sass/_geral.scss */
+/* line 28, ../sass/_geral.scss */
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -4350,7 +4350,7 @@ body {
   .wrapper {
     zoom: 1; }
 
-/* line 38, ../sass/_geral.scss */
+/* line 39, ../sass/_geral.scss */
 .logo {
   width: 119px;
   height: 256px;
@@ -4358,11 +4358,11 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 0%; }
 
-/* line 49, ../sass/_geral.scss */
+/* line 50, ../sass/_geral.scss */
 .menu {
   list-style: none;
   margin-left: 0; }
-  /* line 53, ../sass/_geral.scss */
+  /* line 54, ../sass/_geral.scss */
   .menu li {
     font-size: 16px;
     font-size: 1rem;
@@ -4372,19 +4372,19 @@ body {
     background-image: url('../images/linha.png?1362107421');
     background-repeat: no-repeat;
     background-position: 0% 100%; }
-    /* line 62, ../sass/_geral.scss */
+    /* line 63, ../sass/_geral.scss */
     .menu li a {
       color: #61344c;
       display: block;
       padding: 10px 0px 10px;
       font-style: italic; }
-    /* line 68, ../sass/_geral.scss */
+    /* line 69, ../sass/_geral.scss */
     .menu li.current > a {
       cursor: text;
       text-decoration: none;
       font-weight: bold; }
 
-/* line 77, ../sass/_geral.scss */
+/* line 78, ../sass/_geral.scss */
 .auth {
   margin-bottom: 115px;
   position: relative;
@@ -4392,12 +4392,12 @@ body {
   background-image: url('../images/auth.png?1362107421');
   background-repeat: no-repeat;
   background-position: 0% 100%; }
-  /* line 86, ../sass/_geral.scss */
+  /* line 87, ../sass/_geral.scss */
   .auth label {
     color: #ee7c48;
     font-style: italic; }
 
-/* line 93, ../sass/_geral.scss */
+/* line 94, ../sass/_geral.scss */
 .notFound {
   font-size: 22px;
   font-size: 1.375rem;
@@ -4405,20 +4405,20 @@ body {
   color: black;
   padding: 50px 10px; }
 
-/* line 105, ../sass/_geral.scss */
+/* line 106, ../sass/_geral.scss */
 .frm.inline label,
 .frm.inline input[type=text],
 .frm.inline input[type=password] {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
-/* line 109, ../sass/_geral.scss */
+/* line 110, ../sass/_geral.scss */
 .frm label {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
   font-weight: normal; }
-/* line 116, ../sass/_geral.scss */
+/* line 117, ../sass/_geral.scss */
 .frm select,
 .frm input[type=text],
 .frm input[type=password],
@@ -4437,7 +4437,7 @@ body {
   height: 40px;
   outline: none;
   border: 1px solid #dddddd; }
-  /* line 124, ../sass/_geral.scss */
+  /* line 125, ../sass/_geral.scss */
   .frm select:focus,
   .frm input[type=text]:focus,
   .frm input[type=password]:focus,
@@ -4447,7 +4447,7 @@ body {
     box-shadow: 0 0 5px #ee7c48;
     border: 1px solid #ee7c48; }
 
-/* line 132, ../sass/_geral.scss */
+/* line 133, ../sass/_geral.scss */
 .theFooter {
   background-color: white;
   padding: 10px;
@@ -4455,13 +4455,13 @@ body {
   -moz-box-shadow: #dddddd 0 0 25px;
   box-shadow: #dddddd 0 0 25px; }
 
-/* line 139, ../sass/_geral.scss */
+/* line 140, ../sass/_geral.scss */
 .boxWhite {
   background-image: url('../images/white.png?1362110206');
   background-repeat: repeat;
   background-color: transparent; }
 
-/* line 147, ../sass/_geral.scss */
+/* line 148, ../sass/_geral.scss */
 .container, .fale.boxWhite {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4469,25 +4469,43 @@ body {
   width: 100%;
   padding: 20px; }
 
-/* line 154, ../sass/_geral.scss */
+/* line 155, ../sass/_geral.scss */
 .container {
   height: 300px;
   overflow: hidden; }
 
-/* line 164, ../sass/_geral.scss */
+/* line 165, ../sass/_geral.scss */
 .alpha {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2;
   color: #61344c; }
 
-/* line 170, ../sass/_geral.scss */
+/* line 171, ../sass/_geral.scss */
 .beta {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333;
   font-weight: normal;
   font-style: italic; }
+
+/* line 177, ../sass/_geral.scss */
+h2 {
+  color: #7a4f66;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+/* line 183, ../sass/_geral.scss */
+h3 {
+  color: #626262;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333; }
 
 /* line 6, ../sass/_fale.scss */
 .fale .frm textarea {

@@ -1,6 +1,7 @@
 $laranja: #ee7c48;
 $gray: #dddddd;
 $black: #626262;
+$roxo: #7a4f66;
 
 
 html{
@@ -171,4 +172,17 @@ body{
     @include font-size(18px);
     font-weight: normal;
     font-style: italic;
+}
+
+h2 {
+    color:$roxo;
+    font-style: italic;
+    font-weight: bold;
+    @include font-size(20px);
+}
+h3 {
+    color:$black;
+    font-style: italic;
+    font-weight: normal;
+    @include font-size(18px);
 }
