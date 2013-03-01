@@ -29,7 +29,7 @@
  * paulirish.com/2012/box-sizing-border-box-ftw ?
  */
 /**
- * Would you like to use Adam Whitcroft’s Batch icon font, as per:
+ * Would you like to use Adam WhitcroftÔÇÖs Batch icon font, as per:
  * adamwhitcroft.com/batch ?
  */
 /**
@@ -59,7 +59,7 @@
  * English quote marks?
  */
 /**
- * If you want English quotes then please do not edit these; they’re only here
+ * If you want English quotes then please do not edit these; theyÔÇÖre only here
  * because Sass needs them.
  */
 /**
@@ -127,7 +127,7 @@
     $CONTENTS
 \*------------------------------------*/
 /**
- * CONTENTS............You’re reading it!
+ * CONTENTS............YouÔÇÖre reading it!
  * WARNING.............Here be dragons!
  * IMPORTS.............Begin importing the sections below
  * 
@@ -281,11 +281,11 @@
 /**
  * Media query mixin.
  *
- * It’s not great practice to define solid breakpoints up-front, preferring to
- * modify your design when it needs it, rather than assuming you’ll want a
- * change at ‘mobile’. However, as inuit.css is required to take a hands off
+ * ItÔÇÖs not great practice to define solid breakpoints up-front, preferring to
+ * modify your design when it needs it, rather than assuming youÔÇÖll want a
+ * change at ÔÇÿmobileÔÇÖ. However, as inuit.css is required to take a hands off
  * approach to design decisions, this is the closest we can get to baked-in
- * responsiveness. It’s flexible enough to allow you to set your own breakpoints
+ * responsiveness. ItÔÇÖs flexible enough to allow you to set your own breakpoints
  * but solid enough to be frameworkified.
  * 
  * We define some broad breakpoints in our vars file that are picked up here
@@ -530,7 +530,7 @@ figure {
  */
 /* line 253, ../sass/inuit.css/generic/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -715,7 +715,7 @@ ins {
   border-bottom: 1px solid; }
 
 /**
- * So that `alt` text is visually offset if images don’t load.
+ * So that `alt` text is visually offset if images donÔÇÖt load.
  */
 /* line 59, ../sass/inuit.css/generic/_reset.scss */
 img {
@@ -961,30 +961,30 @@ hgroup .hN {
  */
 /* line 20, ../sass/inuit.css/base/_quotes.scss */
 q {
-  quotes: "‘" "’" "“" "”"; }
+  quotes: "ÔÇÿ" "ÔÇÖ" "ÔÇ£" "ÔÇØ"; }
   /* line 23, ../sass/inuit.css/base/_quotes.scss */
   q:before {
-    content: "‘";
+    content: "ÔÇÿ";
     content: open-quote; }
   /* line 27, ../sass/inuit.css/base/_quotes.scss */
   q:after {
-    content: "’";
+    content: "ÔÇÖ";
     content: close-quote; }
   /* line 32, ../sass/inuit.css/base/_quotes.scss */
   q q:before {
-    content: "“";
+    content: "ÔÇ£";
     content: open-quote; }
   /* line 36, ../sass/inuit.css/base/_quotes.scss */
   q q:after {
-    content: "”";
+    content: "ÔÇØ";
     content: close-quote; }
 
 /* line 42, ../sass/inuit.css/base/_quotes.scss */
 blockquote {
-  quotes: "“" "”"; }
+  quotes: "ÔÇ£" "ÔÇØ"; }
   /* line 45, ../sass/inuit.css/base/_quotes.scss */
   blockquote p:before {
-    content: "“";
+    content: "ÔÇ£";
     content: open-quote; }
   /* line 49, ../sass/inuit.css/base/_quotes.scss */
   blockquote p:after {
@@ -992,15 +992,15 @@ blockquote {
     content: no-close-quote; }
   /* line 53, ../sass/inuit.css/base/_quotes.scss */
   blockquote p:last-of-type:after {
-    content: "”";
+    content: "ÔÇØ";
     content: close-quote; }
   /* line 58, ../sass/inuit.css/base/_quotes.scss */
   blockquote q:before {
-    content: "‘";
+    content: "ÔÇÿ";
     content: open-quote; }
   /* line 62, ../sass/inuit.css/base/_quotes.scss */
   blockquote q:after {
-    content: "’";
+    content: "ÔÇÖ";
     content: close-quote; }
 
 /**
@@ -1015,7 +1015,7 @@ blockquote {
 /* line 78, ../sass/inuit.css/base/_quotes.scss */
 blockquote {
   /**
-   * .4em is roughly equal to the width of the opening “ that we wish to hang.
+   * .4em is roughly equal to the width of the opening ÔÇ£ that we wish to hang.
    */
   text-indent: -0.41em; }
   /* line 84, ../sass/inuit.css/base/_quotes.scss */
@@ -1028,7 +1028,7 @@ blockquote {
   text-indent: 0; }
   /* line 93, ../sass/inuit.css/base/_quotes.scss */
   .source:before {
-    content: "—"; }
+    content: "ÔÇö"; }
 
 /*------------------------------------*\
     $CODE
@@ -1079,7 +1079,7 @@ pre mark {
  * 
  * 1. Make the list look like code.
  * 2. Give the list flush numbers with a leading zero.
- * 3. Make sure lines of code don’t wrap.
+ * 3. Make sure lines of code donÔÇÖt wrap.
  * 4. Give the code form by forcing the `code` to honour white-space.
  */
 /* line 54, ../sass/inuit.css/base/_code.scss */
@@ -1118,7 +1118,7 @@ a {
     text-decoration: underline; }
 
 /**
- * ‘Current’ states, e.g.:
+ * ÔÇÿCurrentÔÇÖ states, e.g.:
  * 
    <ul class=nav>
        <li><a href=#>Home</a></li>
@@ -1436,7 +1436,7 @@ td {
 /* line 129, ../sass/inuit.css/base/_tables.scss */
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   /* Override this color in your theme stylesheet */ }
   /* line 132, ../sass/inuit.css/base/_tables.scss */
   .table--bordered th:empty,
@@ -1620,7 +1620,7 @@ label,
    <small class=extra-help>.edu emails only</small>
  * 
  * We leave the help text in the document flow and merely set it to
- * `visibility:hidden;`. This means that it won’t interfere with anything once
+ * `visibility:hidden;`. This means that it wonÔÇÖt interfere with anything once
  * it reappears.
  * 
  */
@@ -1765,7 +1765,7 @@ label,
        </div>
    </div>
  * 
- * It’s pretty poorly named I’m afraid, but it works…
+ * ItÔÇÖs pretty poorly named IÔÇÖm afraid, but it worksÔÇª
  * 
  * Demo: jsfiddle.net/inuitcss/ufUh2
  * 
@@ -1971,7 +1971,7 @@ html.flexbox {
 \*------------------------------------*/
 /**
  * Link-group nav, used for displaying related options. Extends `.nav--block`
- * but could also extend `.nav--fit`. Extend with colours and ‘current states’
+ * but could also extend `.nav--fit`. Extend with colours and ÔÇÿcurrent statesÔÇÖ
  * in your theme stylesheet.
  * 
   <ul class="nav  options">
@@ -1986,7 +1986,7 @@ html.flexbox {
  */
 /* line 24, ../sass/inuit.css/objects/_options.scss */
 .options > li > a {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Extend in your theme stylesheet */
   border-width: 1px;
   border-left-width: 0; }
@@ -2045,11 +2045,11 @@ html.flexbox {
 
 /* line 41, ../sass/inuit.css/objects/_pagination.scss */
 .pagination__first a:before {
-  content: "« "; }
+  content: "┬½ "; }
 
 /* line 44, ../sass/inuit.css/objects/_pagination.scss */
 .pagination__last a:after {
-  content: " »"; }
+  content: " ┬╗"; }
 
 /*------------------------------------*\
     $BREADCRUMB
@@ -2069,7 +2069,7 @@ html.flexbox {
  */
 /* line 17, ../sass/inuit.css/objects/_breadcrumb.scss */
 .breadcrumb > li + li:before {
-  content: "» "; }
+  content: "┬╗ "; }
 
 /**
  * For denoting a path-like structure, GitHub style, e.g.:
@@ -2189,7 +2189,7 @@ html.flexbox {
   line-height: 2; }
 
 /**
- * Wait for a certain breakpoint to trigger ‘proper' marginalia. Up to this point,
+ * Wait for a certain breakpoint to trigger ÔÇÿproper' marginalia. Up to this point,
  * marginalia are inline with the other text.
  */
 @media (min-width: 1024px) {
@@ -2272,7 +2272,7 @@ html.flexbox {
 /* line 22, ../sass/inuit.css/objects/_block-list.scss */
 .block-list,
 .block-list > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Override this color in your theme stylesheet */ }
 
 /* line 26, ../sass/inuit.css/objects/_block-list.scss */
@@ -2313,7 +2313,7 @@ html.flexbox {
 /* line 23, ../sass/inuit.css/objects/_matrix.scss */
 .matrix,
 .matrix > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Override this color in your theme stylesheet */ }
 
 /* line 27, ../sass/inuit.css/objects/_matrix.scss */
@@ -2412,7 +2412,7 @@ html.flexbox {
        <li class=first><b class=split__title>1st place</b> Bob</li>       
        <li class=second><b class=split__title>2nd place</b> Lilly</li>       
        <li class=third><b class=split__title>3rd place</b> Ted</li>       
-   </ol>​
+   </ol>ÔÇï
  * 
  * Demo: jsfiddle.net/inuitcss/9gZW7
  * 
@@ -2533,7 +2533,7 @@ html.flexbox {
 
 /**
  * Bring the flyouts into view when you hover their parents.
- * Two different types of flyout; ‘regular’ (`.flyout`) and ‘alternative’
+ * Two different types of flyout; ÔÇÿregularÔÇÖ (`.flyout`) and ÔÇÿalternativeÔÇÖ
  * (`.flyout--alt`).
  */
 /* line 42, ../sass/inuit.css/objects/_flyout.scss */
@@ -2574,7 +2574,7 @@ html.flexbox {
     $SPRITE
 \*------------------------------------*/
 /**
- * Giving an element a class of `.s` will throw it into ‘sprite’ mode and apply
+ * Giving an element a class of `.s` will throw it into ÔÇÿspriteÔÇÖ mode and apply
  * a background image e.g.:
  * 
    <a class="s  s--question-mark">More info&hellip;</a>
@@ -2583,13 +2583,13 @@ html.flexbox {
  * 
    <a href=#><i class="s  s--question-mark"></i> Help and FAQ</a>
  * 
- * Giving an element a class of `.i` will throw it into ‘icon’ mode and will
+ * Giving an element a class of `.i` will throw it into ÔÇÿiconÔÇÖ mode and will
  * not add a background, but should be used for icon fonts and is populated
  * through a `data-icon` attribute and the `:after` pseudo-element, e.g.:
  * 
    <a href=#><i class=i data-icon="&#xF000;"></i> View your favourites</a>
  * 
- * Where ‘&#xF000;’ might map to a star in your particular font.
+ * Where ÔÇÿ&#xF000;ÔÇÖ might map to a star in your particular font.
  * 
  * These all require extension in your theme stylesheet.
  * 
@@ -2605,7 +2605,7 @@ html.flexbox {
   vertical-align: middle;
   zoom: 1;
   /**
-   * So using `.i` on certain elements doesn’t make a visual difference.
+   * So using `.i` on certain elements doesnÔÇÖt make a visual difference.
    */
   font-style: normal;
   font-weight: normal;
@@ -2786,7 +2786,7 @@ html.flexbox {
   color: #fff;
   /* Override this color in your theme stylesheet */
   /**
-   * Normally we’d use border-radius:100%; but instead here we just use an
+   * Normally weÔÇÖd use border-radius:100%; but instead here we just use an
    * overly large number; `border-radius:100%;` would create an oval on
    * non-square elements whereas we just want to round the ends of an element.
    */
@@ -2830,7 +2830,7 @@ html.flexbox {
   border-bottom-style: dashed; }
 
 /**
- * Ornamental rules. Places a § over the rule.
+ * Ornamental rules. Places a ┬º over the rule.
  */
 /* line 39, ../sass/inuit.css/objects/_rules.scss */
 .rule--ornament {
@@ -2843,7 +2843,7 @@ html.flexbox {
   */ }
   /* line 42, ../sass/inuit.css/objects/_rules.scss */
   .rule--ornament:after {
-    content: "§";
+    content: "┬º";
     position: absolute;
     top: 0;
     right: 0;
@@ -2858,7 +2858,7 @@ html.flexbox {
     $STATS
 \*------------------------------------*/
 /**
- * Simple object to display key–value statistic-like information, e.g.: 
+ * Simple object to display keyÔÇôvalue statistic-like information, e.g.: 
  *
    <div class=stat-group>
        <dl class=stat>
@@ -2936,7 +2936,7 @@ html.flexbox {
  * The beauty of combining the greyboxing with inuit.css objects is that any
  * prototyping can quickly be converted into/used as production code.
  * 
- * For a more complete prototyping framework, consider Adam Whitcroft’s Proto:
+ * For a more complete prototyping framework, consider Adam WhitcroftÔÇÖs Proto:
  * adamwhitcroft.com/proto
  * 
  * Demo: jsfiddle.net/inuitcss/qCXfh/
@@ -2960,7 +2960,7 @@ html.flexbox {
   text-decoration: underline; }
 
 /**
- * All greyboxes will occupy 100% of their parent’s width, but to alter their
+ * All greyboxes will occupy 100% of their parentÔÇÖs width, but to alter their
  * heights we apply incrementally larger line-heights:
  */
 /* line 46, ../sass/inuit.css/objects/_greybox.scss */
@@ -3129,15 +3129,15 @@ html.flexbox {
   width: 91.666%; }
 
 /**
- * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
- * access to these classes. You can define at which breakpoing you’d like an
+ * If you have set `$responsive` to ÔÇÿtrueÔÇÖ in `_vars.scss` then you now have
+ * access to these classes. You can define at which breakpoing youÔÇÖd like an
  * element to be a certain size, e.g.:
  *
  * `<div class="g  one-quarter  lap-one-half  palm-one-whole"> ... </div>`
  *
- * This would create a `div` that, at ‘desktop’ sizes, takes up a quarter of the
- * horizontal space, a half of that space at ‘tablet’ sizes, and goes full width
- * at ‘mobile’ sizes.
+ * This would create a `div` that, at ÔÇÿdesktopÔÇÖ sizes, takes up a quarter of the
+ * horizontal space, a half of that space at ÔÇÿtabletÔÇÖ sizes, and goes full width
+ * at ÔÇÿmobileÔÇÖ sizes.
  *
  * Demo: jsfiddle.net/inuitcss/WS4Ge
  *
@@ -3635,7 +3635,7 @@ html.flexbox {
   .desk-eleven-twelfths {
     width: 91.666%; } }
 /**
- * If you have set the additional `$responsive-extra` variable to ‘true’ in
+ * If you have set the additional `$responsive-extra` variable to ÔÇÿtrueÔÇÖ in
  * `_vars.scss` then you now have access to the following class available to
  * accomodate much larger screen resolutions.
  */
@@ -3940,7 +3940,7 @@ html.flexbox {
 \*------------------------------------*/
 /**
  * A series of helper classes to use arbitrarily. Only use a helper class if an
- * element/component doesn’t already have a class to which you could apply this
+ * element/component doesnÔÇÖt already have a class to which you could apply this
  * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
  * that ruleset as opposed to adding the `.float--left` class to the markup.
  *
@@ -3957,7 +3957,7 @@ html.flexbox {
 
 /* line 16, ../sass/inuit.css/generic/_helper.scss */
 .text--left {
-  text-align: left !important; }
+  text-align: left  !important; }
 
 /* line 17, ../sass/inuit.css/generic/_helper.scss */
 .text--center, .notFound {
@@ -4079,7 +4079,7 @@ html.flexbox {
  */
 /* line 120, ../sass/inuit.css/generic/_helper.scss */
 .go:after {
-  content: " »"; }
+  content: " ┬╗"; }
 
 /**
  * Apply capital case to an element (usually a `strong`).
@@ -4326,7 +4326,7 @@ body {
   min-width: 1080px;
   height: 774px;
   overflow: hidden;
-  background-image: url('../images/bgs/home.jpg?1362113751');
+  background-image: url('../images/bgs/home.jpg?1362111635');
   background-repeat: no-repeat;
   background-position: 50% 0%; }
 
@@ -4354,7 +4354,7 @@ body {
 .logo {
   width: 119px;
   height: 256px;
-  background-image: url('../images/logo.png?1362096781');
+  background-image: url('../images/logo.png?1362107421');
   background-repeat: no-repeat;
   background-position: 0% 0%; }
 
@@ -4369,7 +4369,7 @@ body {
     line-height: 1.5;
     padding-left: 30px;
     color: #61344c;
-    background-image: url('../images/linha.png?1362096882');
+    background-image: url('../images/linha.png?1362107421');
     background-repeat: no-repeat;
     background-position: 0% 100%; }
     /* line 62, ../sass/_geral.scss */
@@ -4389,7 +4389,7 @@ body {
   margin-bottom: 115px;
   position: relative;
   min-height: 50px;
-  background-image: url('../images/auth.png?1362103702');
+  background-image: url('../images/auth.png?1362107421');
   background-repeat: no-repeat;
   background-position: 0% 100%; }
   /* line 86, ../sass/_geral.scss */
@@ -4457,7 +4457,7 @@ body {
 
 /* line 139, ../sass/_geral.scss */
 .boxWhite {
-  background-image: url('../images/white.png?1362107335');
+  background-image: url('../images/white.png?1362110206');
   background-repeat: repeat;
   background-color: transparent; }
 
