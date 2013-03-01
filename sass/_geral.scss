@@ -1,9 +1,10 @@
 $laranja: #ee7c48;
 $gray: #dddddd;
+$black: #626262;
 
 
 html{
-    color: $brand-color;
+    color: $black;
     font-size: $base-font-size;
 }
 
@@ -134,14 +135,31 @@ body{
     }    
 }
 
-// Scrooll
-.container {
+%container{
     @include box-sizing(border-box);
     width: 100%;
-    height: 300px;
     padding: 10px;
+}
+
+// Scrooll
+.container {
+    @extend %container;
+    height: 300px;
     overflow:hidden;
     .content{
 
     }
+}
+
+// Headers
+.alpha{
+    @extend .caps;
+    @include font-size(20px);
+    color: $brand-color;
+}
+
+.beta{
+    @include font-size(18px);
+    font-weight: normal;
+    font-style: italic;
 }
