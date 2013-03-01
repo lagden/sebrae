@@ -33,8 +33,8 @@
             </div>
             <div class="blocoFrm">
                 <label for="fale_cidade">Cidade/Estado*</label>
-                <input class="med" title="Cidade" type="text" name="fale[cidade]" id="fale_cidade">
-                <select class="ped" name="fale[uf]">
+                <input class="med med-rev" title="Cidade" type="text" name="fale[cidade]" id="fale_cidade">
+                <select class="ped ped-rev Styled" name="fale[uf]">
                     <option value="AC">AC</option>
                     <option value="AL">AL</option>
                     <option value="AM">AM</option>

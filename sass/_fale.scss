@@ -2,6 +2,10 @@
     &.boxWhite{
         @extend %container;
     }
+    small{
+        @extend %sass-margin-bottom;
+        display: block;
+    }
     .frm{
         textarea{
             width: 440px;
@@ -14,8 +18,14 @@
                 width: 50px;
                 margin-right: 10px;
             }
+            &.ped-rev{
+                margin-right: 0px;
+            }
             &.med{
                 width: 150px;
+            }
+            &.med-rev{
+                margin-right: 10px;
             }
         }
         button{
@@ -24,11 +34,16 @@
         .bloco{
             margin-bottom: 20px;
             .blocoFrm{
-                font-size: 0;
                 @include inline-block;
+                font-size: 0;
                 margin-right: 20px;
+                position: relative;
                 &:last-child{
                     margin-right: 0px;
+                }
+                span.Styled{
+                    top: 24px;
+                    left: 160px;
                 }
             }
         }

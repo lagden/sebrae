@@ -10,6 +10,12 @@ jQuery.fn.ready(function(){
     // jQuery as $
     (function($){
 
+        // PlaceHolder
+        $('input, textarea').placeholder();
+
+        // Custom Form
+        $('select.Styled').customized();
+
         $down = $('#down');
         $up = $('#up');
         $container = $('.container');

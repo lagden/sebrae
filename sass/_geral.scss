@@ -140,6 +140,41 @@ body{
     }
 }
 
+// Combobox Customizado - Styled
+.Styled{
+    vertical-align: middle;
+}
+
+select.Styled{
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    &.hiddenStyle{
+        @include opacity(0);
+    }
+}
+
+span.Styled{
+    @include box-sizing(border-box);
+    @include font-size(12px);
+    background:{
+        image: image-url('sprites/bt/select.png');
+        position: 85% center;
+        repeat: no-repeat;
+        color: white;
+    };
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0px 5px;
+    width: auto;
+    height: 40px;
+    border: 1px solid $gray;
+    line-height: 40px;
+}
+
 // Footer
 .theFooter{
     background-color: white;
