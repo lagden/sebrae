@@ -19,40 +19,54 @@ $itens = array(
     <title>Ulalá</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="wrapper cf">
-    <header role="banner" class="cell-4">
-        <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>
-        <nav role="navigation">
-            <ul class="menu">
-                <?php foreach ($itens as $k => $item): ?>
-                    <li <?php echo ($k == $page) ? 'class="current"' : "" ?>>
-                        <a href="?page=<?php echo $k ?>"><?php echo $item ?></a>
-                    </li>
-                <?php endforeach ?>
-            </ul>
-        </nav>
-    </header>
+<body>
+    <div class="wrapper cf">
 
-    <main role="main" class="main cell-8">
-        <div class="container">
-            <div class="content">
-                <p>string</p>
-                <p>string</p>
-                <p>string</p>
-                <p>string</p>
-                <p>string</p>
-                <p>string</p>
-                <p>string</p>
-                <p>string</p>
-                <p>string</p>
-                <p>string</p>
-                <p>lulu</p>
+        <header role="banner" class="cell-4">
+            <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>
+            <nav role="navigation">
+                <ul class="menu">
+                    <?php foreach ($itens as $k => $item): ?>
+                        <li <?php echo ($k == $page) ? 'class="current"' : "" ?>>
+                            <a href="?page=<?php echo $k ?>"><?php echo $item ?></a>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main" class="main cell-8">
+
+            <section class="auth">
+                <form method="post" class="frm inline" id="frmLogin" action="/">
+                    <label for="auth_login">Login</label>
+                    <input title="Login" placeholder="Login" type="text" name="auth[login]" id="auth_login">
+                    <label for="auth_senha">Senha</label>
+                    <input title="Senha" type="password" name="auth[senha]" id="auth_senha">
+                    <button class="btn">Enviar</button>
+                </form>
+            </section>
+
+            <div class="container">
+                <div class="content">
+                    <p>string</p>
+                    <p>string</p>
+                    <p>string</p>
+                    <p>string</p>
+                    <p>string</p>
+                    <p>string</p>
+                    <p>string</p>
+                    <p>string</p>
+                    <p>string</p>
+                    <p>string</p>
+                    <p>lulu</p>
+                </div>
             </div>
-        </div>
 
-        <a href="#" id="up">Up</a>
-        <a href="#" id="down">down</a>
-    </main>
+            <a href="#" id="up">Up</a>
+            <a href="#" id="down">down</a>
+        </main>
+    </div>
 
     <footer role="contentinfo">
         

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "compass";
 /*------------------------------------*\
     STYLE.CSS
 \*------------------------------------*/
@@ -14,8 +15,8 @@
 /**
  * Setup
  */
-@import "vars";
-@import "inuit.css/inuit";
+ @import "vars";
+ @import "inuit.css/inuit";
 
 // Stuff
 @import "stuff/functions";
@@ -27,6 +28,8 @@
 
 // Grid
 @import "stuff/grid";
+
+$laranja: #ee7c48;
 
 
 html{
@@ -42,6 +45,13 @@ html{
     position: relative;
     width: $total-width;
     padding-top: 15px;
+
+    background:{
+        image: image_url('bg1.jpg');
+        repeat: no-repeat;
+        position: 50% 50%;
+        background-size: cover;
+    }
 }
 
 .logo{
@@ -80,7 +90,40 @@ html{
     }
 }
 
+.auth{
+    label{
+        color: $laranja;
+    }
+    input{
 
+    }
+}
+
+// Formulário
+.frm{
+    &.inline{
+        label,
+        input[type=text],
+        input[type=password]{
+            @include inline-block;
+        }
+    }
+    input[type=text],
+    input[type=password],
+    textarea {
+        @include transition(all 0.30s ease-in-out);
+        outline: none;
+        padding: 3px 0px 3px 3px;
+        margin: 5px 1px 3px 0px;
+        border: 1px solid #DDDDDD;
+        &:focus{
+            @include box-shadow(0 0 5px rgba($laranja, 1));
+            padding: 3px 0px 3px 3px;
+            margin: 5px 1px 3px 0px;
+            border: 1px solid rgba($laranja, 1);
+        }
+    }
+}
 
 
 
