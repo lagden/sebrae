@@ -9,7 +9,6 @@ $itens = array(
     'historia'=>'Como escrever a história',
     'fale'=>'Fale conosco',
     'cronograma'=>'Cronograma',
-    'videos'=>'Vídeos',
 )
 ?>
 <!DOCTYPE HTML>
