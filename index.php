@@ -35,7 +35,7 @@ $itens = array(
             </nav>
         </header>
 
-        <main role="main" class="main cell-8">
+        <div class="cell-8">
 
             <section class="auth">
                 <form method="post" class="frm inline" id="frmLogin" action="/">
@@ -47,25 +47,15 @@ $itens = array(
                 </form>
             </section>
 
-            <div class="container">
-                <div class="content">
-                    <p>string</p>
-                    <p>string</p>
-                    <p>string</p>
-                    <p>string</p>
-                    <p>string</p>
-                    <p>string</p>
-                    <p>string</p>
-                    <p>string</p>
-                    <p>string</p>
-                    <p>string</p>
-                    <p>lulu</p>
-                </div>
-            </div>
+            <?php
+            $filename = __DIR__ . "/pages/{$page}.php";
+            if (file_exists($filename))
+                include $filename;
+            else
+                echo '<div class="notFound">404 - página não encontrada</div>';
+            ?>
+        </div>
 
-            <a href="#" id="up">Up</a>
-            <a href="#" id="down">down</a>
-        </main>
     </div>
 
     <footer role="contentinfo" class="theFooter cf">

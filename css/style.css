@@ -751,7 +751,7 @@ textarea:focus {
  */
 /* line 10, ../sass/inuit.css/generic/_clearfix.scss */
 .cf:after, .gw:after,
-.grid-wrapper:after, .nav:after, .media:after, .island:after, .auth:after,
+.grid-wrapper:after, .nav:after, .media:after, .island:after,
 .islet:after, .matrix:after, .multi-list:after, .stat-group:after, .menu:after {
   content: "";
   display: table;
@@ -778,7 +778,6 @@ pre,
 .form-fields > li,
 .media,
 .island,
-.auth,
 .islet {
   margin-bottom: 24px;
   margin-bottom: 1.5rem; }
@@ -791,7 +790,6 @@ pre,
   pre, .islet .form-fields > li, .islet
   .media, .islet
   .island, .islet
-  .auth, .islet
   .islet {
     margin-bottom: 12px;
     margin-bottom: 0.75rem; }
@@ -2233,16 +2231,16 @@ html.flexbox {
  * 
  */
 /* line 16, ../sass/inuit.css/objects/_island.scss */
-.island, .auth,
+.island,
 .islet {
   display: block; }
 
 /* line 20, ../sass/inuit.css/objects/_island.scss */
-.island, .auth {
+.island {
   padding: 24px; }
 
 /* line 24, ../sass/inuit.css/objects/_island.scss */
-.island > :last-child, .auth > :last-child,
+.island > :last-child,
 .islet > :last-child {
   margin-bottom: 0; }
 
@@ -4381,25 +4379,31 @@ body {
 
 /* line 97, ../sass/style.scss */
 .auth {
-  padding: 0;
+  margin-bottom: 115px;
   position: relative;
   min-height: 50px;
   background-image: url('../images/auth.png?1362103702');
   background-repeat: no-repeat;
   background-position: 0% 100%; }
-  /* line 107, ../sass/style.scss */
+  /* line 106, ../sass/style.scss */
   .auth label {
     color: #ee7c48;
     font-style: italic; }
 
-/* line 118, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
+.boxWhite {
+  background-image: url('../images/white.png?1362107335');
+  background-repeat: repeat;
+  background-color: transparent; }
+
+/* line 125, ../sass/style.scss */
 .frm.inline label,
 .frm.inline input[type=text],
 .frm.inline input[type=password] {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
-/* line 124, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .frm input[type=text],
 .frm input[type=password],
 .frm textarea {
@@ -4407,19 +4411,18 @@ body {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  outline: none; }
-  /* line 130, ../sass/style.scss */
+  outline: none;
+  border: 1px solid #dddddd; }
+  /* line 135, ../sass/style.scss */
   .frm input[type=text]:focus,
   .frm input[type=password]:focus,
   .frm textarea:focus {
     -webkit-box-shadow: 0 0 5px #ee7c48;
     -moz-box-shadow: 0 0 5px #ee7c48;
     box-shadow: 0 0 5px #ee7c48;
-    padding: 3px 0px 3px 3px;
-    margin: 5px 1px 3px 0px;
     border: 1px solid #ee7c48; }
 
-/* line 139, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .theFooter {
   background-color: white;
   padding: 10px;
@@ -4427,14 +4430,13 @@ body {
   -moz-box-shadow: #dddddd 0 0 25px;
   box-shadow: #dddddd 0 0 25px; }
 
-/* line 145, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .container {
-  width: 300px;
-  height: 100px;
-  background: red;
-  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  min-height: 100%;
+  padding: 10px;
   overflow: hidden; }
-
-/* line 153, ../sass/style.scss */
-.content {
-  background: #eee; }

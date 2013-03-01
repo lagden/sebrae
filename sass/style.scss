@@ -95,8 +95,7 @@ body{
 }
 
 .auth{
-    @extend .island;
-    padding: 0;
+    margin-bottom: 115px;
     position: relative;
     min-height: 50px;
     background:{
@@ -108,6 +107,14 @@ body{
         color: $laranja;
         font-style: italic;
     }
+}
+
+.boxWhite{
+    background:{
+        image: image_url('white.png');
+        repeat: repeat;
+        color: transparent;
+    }    
 }
 
 // Formulário
@@ -124,13 +131,9 @@ body{
     textarea {
         @include transition(all 0.30s ease-in-out);
         outline: none;
-        // padding: 3px 0px 3px 3px;
-        // margin: 5px 1px 3px 0px;
-        // border: 1px solid $gray;
+        border: 1px solid $gray;
         &:focus{
             @include box-shadow(0 0 5px rgba($laranja, 1));
-            padding: 3px 0px 3px 3px;
-            margin: 5px 1px 3px 0px;
             border: 1px solid rgba($laranja, 1);
         }
     }
@@ -143,13 +146,13 @@ body{
 }
 
 .container {
-    width: 300px;
-    height:100px;
-    background:red;
-    padding:0 10px;
+    @include box-sizing(border-box);
+    width: 100%;
+    height: 300px;
+    min-height: 100%;
+    padding: 10px;
     overflow:hidden;
-}
+    .content{
 
-.content {
-    background:#eee;
+    }
 }
