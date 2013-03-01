@@ -12,18 +12,6 @@ body{
     font-family: $brand-face;
 }
 
-.main{
-    width: 100%;
-    min-width: $total-width;
-    height: 774px;
-    overflow: hidden;
-    background:{
-        image: image_url('bgs/home.jpg');
-        repeat: no-repeat;
-        position: 50% 0%;
-    }
-}
-
 .wrapper{
     @include clear-floats;
     @include helperGrid($gh1, $show);
@@ -31,7 +19,28 @@ body{
     margin-right: auto;
     position: relative;
     width: $total-width;
-    padding-top: 15px;
+}
+
+.main{
+    width: 100%;
+    min-width: $total-width;
+    height: 771px;
+    overflow: hidden;
+    background:{
+        image: image_url('pattern.jpg');
+        repeat: no-repeat;
+        position: 50% 0%;
+    }
+    .wrapper{
+        $padTop: 15px;
+        padding-top: $padTop;
+        height: 771px - $padTop;
+        background:{
+            image: image_url('bgs/home.jpg');
+            repeat: no-repeat;
+            position: 100% 100%;
+        }
+    }
 }
 
 $leftPos: 30px;
@@ -293,7 +302,7 @@ h3{
     padding: 10px 20px;
     position: absolute;
     right: -50px;
-    bottom: -103px;
+    bottom: 0;
     .slideshow{
         .slides{
             position: relative;
