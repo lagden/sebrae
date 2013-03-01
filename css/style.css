@@ -4313,19 +4313,19 @@ html.flexbox {
   float: left;
   width: 1080px; }
 
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 html {
   color: #61344c;
   font-size: "Helvetica Neue", sans-serif; }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 body {
   background-image: url('../images/bg1.jpg?1362101609');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-background-size: cover; }
+  background-position: 0% 0%;
+  background-size: cover; }
 
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -4345,7 +4345,7 @@ body {
   .wrapper {
     zoom: 1; }
 
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .logo {
   width: 119px;
   height: 256px;
@@ -4353,11 +4353,11 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 0%; }
 
-/* line 69, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .menu {
   list-style: none;
   margin-left: 0; }
-  /* line 73, ../sass/style.scss */
+  /* line 74, ../sass/style.scss */
   .menu li {
     font-size: 16px;
     font-size: 1rem;
@@ -4367,19 +4367,19 @@ body {
     background-image: url('../images/linha.png?1362096882');
     background-repeat: no-repeat;
     background-position: 0% 100%; }
-    /* line 82, ../sass/style.scss */
+    /* line 83, ../sass/style.scss */
     .menu li a {
       color: #61344c;
       display: block;
       padding: 10px 0px 10px;
       font-style: italic; }
-    /* line 88, ../sass/style.scss */
+    /* line 89, ../sass/style.scss */
     .menu li.current > a {
       cursor: text;
       text-decoration: none;
       font-weight: bold; }
 
-/* line 96, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .auth {
   padding: 0;
   position: relative;
@@ -4387,19 +4387,19 @@ body {
   background-image: url('../images/auth.png?1362103702');
   background-repeat: no-repeat;
   background-position: 0% 100%; }
-  /* line 106, ../sass/style.scss */
+  /* line 107, ../sass/style.scss */
   .auth label {
     color: #ee7c48;
     font-style: italic; }
 
-/* line 117, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .frm.inline label,
 .frm.inline input[type=text],
 .frm.inline input[type=password] {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
-/* line 123, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .frm input[type=text],
 .frm input[type=password],
 .frm textarea {
@@ -4407,11 +4407,8 @@ body {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  outline: none;
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid #dddddd; }
-  /* line 129, ../sass/style.scss */
+  outline: none; }
+  /* line 130, ../sass/style.scss */
   .frm input[type=text]:focus,
   .frm input[type=password]:focus,
   .frm textarea:focus {
@@ -4422,7 +4419,15 @@ body {
     margin: 5px 1px 3px 0px;
     border: 1px solid #ee7c48; }
 
-/* line 141, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
+.theFooter {
+  background-color: white;
+  padding: 10px;
+  -webkit-box-shadow: #dddddd 0 0 25px;
+  -moz-box-shadow: #dddddd 0 0 25px;
+  box-shadow: #dddddd 0 0 25px; }
+
+/* line 145, ../sass/style.scss */
 .container {
   width: 300px;
   height: 100px;
@@ -4430,6 +4435,6 @@ body {
   padding: 0 10px;
   overflow: hidden; }
 
-/* line 149, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .content {
   background: #eee; }

@@ -30,6 +30,7 @@
 @import "stuff/grid";
 
 $laranja: #ee7c48;
+$gray: #dddddd;
 
 
 html{
@@ -41,8 +42,8 @@ body{
     background:{
         image: image_url('bg1.jpg');
         repeat: no-repeat;
-        position: 50% 50%;
-        background-size: cover;
+        position: 0% 0%;
+        size: cover;
     }
 }
 
@@ -123,9 +124,9 @@ body{
     textarea {
         @include transition(all 0.30s ease-in-out);
         outline: none;
-        padding: 3px 0px 3px 3px;
-        margin: 5px 1px 3px 0px;
-        border: 1px solid #DDDDDD;
+        // padding: 3px 0px 3px 3px;
+        // margin: 5px 1px 3px 0px;
+        // border: 1px solid $gray;
         &:focus{
             @include box-shadow(0 0 5px rgba($laranja, 1));
             padding: 3px 0px 3px 3px;
@@ -135,8 +136,11 @@ body{
     }
 }
 
-
-
+.theFooter{
+    background-color: white;
+    padding: 10px;
+    @include box-shadow(rgba($gray, 1) 0 0 25px);
+}
 
 .container {
     width: 300px;

@@ -68,8 +68,12 @@ $itens = array(
         </main>
     </div>
 
-    <footer role="contentinfo">
-        
+    <footer role="contentinfo" class="theFooter cf">
+        <section class="wrapper cf">
+            <figure>
+                <img src="images/logos.png" class="float--right" alt="logos">
+            </figure>
+        </section>
     </footer>
     <!-- jQuery -->
     <script src="js/vendor/jquery/jquery.js" type="text/javascript"></script>
