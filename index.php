@@ -32,8 +32,8 @@ else
 </head>
 <body>
     <main role="main" class="main">
-        <div class="wrapper cf" style="background-image:url('images/bgs/<?php echo "{$page}.jpg" ?>')">
-            <header role="banner" class="cell-4">
+        <div class="wrapper cf" style="background-image:url('images/bgs/<?php echo "{$page}.png" ?>')">
+            <header role="banner" class="cell-3">
                 <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>
                 <nav role="navigation">
                     <ul class="menu">
@@ -45,7 +45,7 @@ else
                     </ul>
                 </nav>
             </header>
-            <div class="cell-8">
+            <div class="cell-8 customPad">
                 <section class="auth">
                     <form method="post" class="frm inline" id="frmLogin" action="/">
                         <label for="auth_login">Login</label>
