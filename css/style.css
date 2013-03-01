@@ -4311,6 +4311,52 @@ html.flexbox {
   float: left;
   width: 1080px; }
 
+/* line 90, sprites/bt/*.png */
+.bt-sprite, .bt-down, .bt-enviar-login, .bt-inscreva-se, .bt-next, .bt-prev, .bt-select, .bt-up {
+  background: url('../images/sprites/bt-s058e1929f8.png') no-repeat; }
+
+/* line 60, ../../../../../Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-down {
+  background-position: -103px -117px;
+  height: 34px;
+  width: 57px; }
+
+/* line 60, ../../../../../Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-enviar-login {
+  background-position: -13px -117px;
+  height: 33px;
+  width: 90px; }
+
+/* line 60, ../../../../../Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-inscreva-se {
+  background-position: 0 -151px;
+  height: 45px;
+  width: 210px; }
+
+/* line 60, ../../../../../Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-next {
+  background-position: -118px 0;
+  height: 117px;
+  width: 60px; }
+
+/* line 60, ../../../../../Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-prev {
+  background-position: -57px 0;
+  height: 117px;
+  width: 61px; }
+
+/* line 60, ../../../../../Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-select {
+  background-position: 0 -117px;
+  height: 12px;
+  width: 13px; }
+
+/* line 60, ../../../../../Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-up {
+  background-position: 0 0;
+  height: 34px;
+  width: 57px; }
+
 /* line 7, ../sass/_geral.scss */
 html {
   color: #626262;
@@ -4446,8 +4492,23 @@ body {
     -moz-box-shadow: 0 0 5px #ee7c48;
     box-shadow: 0 0 5px #ee7c48;
     border: 1px solid #ee7c48; }
+/* line 131, ../sass/_geral.scss */
+.frm button {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  outline: none;
+  border: 0;
+  color: white; }
+  /* line 138, ../sass/_geral.scss */
+  .frm button:active {
+    top: 1px; }
 
-/* line 133, ../sass/_geral.scss */
+/* line 145, ../sass/_geral.scss */
 .theFooter {
   background-color: white;
   padding: 10px;
@@ -4455,13 +4516,13 @@ body {
   -moz-box-shadow: #dddddd 0 0 25px;
   box-shadow: #dddddd 0 0 25px; }
 
-/* line 140, ../sass/_geral.scss */
+/* line 152, ../sass/_geral.scss */
 .boxWhite {
   background-image: url('../images/white.png?1362110206');
   background-repeat: repeat;
   background-color: transparent; }
 
-/* line 148, ../sass/_geral.scss */
+/* line 160, ../sass/_geral.scss */
 .container, .fale.boxWhite {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4469,19 +4530,19 @@ body {
   width: 100%;
   padding: 20px; }
 
-/* line 155, ../sass/_geral.scss */
+/* line 167, ../sass/_geral.scss */
 .container {
   height: 300px;
   overflow: hidden; }
 
-/* line 165, ../sass/_geral.scss */
+/* line 177, ../sass/_geral.scss */
 .alpha {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2;
   color: #61344c; }
 
-/* line 171, ../sass/_geral.scss */
+/* line 183, ../sass/_geral.scss */
 .beta {
   font-size: 18px;
   font-size: 1.125rem;
@@ -4489,7 +4550,7 @@ body {
   font-weight: normal;
   font-style: italic; }
 
-/* line 177, ../sass/_geral.scss */
+/* line 189, ../sass/_geral.scss */
 h2 {
   color: #7a4f66;
   font-style: italic;
@@ -4498,7 +4559,7 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.2; }
 
-/* line 183, ../sass/_geral.scss */
+/* line 195, ../sass/_geral.scss */
 h3 {
   color: #626262;
   font-style: italic;
@@ -4525,15 +4586,18 @@ h3 {
   .fale .frm input[type=text].med {
     width: 150px; }
 /* line 21, ../sass/_fale.scss */
+.fale .frm button {
+  top: 26px; }
+/* line 24, ../sass/_fale.scss */
 .fale .frm .bloco {
   margin-bottom: 20px; }
-  /* line 23, ../sass/_fale.scss */
+  /* line 26, ../sass/_fale.scss */
   .fale .frm .bloco .blocoFrm {
     font-size: 0;
     display: inline-block;
     *display: inline;
     *zoom: 1;
     margin-right: 20px; }
-    /* line 27, ../sass/_fale.scss */
+    /* line 30, ../sass/_fale.scss */
     .fale .frm .bloco .blocoFrm:last-child {
       margin-right: 0px; }
