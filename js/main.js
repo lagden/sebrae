@@ -1,4 +1,5 @@
 var mouseStillDown = false
+    ,$win
     ,$down
     ,$up
     ,$container
@@ -88,9 +89,20 @@ jQuery.fn.ready(function(){
             ev.preventDefault();
         });
 
+        // Resize
+        $win = $(window);
+        $win.on('resize',function(){
+            resizeBox();
+        });
+
     })(jQuery);
 
 });
+
+function resizeBox()
+{
+    console.log('resizeBox');
+};
 
 function loop(direction)
 {
