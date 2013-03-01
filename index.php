@@ -26,7 +26,7 @@ else
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Ulalá</title>
+    <title>Prêmio Sebrae Mulher de Negócios</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
