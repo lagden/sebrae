@@ -38,12 +38,15 @@ html{
     font-size: $brand-face;
 }
 
-body{
+.main{
+    width: 100%;
+    min-width: $total-width;
+    height: 774px;
+    overflow: hidden;
     background:{
-        image: image_url('bg1.jpg');
+        image: image_url('bgs/home.jpg');
         repeat: no-repeat;
-        position: 0% 0%;
-        size: cover;
+        position: 50% 0%;
     }
 }
 
@@ -57,6 +60,7 @@ body{
     padding-top: 15px;
 }
 
+// Logo
 .logo{
     width: 119px;
     height: 256px;
@@ -67,6 +71,7 @@ body{
     }    
 }
 
+// Menu
 .menu{
     list-style:none;
     margin-left:0;
@@ -94,6 +99,7 @@ body{
     }
 }
 
+// Login
 .auth{
     margin-bottom: 115px;
     position: relative;
@@ -109,12 +115,12 @@ body{
     }
 }
 
-.boxWhite{
-    background:{
-        image: image_url('white.png');
-        repeat: repeat;
-        color: transparent;
-    }    
+// Erro 404
+.notFound{
+    @extend .text--center;
+    @include font-size(22px);
+    color: black;
+    padding: 50px 10px;
 }
 
 // Formulário
@@ -139,17 +145,27 @@ body{
     }
 }
 
+// Footer
 .theFooter{
     background-color: white;
     padding: 10px;
     @include box-shadow(rgba($gray, 1) 0 0 25px);
 }
 
+// Box Branco
+.boxWhite{
+    background:{
+        image: image_url('white.png');
+        repeat: repeat;
+        color: transparent;
+    }    
+}
+
+// Scrooll
 .container {
     @include box-sizing(border-box);
     width: 100%;
     height: 300px;
-    min-height: 100%;
     padding: 10px;
     overflow:hidden;
     .content{

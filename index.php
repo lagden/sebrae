@@ -1,5 +1,5 @@
 <?php
-$page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 'home';
+$page = isset($_REQUEST['page']) ? $_REQUEST['page'] : '404';
 $itens = array(
     'home'=>'Home',
     'premio'=>'O que é o Prêmio?',
@@ -9,8 +9,17 @@ $itens = array(
     'historia'=>'Como escrever a história',
     'fale'=>'Fale conosco',
     'cronograma'=>'Cronograma',
-    'videos'=>'Vídeos',
-)
+);
+
+$filename = __DIR__ . "/pages/{$page}.php";
+$include = false;
+if (file_exists($filename))
+    $include = true;
+else
+{
+    $page = '404';
+    $erro404 = '<div class="notFound boxWhite">404 - página não encontrada</div>';
+}
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
@@ -20,44 +29,39 @@ $itens = array(
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper cf">
+    <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "{$page}.jpg" ?>')">
+        <div class="wrapper cf">
+            <header role="banner" class="cell-4">
+                <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>
+                <nav role="navigation">
+                    <ul class="menu">
+                        <?php foreach ($itens as $k => $item): ?>
+                            <li <?php echo ($k == $page) ? 'class="current"' : "" ?>>
+                                <a href="?page=<?php echo $k ?>"><?php echo $item ?></a>
+                            </li>
+                        <?php endforeach ?>
+                    </ul>
+                </nav>
+            </header>
 
-        <header role="banner" class="cell-4">
-            <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>
-            <nav role="navigation">
-                <ul class="menu">
-                    <?php foreach ($itens as $k => $item): ?>
-                        <li <?php echo ($k == $page) ? 'class="current"' : "" ?>>
-                            <a href="?page=<?php echo $k ?>"><?php echo $item ?></a>
-                        </li>
-                    <?php endforeach ?>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="cell-8">
-
-            <section class="auth">
-                <form method="post" class="frm inline" id="frmLogin" action="/">
-                    <label for="auth_login">Login</label>
-                    <input title="Login" placeholder="Login" type="text" name="auth[login]" id="auth_login">
-                    <label for="auth_senha">Senha</label>
-                    <input title="Senha" type="password" name="auth[senha]" id="auth_senha">
-                    <button class="btn">Enviar</button>
-                </form>
-            </section>
-
-            <?php
-            $filename = __DIR__ . "/pages/{$page}.php";
-            if (file_exists($filename))
-                include $filename;
-            else
-                echo '<div class="notFound">404 - página não encontrada</div>';
-            ?>
+            <div class="cell-8">
+                <section class="auth">
+                    <form method="post" class="frm inline" id="frmLogin" action="/">
+                        <label for="auth_login">Login</label>
+                        <input title="Login" placeholder="Login" type="text" name="auth[login]" id="auth_login">
+                        <label for="auth_senha">Senha</label>
+                        <input title="Senha" type="password" name="auth[senha]" id="auth_senha">
+                        <button class="btn">Enviar</button>
+                    </form>
+                </section>
+                <!-- Miolo -->
+                <?php
+                if($include) include $filename;
+                else echo $erro404;
+                ?>
+            </div>
         </div>
-
-    </div>
-
+    </main>
     <footer role="contentinfo" class="theFooter cf">
         <section class="wrapper cf">
             <figure>

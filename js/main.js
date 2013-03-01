@@ -26,6 +26,10 @@ jQuery.fn.ready(function(){
         {
             mouseStillDown = false;
             $content.stop();
+        })
+        .click(function(ev)
+        {
+            ev.preventDefault();
         });
 
         $up
@@ -39,6 +43,10 @@ jQuery.fn.ready(function(){
         {
             mouseStillDown = false;
             $content.stop();
+        })
+        .click(function(ev)
+        {
+            ev.preventDefault();
         });
 
     })(jQuery);
