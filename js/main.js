@@ -3,6 +3,7 @@ var mouseStillDown = false
     ,$up
     ,$container
     ,$content
+    ,animationOffset
     ;
 
 jQuery.fn.ready(function(){
@@ -20,6 +21,13 @@ jQuery.fn.ready(function(){
         $up = $('#up');
         $container = $('.container');
         $content = $('.content');
+
+        animationOffset = $container.height() - $content.height();
+        if(animationOffset > 0)
+        {
+            $up.hide();
+            $down.hide();
+        }
 
         $down
         .mousedown(function(ev)
@@ -66,15 +74,16 @@ function loop(direction)
 
     if(mouseStillDown){
         scrolla(direction);
-        setInterval(50, "loop");
+        setInterval(100, "loop");
     }
 }
 
 function scrolla(direction, speed)
 {
-    speed = speed || 1000;
-    var animationOffset = $container.height() - $content.height();
+    animationOffset = $container.height() - $content.height();
+    speed = speed || 2000;
     if (direction == 'up') animationOffset = 0;
     console.log(animationOffset);
-    $content.animate({ "marginTop": animationOffset + "px" }, speed, "linear");
+    if(animationOffset <= 0)
+        $content.animate({ "marginTop": animationOffset + "px" }, speed, "linear");
 }

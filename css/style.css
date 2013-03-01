@@ -3961,7 +3961,7 @@ html.flexbox {
   text-align: left !important; }
 
 /* line 17, ../sass/inuit.css/generic/_helper.scss */
-.text--center, .notFound {
+.text--center, .notFound, .navegacao {
   text-align: center!important; }
 
 /* line 18, ../sass/inuit.css/generic/_helper.scss */
@@ -4359,17 +4359,17 @@ html.flexbox {
   width: 57px; }
 
 /* line 58, sprites/icon/*.png */
-.icon-sprite, .icon-seta_login_branca, .icon-seta_login_roxa, .icon-seta_ver_mais {
+.icon-sprite, .icon-seta_login_branca, .auth a.branco .seta, .icon-seta_login_roxa, .auth a.roxo .seta, .icon-seta_ver_mais {
   background: url('../images/sprites/icon-sb7d789a448.png') no-repeat; }
 
 /* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-seta_login_branca {
+.icon-seta_login_branca, .auth a.branco .seta {
   background-position: 0 -51px;
   height: 35px;
   width: 87px; }
 
 /* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-seta_login_roxa {
+.icon-seta_login_roxa, .auth a.roxo .seta {
   background-position: 0 -16px;
   height: 35px;
   width: 87px; }
@@ -4477,15 +4477,20 @@ body {
     position: relative;
     margin-left: 10px;
     font-weight: normal;
-    font-style: italic;
-    color: white; }
-    /* line 102, ../sass/_geral.scss */
+    font-style: italic; }
+    /* line 101, ../sass/_geral.scss */
     .auth a i {
       position: absolute;
       top: 26px;
       left: 20px; }
+    /* line 106, ../sass/_geral.scss */
+    .auth a.branco {
+      color: white; }
+    /* line 112, ../sass/_geral.scss */
+    .auth a.roxo {
+      color: #7a4f66; }
 
-/* line 111, ../sass/_geral.scss */
+/* line 122, ../sass/_geral.scss */
 .notFound {
   font-size: 22px;
   font-size: 1.375rem;
@@ -4493,13 +4498,13 @@ body {
   color: black;
   padding: 50px 10px; }
 
-/* line 120, ../sass/_geral.scss */
+/* line 131, ../sass/_geral.scss */
 .frm label {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
   font-weight: normal; }
-/* line 127, ../sass/_geral.scss */
+/* line 138, ../sass/_geral.scss */
 .frm select,
 .frm input[type=text],
 .frm input[type=password],
@@ -4518,7 +4523,7 @@ body {
   height: 40px;
   outline: none;
   border: 1px solid #dddddd; }
-  /* line 136, ../sass/_geral.scss */
+  /* line 147, ../sass/_geral.scss */
   .frm select:focus,
   .frm input[type=text]:focus,
   .frm input[type=password]:focus,
@@ -4527,7 +4532,7 @@ body {
     -moz-box-shadow: 0 0 5px #ee7c48;
     box-shadow: 0 0 5px #ee7c48;
     border: 1px solid #ee7c48; }
-/* line 141, ../sass/_geral.scss */
+/* line 152, ../sass/_geral.scss */
 .frm button {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -4539,10 +4544,10 @@ body {
   outline: none;
   border: 0;
   color: white; }
-  /* line 148, ../sass/_geral.scss */
+  /* line 159, ../sass/_geral.scss */
   .frm button:active {
     top: 1px; }
-/* line 155, ../sass/_geral.scss */
+/* line 166, ../sass/_geral.scss */
 .frm.inline label,
 .frm.inline input[type=text],
 .frm.inline input[type=password] {
@@ -4551,25 +4556,25 @@ body {
   *zoom: 1;
   margin-right: 10px;
   height: 33px; }
-/* line 160, ../sass/_geral.scss */
+/* line 171, ../sass/_geral.scss */
 .frm.inline label {
   margin-left: 10px; }
 
-/* line 167, ../sass/_geral.scss */
+/* line 178, ../sass/_geral.scss */
 .Styled {
   vertical-align: middle; }
 
-/* line 171, ../sass/_geral.scss */
+/* line 182, ../sass/_geral.scss */
 select.Styled {
   position: relative;
   z-index: 10;
   cursor: pointer; }
-  /* line 175, ../sass/_geral.scss */
+  /* line 186, ../sass/_geral.scss */
   select.Styled.hiddenStyle {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0; }
 
-/* line 180, ../sass/_geral.scss */
+/* line 191, ../sass/_geral.scss */
 span.Styled {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4592,7 +4597,7 @@ span.Styled {
   border: 1px solid #dddddd;
   line-height: 40px; }
 
-/* line 202, ../sass/_geral.scss */
+/* line 213, ../sass/_geral.scss */
 .theFooter {
   background-color: white;
   padding: 10px;
@@ -4600,7 +4605,7 @@ span.Styled {
   -moz-box-shadow: #dddddd 0 0 25px;
   box-shadow: #dddddd 0 0 25px; }
 
-/* line 209, ../sass/_geral.scss */
+/* line 220, ../sass/_geral.scss */
 .boxWhite, .frm select,
 .frm input[type=text],
 .frm input[type=password],
@@ -4609,7 +4614,7 @@ span.Styled {
   background-repeat: repeat;
   background-color: transparent; }
 
-/* line 217, ../sass/_geral.scss */
+/* line 228, ../sass/_geral.scss */
 .container, .fale.boxWhite, .frm select.fale,
 .frm input.fale[type=text],
 .frm input.fale[type=password],
@@ -4618,14 +4623,33 @@ span.Styled {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  height: 100%;
+  max-height: 550px;
   padding: 20px; }
 
-/* line 224, ../sass/_geral.scss */
+/* line 237, ../sass/_geral.scss */
 .container {
-  height: 300px;
   overflow: hidden; }
 
-/* line 234, ../sass/_geral.scss */
+/* line 247, ../sass/_geral.scss */
+.navegacao a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative; }
+  /* line 250, ../sass/_geral.scss */
+  .navegacao a i {
+    position: absolute;
+    top: -40px;
+    left: 0; }
+    /* line 254, ../sass/_geral.scss */
+    .navegacao a i.bt-up {
+      left: -40px; }
+    /* line 257, ../sass/_geral.scss */
+    .navegacao a i.bt-down {
+      left: 40px; }
+
+/* line 265, ../sass/_geral.scss */
 .alpha, h2 {
   font-size: 20px;
   font-size: 1.25rem;
@@ -4634,7 +4658,7 @@ span.Styled {
   font-style: italic;
   font-weight: bold; }
 
-/* line 242, ../sass/_geral.scss */
+/* line 273, ../sass/_geral.scss */
 .beta, h3 {
   font-size: 18px;
   font-size: 1.125rem;
