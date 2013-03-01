@@ -671,8 +671,7 @@ textarea {
 /* line 393, ../sass/inuit.css/generic/_normalize.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /*------------------------------------*\
     $RESET
@@ -835,88 +834,6 @@ html {
   min-height: 100%; }
 
 /*------------------------------------*\
-    $HEADINGS
-\*------------------------------------*/
-/**
- * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
- * 
- * When we define a heading we also define a corresponding class to go with it.
- * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
- * heading hierarchy.
- */
-/* line 11, ../sass/inuit.css/base/_headings.scss */
-h1, .alpha, h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.33333; }
-
-/* line 14, ../sass/inuit.css/base/_headings.scss */
-h2, .beta, h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.6; }
-
-/* line 17, ../sass/inuit.css/base/_headings.scss */
-h3, .gamma {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1; }
-
-/* line 20, ../sass/inuit.css/base/_headings.scss */
-h4, .delta {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2; }
-
-/* line 23, ../sass/inuit.css/base/_headings.scss */
-h5, .epsilon {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
-
-/* line 26, ../sass/inuit.css/base/_headings.scss */
-h6, .zeta {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429; }
-
-/**
- * Heading groups and generic any-heading class.
- * To target any heading of any level simply apply a class of `.hN`, e.g.:
- * 
-   <hgroup>
-       <h1 class=hN>inuit.css</h1>
-       <h2 class=hN>Best. Framework. Ever!</h2>
-   </hgroup>
- * 
- */
-/* line 43, ../sass/inuit.css/base/_headings.scss */
-hgroup .hN {
-  margin-bottom: 0; }
-
-/**
- * A series of classes for setting massive type; for use in heroes, mastheads,
- * promos, etc.
- */
-/* line 52, ../sass/inuit.css/base/_headings.scss */
-.giga {
-  font-size: 96px;
-  font-size: 6rem;
-  line-height: 1; }
-
-/* line 55, ../sass/inuit.css/base/_headings.scss */
-.mega {
-  font-size: 72px;
-  font-size: 4.5rem;
-  line-height: 1; }
-
-/* line 58, ../sass/inuit.css/base/_headings.scss */
-.kilo {
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 1; }
-
-/*------------------------------------*\
     $PARAGRAPHS
 \*------------------------------------*/
 /**
@@ -948,158 +865,6 @@ hgroup .hN {
   font-size: 10px;
   font-size: 0.625rem;
   line-height: 2.4; }
-
-/*------------------------------------*\
-    $QUOTES
-\*------------------------------------*/
-/**
- * If English quotes are set in `_vars.scss`, define them here.
- */
-/**
- * Big up @boblet: html5doctor.com/blockquote-q-cite
- */
-/**
- * Inline quotes.
- */
-/* line 20, ../sass/inuit.css/base/_quotes.scss */
-q {
-  quotes: "‘" "’" "“" "”"; }
-  /* line 23, ../sass/inuit.css/base/_quotes.scss */
-  q:before {
-    content: "‘";
-    content: open-quote; }
-  /* line 27, ../sass/inuit.css/base/_quotes.scss */
-  q:after {
-    content: "’";
-    content: close-quote; }
-  /* line 32, ../sass/inuit.css/base/_quotes.scss */
-  q q:before {
-    content: "“";
-    content: open-quote; }
-  /* line 36, ../sass/inuit.css/base/_quotes.scss */
-  q q:after {
-    content: "”";
-    content: close-quote; }
-
-/* line 42, ../sass/inuit.css/base/_quotes.scss */
-blockquote {
-  quotes: "“" "”"; }
-  /* line 45, ../sass/inuit.css/base/_quotes.scss */
-  blockquote p:before {
-    content: "“";
-    content: open-quote; }
-  /* line 49, ../sass/inuit.css/base/_quotes.scss */
-  blockquote p:after {
-    content: "";
-    content: no-close-quote; }
-  /* line 53, ../sass/inuit.css/base/_quotes.scss */
-  blockquote p:last-of-type:after {
-    content: "”";
-    content: close-quote; }
-  /* line 58, ../sass/inuit.css/base/_quotes.scss */
-  blockquote q:before {
-    content: "‘";
-    content: open-quote; }
-  /* line 62, ../sass/inuit.css/base/_quotes.scss */
-  blockquote q:after {
-    content: "’";
-    content: close-quote; }
-
-/**
- * 
-   <blockquote>
-       <p>Insanity: doing the same thing over and over again and expecting
-       different results.</p>
-       <b class=source>Albert Einstein</b>
-   </blockquote>
- * 
- */
-/* line 78, ../sass/inuit.css/base/_quotes.scss */
-blockquote {
-  /**
-   * .4em is roughly equal to the width of the opening “ that we wish to hang.
-   */
-  text-indent: -0.41em; }
-  /* line 84, ../sass/inuit.css/base/_quotes.scss */
-  blockquote p:last-of-type {
-    margin-bottom: 0; }
-
-/* line 89, ../sass/inuit.css/base/_quotes.scss */
-.source {
-  display: block;
-  text-indent: 0; }
-  /* line 93, ../sass/inuit.css/base/_quotes.scss */
-  .source:before {
-    content: "—"; }
-
-/*------------------------------------*\
-    $CODE
-\*------------------------------------*/
-/**
- * Use an explicit font stack to ensure browsers render correct `line-height`.
- */
-/* line 7, ../sass/inuit.css/base/_code.scss */
-pre {
-  overflow: auto; }
-
-/* line 10, ../sass/inuit.css/base/_code.scss */
-pre mark {
-  background: none;
-  border-bottom: 1px solid;
-  color: inherit; }
-
-/**
- * Add comments to your code examples, e.g.:
- * 
-   <code>&lt;/div&gt;<span class=code-comment>&lt;!-- /wrapper --&gt;</span></code>
- * 
- */
-/* line 23, ../sass/inuit.css/base/_code.scss */
-.code-comment {
-  /**
-   * Override this setting in your theme stylesheet
-   */
-  opacity: 0.75;
-  filter: alpha(opacity=75); }
-
-/**
- * You can add line numbers to your code examples but be warned, it requires
- * some pretty funky looking markup, e.g.:
- * 
-   <ol class=line-numbers>
-       <li><code>.nav{</code></li>
-       <li><code>    list-style:none;</code></li>
-       <li><code>    margin-left:0;</code></li>
-       <li><code>}</code></li>
-       <li><code>    .nav > li,</code></li>
-       <li><code>        .nav > li > a{</code></li>
-       <li><code>            display:inline-block;</code></li>
-       <li><code>           *display:inline-block;</code></li>
-       <li><code>            zoom:1;</code></li>
-       <li><code>        }</code></li>
-   </ol>
- * 
- * 1. Make the list look like code.
- * 2. Give the list flush numbers with a leading zero.
- * 3. Make sure lines of code don’t wrap.
- * 4. Give the code form by forcing the `code` to honour white-space.
- */
-/* line 54, ../sass/inuit.css/base/_code.scss */
-.line-numbers {
-  font-family: monospace, serif;
-  /* [1] */
-  list-style: decimal-leading-zero inside;
-  /* [2] */
-  white-space: nowrap;
-  /* [3] */
-  overflow: auto;
-  /* [3] */
-  margin-left: 0; }
-
-/* line 61, ../sass/inuit.css/base/_code.scss */
-.line-numbers code {
-  white-space: pre;
-  /* [4] */ }
 
 /*------------------------------------*\
     $LINKS
@@ -4000,7 +3765,7 @@ html.flexbox {
   margin-left: 0!important; }
 
 /* line 29, ../sass/inuit.css/generic/_helper.scss */
-.ir {
+.ir, .rfSlider .slideshow .nav > li > a {
   border: 0;
   font: 0/0 Arial;
   text-shadow: none;
@@ -4149,7 +3914,7 @@ html.flexbox {
 .col-1 {
   display: inline;
   float: left;
-  width: 70px;
+  width: 88px;
   margin: 0 10px;
   margin: 0 relative-size(10, 16px, rem); }
 
@@ -4157,13 +3922,13 @@ html.flexbox {
 .cell-1 {
   display: inline;
   float: left;
-  width: 90px; }
+  width: 108px; }
 
 /* line 18, ../sass/stuff/_grid.scss */
 .col-2 {
   display: inline;
   float: left;
-  width: 160px;
+  width: 196px;
   margin: 0 10px;
   margin: 0 relative-size(10, 16px, rem); }
 
@@ -4171,13 +3936,13 @@ html.flexbox {
 .cell-2 {
   display: inline;
   float: left;
-  width: 180px; }
+  width: 216px; }
 
 /* line 18, ../sass/stuff/_grid.scss */
 .col-3 {
   display: inline;
   float: left;
-  width: 250px;
+  width: 304px;
   margin: 0 10px;
   margin: 0 relative-size(10, 16px, rem); }
 
@@ -4185,13 +3950,13 @@ html.flexbox {
 .cell-3 {
   display: inline;
   float: left;
-  width: 270px; }
+  width: 324px; }
 
 /* line 18, ../sass/stuff/_grid.scss */
 .col-4 {
   display: inline;
   float: left;
-  width: 340px;
+  width: 412px;
   margin: 0 10px;
   margin: 0 relative-size(10, 16px, rem); }
 
@@ -4199,24 +3964,10 @@ html.flexbox {
 .cell-4 {
   display: inline;
   float: left;
-  width: 360px; }
+  width: 432px; }
 
 /* line 18, ../sass/stuff/_grid.scss */
 .col-5 {
-  display: inline;
-  float: left;
-  width: 430px;
-  margin: 0 10px;
-  margin: 0 relative-size(10, 16px, rem); }
-
-/* line 23, ../sass/stuff/_grid.scss */
-.cell-5 {
-  display: inline;
-  float: left;
-  width: 450px; }
-
-/* line 18, ../sass/stuff/_grid.scss */
-.col-6 {
   display: inline;
   float: left;
   width: 520px;
@@ -4224,16 +3975,30 @@ html.flexbox {
   margin: 0 relative-size(10, 16px, rem); }
 
 /* line 23, ../sass/stuff/_grid.scss */
-.cell-6 {
+.cell-5 {
   display: inline;
   float: left;
   width: 540px; }
 
 /* line 18, ../sass/stuff/_grid.scss */
+.col-6 {
+  display: inline;
+  float: left;
+  width: 628px;
+  margin: 0 10px;
+  margin: 0 relative-size(10, 16px, rem); }
+
+/* line 23, ../sass/stuff/_grid.scss */
+.cell-6 {
+  display: inline;
+  float: left;
+  width: 648px; }
+
+/* line 18, ../sass/stuff/_grid.scss */
 .col-7 {
   display: inline;
   float: left;
-  width: 610px;
+  width: 736px;
   margin: 0 10px;
   margin: 0 relative-size(10, 16px, rem); }
 
@@ -4241,13 +4006,13 @@ html.flexbox {
 .cell-7 {
   display: inline;
   float: left;
-  width: 630px; }
+  width: 756px; }
 
 /* line 18, ../sass/stuff/_grid.scss */
 .col-8 {
   display: inline;
   float: left;
-  width: 700px;
+  width: 844px;
   margin: 0 10px;
   margin: 0 relative-size(10, 16px, rem); }
 
@@ -4255,13 +4020,13 @@ html.flexbox {
 .cell-8 {
   display: inline;
   float: left;
-  width: 720px; }
+  width: 864px; }
 
 /* line 18, ../sass/stuff/_grid.scss */
 .col-9 {
   display: inline;
   float: left;
-  width: 790px;
+  width: 952px;
   margin: 0 10px;
   margin: 0 relative-size(10, 16px, rem); }
 
@@ -4269,38 +4034,10 @@ html.flexbox {
 .cell-9 {
   display: inline;
   float: left;
-  width: 810px; }
+  width: 972px; }
 
 /* line 18, ../sass/stuff/_grid.scss */
 .col-10 {
-  display: inline;
-  float: left;
-  width: 880px;
-  margin: 0 10px;
-  margin: 0 relative-size(10, 16px, rem); }
-
-/* line 23, ../sass/stuff/_grid.scss */
-.cell-10 {
-  display: inline;
-  float: left;
-  width: 900px; }
-
-/* line 18, ../sass/stuff/_grid.scss */
-.col-11 {
-  display: inline;
-  float: left;
-  width: 970px;
-  margin: 0 10px;
-  margin: 0 relative-size(10, 16px, rem); }
-
-/* line 23, ../sass/stuff/_grid.scss */
-.cell-11 {
-  display: inline;
-  float: left;
-  width: 990px; }
-
-/* line 18, ../sass/stuff/_grid.scss */
-.col-12 {
   display: inline;
   float: left;
   width: 1060px;
@@ -4308,24 +4045,64 @@ html.flexbox {
   margin: 0 relative-size(10, 16px, rem); }
 
 /* line 23, ../sass/stuff/_grid.scss */
-.cell-12 {
+.cell-10 {
   display: inline;
   float: left;
   width: 1080px; }
 
-/* line 90, sprites/bt/*.png */
-.bt-sprite, .bt-down, .bt-enviar-login, .bt-inscreva-se, .bt-next, .bt-prev, .bt-select, .bt-up {
-  background: url('../images/sprites/bt-s058e1929f8.png') no-repeat; }
+/* line 18, ../sass/stuff/_grid.scss */
+.col-11 {
+  display: inline;
+  float: left;
+  width: 1168px;
+  margin: 0 10px;
+  margin: 0 relative-size(10, 16px, rem); }
+
+/* line 23, ../sass/stuff/_grid.scss */
+.cell-11 {
+  display: inline;
+  float: left;
+  width: 1188px; }
+
+/* line 18, ../sass/stuff/_grid.scss */
+.col-12 {
+  display: inline;
+  float: left;
+  width: 1276px;
+  margin: 0 10px;
+  margin: 0 relative-size(10, 16px, rem); }
+
+/* line 23, ../sass/stuff/_grid.scss */
+.cell-12 {
+  display: inline;
+  float: left;
+  width: 1296px; }
+
+/* line 106, sprites/bt/*.png */
+.bt-sprite, .bt-bolinha-empty, .rfSlider .slideshow .nav > li > a, .bt-bolinha-full, .rfSlider .slideshow .nav > li > a.rf-slideshownav-current-nav, .bt-down, .bt-enviar-login, .bt-inscreva-se, .bt-next, .bt-prev, .bt-select, .bt-up {
+  background: url('../images/sprites/bt-s4a3345140f.png') no-repeat; }
+
+/* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-bolinha-empty, .rfSlider .slideshow .nav > li > a {
+  background-position: -13px -117px;
+  height: 14px;
+  width: 15px; }
+
+/* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-bolinha-full, .rfSlider .slideshow .nav > li > a.rf-slideshownav-current-nav {
+  background-position: -28px -117px;
+  height: 14px;
+  width: 14px; }
 
 /* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .bt-down {
-  background-position: -103px -117px;
+  background-position: -132px -117px;
   height: 34px;
   width: 57px; }
 
 /* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .bt-enviar-login {
-  background-position: -13px -117px;
+  background-position: -42px -117px;
   height: 33px;
   width: 90px; }
 
@@ -4391,22 +4168,11 @@ body {
   font-family: "Lato", "Helvetica Neue", sans-serif; }
 
 /* line 15, ../sass/_geral.scss */
-.main {
-  width: 100%;
-  min-width: 1080px;
-  height: 774px;
-  overflow: hidden;
-  background-image: url('../images/bgs/home.jpg?1362113751');
-  background-repeat: no-repeat;
-  background-position: 50% 0%; }
-
-/* line 27, ../sass/_geral.scss */
 .wrapper {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  width: 1080px;
-  padding-top: 15px; }
+  width: 1300px; }
   /* line 3, ../sass/stuff/_mixins.scss */
   .wrapper:before, .wrapper:after {
     content: "\0020";
@@ -4420,42 +4186,64 @@ body {
   .wrapper {
     zoom: 1; }
 
-/* line 40, ../sass/_geral.scss */
+/* line 24, ../sass/_geral.scss */
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
+  height: 771px;
+  overflow: hidden;
+  background-image: url('../images/pattern.jpg?1362174777');
+  background-repeat: no-repeat;
+  background-position: 50% 0%; }
+  /* line 35, ../sass/_geral.scss */
+  .main .wrapper {
+    padding-top: 15px;
+    height: 756px;
+    background-image: url('../images/bgs/home.jpg?1362177419');
+    background-repeat: no-repeat;
+    background-position: 100% 100%; }
+
+/* line 47, ../sass/_geral.scss */
+.main > .wrapper > .customPad {
+  padding-left: 30px; }
+
+/* line 54, ../sass/_geral.scss */
 .logo {
-  margin-left: 30px;
+  margin-left: 80px;
   width: 119px;
   height: 256px;
   background-image: url('../images/logo.png?1362096781');
   background-repeat: no-repeat;
   background-position: 0% 0%; }
 
-/* line 52, ../sass/_geral.scss */
+/* line 66, ../sass/_geral.scss */
 .menu {
   list-style: none;
   margin-left: 0; }
-  /* line 56, ../sass/_geral.scss */
+  /* line 70, ../sass/_geral.scss */
   .menu li {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
-    padding-left: 30px;
+    padding-left: 80px;
     color: #61344c;
     background-image: url('../images/linha.png?1362096882');
     background-repeat: no-repeat;
-    background-position: 0% 100%; }
-    /* line 65, ../sass/_geral.scss */
+    background-position: 60px 100%; }
+    /* line 79, ../sass/_geral.scss */
     .menu li a {
       color: #61344c;
       display: block;
       padding: 10px 0px 10px;
       font-style: italic; }
-    /* line 71, ../sass/_geral.scss */
+    /* line 85, ../sass/_geral.scss */
     .menu li.current > a {
       cursor: text;
       text-decoration: none;
       font-weight: bold; }
 
-/* line 80, ../sass/_geral.scss */
+/* line 94, ../sass/_geral.scss */
 .auth {
   margin-bottom: 115px;
   position: relative;
@@ -4463,11 +4251,11 @@ body {
   background-image: url('../images/auth.png?1362103702');
   background-repeat: no-repeat;
   background-position: 0% 100%; }
-  /* line 89, ../sass/_geral.scss */
+  /* line 103, ../sass/_geral.scss */
   .auth label {
     color: #ee7c48;
     font-style: italic; }
-  /* line 93, ../sass/_geral.scss */
+  /* line 107, ../sass/_geral.scss */
   .auth a {
     display: inline-block;
     *display: inline;
@@ -4479,19 +4267,19 @@ body {
     margin-left: 10px;
     font-weight: normal;
     font-style: italic; }
-    /* line 101, ../sass/_geral.scss */
+    /* line 115, ../sass/_geral.scss */
     .auth a i {
       position: absolute;
       top: 26px;
       left: 20px; }
-    /* line 106, ../sass/_geral.scss */
+    /* line 120, ../sass/_geral.scss */
     .auth a.branco {
       color: white; }
-    /* line 112, ../sass/_geral.scss */
+    /* line 126, ../sass/_geral.scss */
     .auth a.roxo {
       color: #7a4f66; }
 
-/* line 122, ../sass/_geral.scss */
+/* line 136, ../sass/_geral.scss */
 .notFound {
   font-size: 22px;
   font-size: 1.375rem;
@@ -4499,13 +4287,13 @@ body {
   color: black;
   padding: 50px 10px; }
 
-/* line 131, ../sass/_geral.scss */
+/* line 145, ../sass/_geral.scss */
 .frm label {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
   font-weight: normal; }
-/* line 138, ../sass/_geral.scss */
+/* line 152, ../sass/_geral.scss */
 .frm select,
 .frm input[type=text],
 .frm input[type=password],
@@ -4524,7 +4312,7 @@ body {
   height: 40px;
   outline: none;
   border: 1px solid #dddddd; }
-  /* line 147, ../sass/_geral.scss */
+  /* line 161, ../sass/_geral.scss */
   .frm select:focus,
   .frm input[type=text]:focus,
   .frm input[type=password]:focus,
@@ -4533,7 +4321,7 @@ body {
     -moz-box-shadow: 0 0 5px #ee7c48;
     box-shadow: 0 0 5px #ee7c48;
     border: 1px solid #ee7c48; }
-/* line 152, ../sass/_geral.scss */
+/* line 166, ../sass/_geral.scss */
 .frm button {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -4545,10 +4333,10 @@ body {
   outline: none;
   border: 0;
   color: white; }
-  /* line 159, ../sass/_geral.scss */
+  /* line 173, ../sass/_geral.scss */
   .frm button:active {
     top: 1px; }
-/* line 166, ../sass/_geral.scss */
+/* line 180, ../sass/_geral.scss */
 .frm.inline label,
 .frm.inline input[type=text],
 .frm.inline input[type=password] {
@@ -4557,25 +4345,25 @@ body {
   *zoom: 1;
   margin-right: 10px;
   height: 33px; }
-/* line 171, ../sass/_geral.scss */
+/* line 185, ../sass/_geral.scss */
 .frm.inline label {
   margin-left: 10px; }
 
-/* line 178, ../sass/_geral.scss */
+/* line 192, ../sass/_geral.scss */
 .Styled {
   vertical-align: middle; }
 
-/* line 182, ../sass/_geral.scss */
+/* line 196, ../sass/_geral.scss */
 select.Styled {
   position: relative;
   z-index: 10;
   cursor: pointer; }
-  /* line 186, ../sass/_geral.scss */
+  /* line 200, ../sass/_geral.scss */
   select.Styled.hiddenStyle {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0; }
 
-/* line 191, ../sass/_geral.scss */
+/* line 205, ../sass/_geral.scss */
 span.Styled {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4598,7 +4386,7 @@ span.Styled {
   border: 1px solid #dddddd;
   line-height: 40px; }
 
-/* line 213, ../sass/_geral.scss */
+/* line 227, ../sass/_geral.scss */
 .theFooter {
   background-color: white;
   padding: 10px;
@@ -4606,7 +4394,7 @@ span.Styled {
   -moz-box-shadow: #dddddd 0 0 25px;
   box-shadow: #dddddd 0 0 25px; }
 
-/* line 220, ../sass/_geral.scss */
+/* line 234, ../sass/_geral.scss */
 .boxWhite, .frm select,
 .frm input[type=text],
 .frm input[type=password],
@@ -4615,7 +4403,7 @@ span.Styled {
   background-repeat: repeat;
   background-color: transparent; }
 
-/* line 228, ../sass/_geral.scss */
+/* line 242, ../sass/_geral.scss */
 .container, .fale.boxWhite, .frm select.fale,
 .frm input.fale[type=text],
 .frm input.fale[type=password],
@@ -4625,32 +4413,33 @@ span.Styled {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  max-width: 760px;
   max-height: 550px;
-  padding: 20px; }
+  padding: 30px; }
 
-/* line 237, ../sass/_geral.scss */
+/* line 252, ../sass/_geral.scss */
 .container {
   overflow: hidden; }
 
-/* line 247, ../sass/_geral.scss */
+/* line 262, ../sass/_geral.scss */
 .navegacao a {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   position: relative; }
-  /* line 250, ../sass/_geral.scss */
+  /* line 265, ../sass/_geral.scss */
   .navegacao a i {
     position: absolute;
     top: -40px;
     left: 0; }
-    /* line 254, ../sass/_geral.scss */
+    /* line 269, ../sass/_geral.scss */
     .navegacao a i.bt-up {
       left: -40px; }
-    /* line 257, ../sass/_geral.scss */
+    /* line 272, ../sass/_geral.scss */
     .navegacao a i.bt-down {
       left: 40px; }
 
-/* line 265, ../sass/_geral.scss */
+/* line 280, ../sass/_geral.scss */
 .alpha, h2 {
   font-size: 20px;
   font-size: 1.25rem;
@@ -4659,7 +4448,7 @@ span.Styled {
   font-style: italic;
   font-weight: bold; }
 
-/* line 273, ../sass/_geral.scss */
+/* line 288, ../sass/_geral.scss */
 .beta, h3 {
   font-size: 18px;
   font-size: 1.125rem;
@@ -4668,6 +4457,86 @@ span.Styled {
   font-weight: normal;
   font-style: italic;
   text-transform: none; }
+
+/* line 304, ../sass/_geral.scss */
+.rfSlider {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 400px;
+  height: 300px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 60px;
+  bottom: 0; }
+  /* line 313, ../sass/_geral.scss */
+  .rfSlider .slideshow .slides {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 412px;
+    height: 300px; }
+    /* line 318, ../sass/_geral.scss */
+    .rfSlider .slideshow .slides div {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 412px;
+      height: 300px; }
+      /* line 322, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div h1, .rfSlider .slideshow .slides div h2, .rfSlider .slideshow .slides div p {
+        color: #7a4f66;
+        font-weight: normal;
+        font-style: italic;
+        margin: 0;
+        padding: 0; }
+      /* line 329, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div h1 {
+        font-size: 25px;
+        font-size: 1.5625rem;
+        line-height: 1.92; }
+      /* line 332, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div h2 {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.33333;
+        margin-bottom: 20px; }
+      /* line 336, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div p {
+        font-size: 15px;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        font-style: normal;
+        margin-bottom: 20px; }
+      /* line 341, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div p.med {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.33333;
+        font-style: italic; }
+        /* line 344, ../sass/_geral.scss */
+        .rfSlider .slideshow .slides div p.med a {
+          color: #7a4f66; }
+  /* line 350, ../sass/_geral.scss */
+  .rfSlider .slideshow .nav {
+    margin: 0;
+    line-height: normal;
+    height: 14px; }
+    /* line 354, ../sass/_geral.scss */
+    .rfSlider .slideshow .nav > li > a {
+      vertical-align: top; }
+  /* line 366, ../sass/_geral.scss */
+  .rfSlider .prev,
+  .rfSlider .next {
+    position: absolute;
+    top: 80px; }
+  /* line 370, ../sass/_geral.scss */
+  .rfSlider .prev {
+    left: -45px; }
+  /* line 373, ../sass/_geral.scss */
+  .rfSlider .next {
+    right: -45px; }
 
 /* line 5, ../sass/_fale.scss */
 .fale small {

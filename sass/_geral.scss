@@ -12,29 +12,43 @@ body{
     font-family: $brand-face;
 }
 
-.main{
-    width: 100%;
-    min-width: $total-width;
-    height: 774px;
-    overflow: hidden;
-    background:{
-        image: image_url('bgs/home.jpg');
-        repeat: no-repeat;
-        position: 50% 0%;
-    }
-}
-
 .wrapper{
     @include clear-floats;
     @include helperGrid($gh1, $show);
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: $total-width;
-    padding-top: 15px;
+    width: 1300px;
 }
 
-$leftPos: 30px;
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    height: 771px;
+    overflow: hidden;
+    background:{
+        image: image_url('pattern.jpg');
+        repeat: no-repeat;
+        position: 50% 0%;
+    }
+    .wrapper{
+        $padTop: 15px;
+        padding-top: $padTop;
+        height: 771px - $padTop;
+        background:{
+            image: image_url('bgs/home.jpg');
+            repeat: no-repeat;
+            position: 100% 100%;
+        }
+    }
+}
+
+.main > .wrapper > .customPad{
+    padding-left: 30px;
+}
+
+$leftPos: 80px;
 
 // Logo
 .logo{
@@ -60,7 +74,7 @@ $leftPos: 30px;
         background:{
             image: image_url('linha.png');
             repeat: no-repeat;
-            position: 0% 100%;
+            position: 60px 100%;
         }
         a{
             color: $brand-color;
@@ -229,8 +243,9 @@ span.Styled{
     @include box-sizing(border-box);
     width: 100%;
     height: 100%;
+    max-width: 760px;
     max-height: 550px;
-    padding: 20px;
+    padding: 30px;
 }
 
 // Scrooll
@@ -284,4 +299,78 @@ h2{
 
 h3{
     @extend .beta;
+}
+
+.rfSlider{
+    @include box-sizing(border-box);
+    width: 400px;
+    height: 300px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    .slideshow{
+        .slides{
+            position: relative;
+                @include box-sizing(border-box);
+                width: gridsystem-width(4) - $gutter-width;
+                height: 300px;
+            div{
+                @include box-sizing(border-box);
+                width: gridsystem-width(4) - $gutter-width;
+                height: 300px;
+                h1,h2,p{
+                    color: $roxo;
+                    font-weight: normal;
+                    font-style: italic;
+                    margin: 0;
+                    padding: 0;
+                }
+                h1{
+                    @include font-size(25px);
+                }
+                h2{
+                    @include font-size(18px);
+                    margin-bottom: 20px;
+                }
+                p{
+                    @include font-size(15px);
+                    font-style: normal;
+                    margin-bottom: 20px;
+                }
+                p.med{
+                    @include font-size(18px);
+                    font-style: italic;
+                    a{
+                        color: $roxo;
+                    }
+                }
+            }
+        }
+        .nav{
+            margin: 0;
+            line-height: normal;
+            height: 14px;
+            > li > a{
+                vertical-align: top;
+                @extend .ir;
+                @extend .bt-bolinha-empty;
+                &.rf-slideshownav-current-nav{
+                    @extend .bt-bolinha-full;
+                }
+            }
+        }
+    }
+    $offset: -45px;
+    .prev,
+    .next{
+        position: absolute;
+        top: 80px;
+    }
+    .prev{
+        left: $offset;
+    }
+    .next{
+        right: $offset;
+    }
 }

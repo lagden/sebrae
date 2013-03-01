@@ -31,9 +31,9 @@ else
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "{$page}.jpg" ?>')">
-        <div class="wrapper cf">
-            <header role="banner" class="cell-4">
+    <main role="main" class="main">
+        <div class="wrapper cf" style="background-image:url('images/bgs/<?php echo "{$page}.png" ?>')">
+            <header role="banner" class="cell-3">
                 <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>
                 <nav role="navigation">
                     <ul class="menu">
@@ -45,7 +45,7 @@ else
                     </ul>
                 </nav>
             </header>
-            <div class="cell-8">
+            <div class="cell-8 customPad">
                 <section class="auth">
                     <form method="post" class="frm inline" id="frmLogin" action="/">
                         <label for="auth_login">Login</label>
@@ -73,6 +73,8 @@ else
     </footer>
     <!-- jQuery -->
     <script src="js/vendor/jquery/jquery.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery/jquery.ui.core.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery/jquery.ui.widget.js" type="text/javascript"></script>
 
     <!-- Selectivizr -->
     <!--[if (gte IE 6)&(lte IE 8)]>
@@ -86,6 +88,8 @@ else
     <script src="js/vendor/greensock/jquery.gsap.min.js" type="text/javascript"></script>
 
     <!-- plugins -->
+    <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshow.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshownav.js" type="text/javascript"></script>
 
     <!-- scripts -->
     <script src="js/helper.js" type="text/javascript"></script>
