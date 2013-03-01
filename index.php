@@ -28,11 +28,11 @@ else
     <meta charset="UTF-8">
     <title>Ulalá</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "{$page}.jpg" ?>')">
+    <!-- <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "{$page}.jpg" ?>')"> -->
+    <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "home.jpg" ?>')">
         <div class="wrapper cf">
             <header role="banner" class="cell-4">
                 <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>

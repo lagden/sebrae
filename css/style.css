@@ -4085,7 +4085,7 @@ html.flexbox {
  * Apply capital case to an element (usually a `strong`).
  */
 /* line 128, ../sass/inuit.css/generic/_helper.scss */
-.caps {
+.caps, .alpha {
   text-transform: uppercase; }
 
 /**
@@ -4311,16 +4311,16 @@ html.flexbox {
   float: left;
   width: 1080px; }
 
-/* line 5, ../sass/_geral.scss */
+/* line 6, ../sass/_geral.scss */
 html {
-  color: #61344c;
+  color: #626262;
   font-size: 16px; }
 
-/* line 10, ../sass/_geral.scss */
+/* line 11, ../sass/_geral.scss */
 body {
   font-family: "Lato", "Helvetica Neue", sans-serif; }
 
-/* line 14, ../sass/_geral.scss */
+/* line 15, ../sass/_geral.scss */
 .main {
   width: 100%;
   min-width: 1080px;
@@ -4330,7 +4330,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0%; }
 
-/* line 26, ../sass/_geral.scss */
+/* line 27, ../sass/_geral.scss */
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -4350,7 +4350,7 @@ body {
   .wrapper {
     zoom: 1; }
 
-/* line 37, ../sass/_geral.scss */
+/* line 38, ../sass/_geral.scss */
 .logo {
   width: 119px;
   height: 256px;
@@ -4358,11 +4358,11 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 0%; }
 
-/* line 48, ../sass/_geral.scss */
+/* line 49, ../sass/_geral.scss */
 .menu {
   list-style: none;
   margin-left: 0; }
-  /* line 52, ../sass/_geral.scss */
+  /* line 53, ../sass/_geral.scss */
   .menu li {
     font-size: 16px;
     font-size: 1rem;
@@ -4372,19 +4372,19 @@ body {
     background-image: url('../images/linha.png?1362096882');
     background-repeat: no-repeat;
     background-position: 0% 100%; }
-    /* line 61, ../sass/_geral.scss */
+    /* line 62, ../sass/_geral.scss */
     .menu li a {
       color: #61344c;
       display: block;
       padding: 10px 0px 10px;
       font-style: italic; }
-    /* line 67, ../sass/_geral.scss */
+    /* line 68, ../sass/_geral.scss */
     .menu li.current > a {
       cursor: text;
       text-decoration: none;
       font-weight: bold; }
 
-/* line 76, ../sass/_geral.scss */
+/* line 77, ../sass/_geral.scss */
 .auth {
   margin-bottom: 115px;
   position: relative;
@@ -4392,12 +4392,12 @@ body {
   background-image: url('../images/auth.png?1362103702');
   background-repeat: no-repeat;
   background-position: 0% 100%; }
-  /* line 85, ../sass/_geral.scss */
+  /* line 86, ../sass/_geral.scss */
   .auth label {
     color: #ee7c48;
     font-style: italic; }
 
-/* line 92, ../sass/_geral.scss */
+/* line 93, ../sass/_geral.scss */
 .notFound {
   font-size: 22px;
   font-size: 1.375rem;
@@ -4405,14 +4405,14 @@ body {
   color: black;
   padding: 50px 10px; }
 
-/* line 104, ../sass/_geral.scss */
+/* line 105, ../sass/_geral.scss */
 .frm.inline label,
 .frm.inline input[type=text],
 .frm.inline input[type=password] {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
-/* line 110, ../sass/_geral.scss */
+/* line 111, ../sass/_geral.scss */
 .frm input[type=text],
 .frm input[type=password],
 .frm textarea {
@@ -4422,7 +4422,7 @@ body {
   transition: all 0.3s ease-in-out;
   outline: none;
   border: 1px solid #dddddd; }
-  /* line 114, ../sass/_geral.scss */
+  /* line 115, ../sass/_geral.scss */
   .frm input[type=text]:focus,
   .frm input[type=password]:focus,
   .frm textarea:focus {
@@ -4431,7 +4431,7 @@ body {
     box-shadow: 0 0 5px #ee7c48;
     border: 1px solid #ee7c48; }
 
-/* line 122, ../sass/_geral.scss */
+/* line 123, ../sass/_geral.scss */
 .theFooter {
   background-color: white;
   padding: 10px;
@@ -4439,18 +4439,36 @@ body {
   -moz-box-shadow: #dddddd 0 0 25px;
   box-shadow: #dddddd 0 0 25px; }
 
-/* line 129, ../sass/_geral.scss */
+/* line 130, ../sass/_geral.scss */
 .boxWhite {
   background-image: url('../images/white.png?1362107335');
   background-repeat: repeat;
   background-color: transparent; }
 
 /* line 138, ../sass/_geral.scss */
-.container {
+.container, .fale.boxWhite {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  padding: 10px; }
+
+/* line 145, ../sass/_geral.scss */
+.container {
   height: 300px;
-  padding: 10px;
   overflow: hidden; }
+
+/* line 155, ../sass/_geral.scss */
+.alpha {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #61344c; }
+
+/* line 161, ../sass/_geral.scss */
+.beta {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  font-weight: normal;
+  font-style: italic; }
