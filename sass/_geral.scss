@@ -106,10 +106,19 @@ body{
             @include inline-block;
         }
     }
+    label{
+        @include font-size(14px);
+        font-weight: normal;
+    }
+    select,
     input[type=text],
     input[type=password],
     textarea {
+        @include box-sizing(border-box);
+        @include font-size(12px);
         @include transition(all 0.30s ease-in-out);
+        padding: 0 10px;
+        height: 40px;
         outline: none;
         border: 1px solid $gray;
         &:focus{
@@ -138,7 +147,7 @@ body{
 %container{
     @include box-sizing(border-box);
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 
 // Scrooll
