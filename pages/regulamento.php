@@ -1,4 +1,4 @@
-<div class="container">
+<div class="boxWhite container">
     <div class="content">
         <p>string</p>
         <p>string</p>
