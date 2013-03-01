@@ -31,8 +31,7 @@ else
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "{$page}.jpg" ?>')"> -->
-    <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "home.jpg" ?>')">
+    <main role="main" class="main" style="background-image:url('images/bgs/<?php echo "{$page}.jpg" ?>')">
         <div class="wrapper cf">
             <header role="banner" class="cell-4">
                 <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>
