@@ -5,7 +5,7 @@
         para milhares de outras mulheres</em>
     </h2>
     <small>*Campos de preenchimento obrigatório</small>
-    <form method="post" class="frm" id="frmFale" action="/">
+    <form method="post" class="frm" id="frmFale" action="#">
         <div class="bloco">
             <div class="blocoFrm">
                 <label for="fale_nome">Nome*</label>

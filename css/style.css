@@ -4358,16 +4358,16 @@ html.flexbox {
   height: 34px;
   width: 57px; }
 
-/* line 6, ../sass/_geral.scss */
+/* line 7, ../sass/_geral.scss */
 html {
   color: #626262;
   font-size: 16px; }
 
-/* line 11, ../sass/_geral.scss */
+/* line 12, ../sass/_geral.scss */
 body {
   font-family: "Lato", "Helvetica Neue", sans-serif; }
 
-/* line 15, ../sass/_geral.scss */
+/* line 16, ../sass/_geral.scss */
 .main {
   width: 100%;
   min-width: 1080px;
@@ -4377,7 +4377,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0%; }
 
-/* line 27, ../sass/_geral.scss */
+/* line 28, ../sass/_geral.scss */
 .wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -4397,7 +4397,7 @@ body {
   .wrapper {
     zoom: 1; }
 
-/* line 38, ../sass/_geral.scss */
+/* line 39, ../sass/_geral.scss */
 .logo {
   width: 119px;
   height: 256px;
@@ -4405,11 +4405,11 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 0%; }
 
-/* line 49, ../sass/_geral.scss */
+/* line 50, ../sass/_geral.scss */
 .menu {
   list-style: none;
   margin-left: 0; }
-  /* line 53, ../sass/_geral.scss */
+  /* line 54, ../sass/_geral.scss */
   .menu li {
     font-size: 16px;
     font-size: 1rem;
@@ -4419,19 +4419,19 @@ body {
     background-image: url('../images/linha.png?1362096882');
     background-repeat: no-repeat;
     background-position: 0% 100%; }
-    /* line 62, ../sass/_geral.scss */
+    /* line 63, ../sass/_geral.scss */
     .menu li a {
       color: #61344c;
       display: block;
       padding: 10px 0px 10px;
       font-style: italic; }
-    /* line 68, ../sass/_geral.scss */
+    /* line 69, ../sass/_geral.scss */
     .menu li.current > a {
       cursor: text;
       text-decoration: none;
       font-weight: bold; }
 
-/* line 77, ../sass/_geral.scss */
+/* line 78, ../sass/_geral.scss */
 .auth {
   margin-bottom: 115px;
   position: relative;
@@ -4439,12 +4439,12 @@ body {
   background-image: url('../images/auth.png?1362103702');
   background-repeat: no-repeat;
   background-position: 0% 100%; }
-  /* line 86, ../sass/_geral.scss */
+  /* line 87, ../sass/_geral.scss */
   .auth label {
     color: #ee7c48;
     font-style: italic; }
 
-/* line 93, ../sass/_geral.scss */
+/* line 94, ../sass/_geral.scss */
 .notFound {
   font-size: 22px;
   font-size: 1.375rem;
@@ -4452,20 +4452,20 @@ body {
   color: black;
   padding: 50px 10px; }
 
-/* line 105, ../sass/_geral.scss */
+/* line 106, ../sass/_geral.scss */
 .frm.inline label,
 .frm.inline input[type=text],
 .frm.inline input[type=password] {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
-/* line 109, ../sass/_geral.scss */
+/* line 110, ../sass/_geral.scss */
 .frm label {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
   font-weight: normal; }
-/* line 116, ../sass/_geral.scss */
+/* line 117, ../sass/_geral.scss */
 .frm select,
 .frm input[type=text],
 .frm input[type=password],
@@ -4484,7 +4484,7 @@ body {
   height: 40px;
   outline: none;
   border: 1px solid #dddddd; }
-  /* line 124, ../sass/_geral.scss */
+  /* line 125, ../sass/_geral.scss */
   .frm select:focus,
   .frm input[type=text]:focus,
   .frm input[type=password]:focus,
@@ -4493,7 +4493,7 @@ body {
     -moz-box-shadow: 0 0 5px #ee7c48;
     box-shadow: 0 0 5px #ee7c48;
     border: 1px solid #ee7c48; }
-/* line 130, ../sass/_geral.scss */
+/* line 131, ../sass/_geral.scss */
 .frm button {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -4505,25 +4505,25 @@ body {
   outline: none;
   border: 0;
   color: white; }
-  /* line 137, ../sass/_geral.scss */
+  /* line 138, ../sass/_geral.scss */
   .frm button:active {
     top: 1px; }
 
-/* line 144, ../sass/_geral.scss */
+/* line 145, ../sass/_geral.scss */
 .Styled {
   vertical-align: middle; }
 
-/* line 148, ../sass/_geral.scss */
+/* line 149, ../sass/_geral.scss */
 select.Styled {
   position: relative;
   z-index: 10;
   cursor: pointer; }
-  /* line 152, ../sass/_geral.scss */
+  /* line 153, ../sass/_geral.scss */
   select.Styled.hiddenStyle {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0; }
 
-/* line 157, ../sass/_geral.scss */
+/* line 158, ../sass/_geral.scss */
 span.Styled {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4546,7 +4546,7 @@ span.Styled {
   border: 1px solid #dddddd;
   line-height: 40px; }
 
-/* line 179, ../sass/_geral.scss */
+/* line 180, ../sass/_geral.scss */
 .theFooter {
   background-color: white;
   padding: 10px;
@@ -4554,13 +4554,13 @@ span.Styled {
   -moz-box-shadow: #dddddd 0 0 25px;
   box-shadow: #dddddd 0 0 25px; }
 
-/* line 186, ../sass/_geral.scss */
+/* line 187, ../sass/_geral.scss */
 .boxWhite {
   background-image: url('../images/white.png?1362107335');
   background-repeat: repeat;
   background-color: transparent; }
 
-/* line 194, ../sass/_geral.scss */
+/* line 195, ../sass/_geral.scss */
 .container, .fale.boxWhite {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4568,25 +4568,43 @@ span.Styled {
   width: 100%;
   padding: 20px; }
 
-/* line 201, ../sass/_geral.scss */
+/* line 202, ../sass/_geral.scss */
 .container {
   height: 300px;
   overflow: hidden; }
 
-/* line 211, ../sass/_geral.scss */
+/* line 212, ../sass/_geral.scss */
 .alpha {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2;
   color: #61344c; }
 
-/* line 217, ../sass/_geral.scss */
+/* line 218, ../sass/_geral.scss */
 .beta {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333;
   font-weight: normal;
   font-style: italic; }
+
+/* line 224, ../sass/_geral.scss */
+h2 {
+  color: #7a4f66;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+/* line 230, ../sass/_geral.scss */
+h3 {
+  color: #626262;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.33333; }
 
 /* line 5, ../sass/_fale.scss */
 .fale small {
