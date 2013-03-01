@@ -11,7 +11,8 @@ $itens = array(
     'cronograma'=>'Cronograma',
 );
 
-$filename = __DIR__ . "/pages/{$page}.php";
+$ds = DIRECTORY_SEPARATOR;
+$filename = "pages{$ds}{$page}.php";
 $include = false;
 if (file_exists($filename))
     $include = true;
@@ -43,7 +44,6 @@ else
                     </ul>
                 </nav>
             </header>
-
             <div class="cell-8">
                 <section class="auth">
                     <form method="post" class="frm inline" id="frmLogin" action="/">
