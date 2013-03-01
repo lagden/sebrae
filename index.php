@@ -52,7 +52,8 @@ else
                         <input title="Login" type="text" name="auth[login]" id="auth_login">
                         <label for="auth_senha">Senha</label>
                         <input title="Senha" type="password" name="auth[senha]" id="auth_senha">
-                        <button class="btn">Enviar</button>
+                        <button type="submit" class="bt-enviar-login">Enviar</button>
+                        <a href="#inscreva-se">Inscreva-se <i class="icon-seta_login_branca"></i></a>
                     </form>
                 </section>
                 <!-- Miolo -->

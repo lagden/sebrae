@@ -1,8 +1,7 @@
 $laranja: #ee7c48;
 $gray: #dddddd;
-$black: #626262;
+$black: #333333;
 $roxo: #7a4f66;
-
 
 html{
     color: $black;
@@ -35,8 +34,11 @@ body{
     padding-top: 15px;
 }
 
+$leftPos: 30px;
+
 // Logo
 .logo{
+    margin-left: $leftPos;
     width: 119px;
     height: 256px;
     background:{
@@ -53,7 +55,7 @@ body{
     @extend .cf;
     li{
         @include font-size(16px);
-        padding-left: 30px;
+        padding-left: $leftPos;
         color: $brand-color;
         background:{
             image: image_url('linha.png');
@@ -88,6 +90,21 @@ body{
         color: $laranja;
         font-style: italic;
     }
+    a{
+        @include inline-block;
+        @include font-size(14px);
+        @extend .caps;
+        position: relative;
+        margin-left: 10px;
+        font-weight: normal;
+        font-style: italic;
+        color: white;
+        i{
+            position: absolute;
+            top: 26px;
+            left: 20px;
+        }
+    }
 }
 
 // Erro 404
@@ -100,13 +117,6 @@ body{
 
 // Formulário
 .frm{
-    &.inline{
-        label,
-        input[type=text],
-        input[type=password]{
-            @include inline-block;
-        }
-    }
     label{
         @include font-size(14px);
         font-weight: normal;
@@ -115,6 +125,7 @@ body{
     input[type=text],
     input[type=password],
     textarea {
+        @extend .boxWhite;
         @include box-sizing(border-box);
         @include font-size(12px);
         @include transition(all 0.30s ease-in-out);
@@ -127,7 +138,6 @@ body{
             border: 1px solid rgba($laranja, 1);
         }
     }
-
     button{
         position: relative;
         @include box-sizing(border-box);
@@ -138,6 +148,18 @@ body{
         &:active{
             top: 1px;
         };
+    }
+    &.inline{
+        label,
+        input[type=text],
+        input[type=password]{
+            @include inline-block;
+            margin-right: 10px;
+            height: 33px;
+        }
+        label{
+            margin-left: 10px;
+        }
     }
 }
 
@@ -213,23 +235,22 @@ span.Styled{
     @extend .caps;
     @include font-size(20px);
     color: $brand-color;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .beta{
     @include font-size(18px);
+    color: $black;
     font-weight: normal;
     font-style: italic;
+    text-transform: none;
 }
 
-h2 {
-    color:$roxo;
-    font-style: italic;
-    font-weight: bold;
-    @include font-size(20px);
+h2{
+    @extend .alpha;
 }
-h3 {
-    color:$black;
-    font-style: italic;
-    font-weight: normal;
-    @include font-size(18px);
+
+h3{
+    @extend .beta;
 }
