@@ -17,6 +17,74 @@
 @import "vars";
 @import "inuit.css/inuit";
 
+// Stuff
+@import "stuff/functions";
+// @import "stuff/vars";
+@import "stuff/mixins";
+
+// Vendors
+@import "vendor/semantic";
+
+// Grid
+@import "stuff/grid";
+
+
+html{
+    color: $brand-color;
+    font-size: $brand-face;
+}
+
+.wrapper{
+    @include clear-floats;
+    @include helperGrid($gh1, $show);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: $total-width;
+    padding-top: 15px;
+}
+
+.logo{
+    width: 119px;
+    height: 256px;
+    background:{
+        image: image_url('logo.png');
+        repeat: no-repeat;
+        position: 0% 0%;
+    }    
+}
+
+.menu{
+    list-style:none;
+    margin-left:0;
+    @extend .cf;
+    li{
+        @include font-size(16px);
+        padding-left: 30px;
+        color: $brand-color;
+        background:{
+            image: image_url('linha.png');
+            repeat: no-repeat;
+            position: 0% 100%;
+        }
+        a{
+            color: $brand-color;
+            display: block;
+            padding: 10px 0px 10px;
+        }
+        &.current > a{
+            cursor: text;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+
+
 .container {
     width: 300px;
     height:100px;
@@ -25,4 +93,6 @@
     overflow:hidden;
 }
 
-.content { background:#eee; }
+.content {
+    background:#eee;
+}

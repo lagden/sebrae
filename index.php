@@ -2,7 +2,14 @@
 $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 'home';
 $itens = array(
     'home'=>'Home',
-    'teste'=>'Exempo',
+    'premio'=>'O que é o Prêmio?',
+    'participar'=>'Como participar',
+    'premiacao'=>'Premiação',
+    'regulamento'=>'Regulamento',
+    'historia'=>'Como escrever a história',
+    'fale'=>'Fale conosco',
+    'cronograma'=>'Cronograma',
+    'videos'=>'Vídeos',
 )
 ?>
 <!DOCTYPE HTML>
@@ -12,11 +19,11 @@ $itens = array(
     <title>Ulalá</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="wrapper">
-    <header role="banner">
+<body class="wrapper cf">
+    <header role="banner" class="cell-4">
         <h1 class="logo ir">Prêmio Sebrae Mulher de Negócios</h1>
         <nav role="navigation">
-            <ul>
+            <ul class="menu">
                 <?php foreach ($itens as $k => $item): ?>
                     <li <?php echo ($k == $page) ? 'class="current"' : "" ?>>
                         <a href="?page=<?php echo $k ?>"><?php echo $item ?></a>
@@ -26,7 +33,7 @@ $itens = array(
         </nav>
     </header>
 
-    <main role="main" class="main">
+    <main role="main" class="main cell-8">
         <div class="container">
             <div class="content">
                 <p>string</p>

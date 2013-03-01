@@ -1,0 +1,72 @@
+/////////////////
+// Semantic.gs // for SCSS: http://sass-lang.com/
+/////////////////
+
+// Defaults which you can freely override
+$column-width: 70px;
+$gutter-width: 20px;
+$gutter-width-half: ($gutter-width / 2);
+$columns: 12;
+
+$fontBase: $base-font-size;
+
+// Utility function — you should never need to modify this
+@function gridsystem-width($c:$columns) {
+    @return ($column-width + $gutter-width) * $c;
+}
+
+// Set $total-width to 100% for a fluid layout
+$total-width: gridsystem-width($columns);
+
+// Convenience function for calculating the $total-width / $calculated-width.
+@function gridsystem-ratio($c:$columns) {
+    @if ($total-width == 100%) {
+        @return $total-width / gridsystem-width($c);
+    } @else {
+        @return $total-width / gridsystem-width($columns);
+    }
+}
+
+//////////
+// GRID //
+//////////
+
+@mixin row($c:$columns) {
+    display: block;
+    @if ($total-width == 100%) {
+        width: auto;
+        @include margins((-.5 * $gutter-width * gridsystem-ratio($c)));
+    } @else {
+        width: (gridsystem-width($c) * gridsystem-ratio());
+        @include margins((-.5 * $gutter-width * gridsystem-ratio()));
+    }
+    // @include clearfix();
+}
+
+@mixin column($x, $c:$columns) {
+    display: inline;
+    float: left;
+    width: ((gridsystem-width($x)-$gutter-width) * gridsystem-ratio($c));
+    @include margins((.5 * $gutter-width * gridsystem-ratio($c)));
+}
+
+@mixin cell($x, $c:$columns) {
+    display: inline;
+    float: left;
+    width: gridsystem-width($x);
+}
+
+@mixin push($offset:1) {
+    $marginleft: strip-units((gridsystem-width($offset) - $gutter-width + ($gutter-width*.5)) * gridsystem-ratio());
+    @include relativeSize('margin-left', $marginleft, $fontBase);
+}
+
+@mixin pull($offset:1) {
+    $marginright: strip-units((gridsystem-width($offset) - $gutter-width + ($gutter-width*.5)) * gridsystem-ratio());
+    @include relativeSize('margin-right', $marginright, $fontBase);
+}
+
+@mixin margins($v){
+    margin: 0 $v;
+    margin: 0 relative-size(strip-units($v), $fontBase, rem);
+}
