@@ -834,88 +834,6 @@ html {
   min-height: 100%; }
 
 /*------------------------------------*\
-    $HEADINGS
-\*------------------------------------*/
-/**
- * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
- * 
- * When we define a heading we also define a corresponding class to go with it.
- * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
- * heading hierarchy.
- */
-/* line 11, ../sass/inuit.css/base/_headings.scss */
-h1, .alpha, h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.33333; }
-
-/* line 14, ../sass/inuit.css/base/_headings.scss */
-h2, .beta, h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.6; }
-
-/* line 17, ../sass/inuit.css/base/_headings.scss */
-h3, .gamma {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1; }
-
-/* line 20, ../sass/inuit.css/base/_headings.scss */
-h4, .delta {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2; }
-
-/* line 23, ../sass/inuit.css/base/_headings.scss */
-h5, .epsilon {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
-
-/* line 26, ../sass/inuit.css/base/_headings.scss */
-h6, .zeta {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429; }
-
-/**
- * Heading groups and generic any-heading class.
- * To target any heading of any level simply apply a class of `.hN`, e.g.:
- * 
-   <hgroup>
-       <h1 class=hN>inuit.css</h1>
-       <h2 class=hN>Best. Framework. Ever!</h2>
-   </hgroup>
- * 
- */
-/* line 43, ../sass/inuit.css/base/_headings.scss */
-hgroup .hN {
-  margin-bottom: 0; }
-
-/**
- * A series of classes for setting massive type; for use in heroes, mastheads,
- * promos, etc.
- */
-/* line 52, ../sass/inuit.css/base/_headings.scss */
-.giga {
-  font-size: 96px;
-  font-size: 6rem;
-  line-height: 1; }
-
-/* line 55, ../sass/inuit.css/base/_headings.scss */
-.mega {
-  font-size: 72px;
-  font-size: 4.5rem;
-  line-height: 1; }
-
-/* line 58, ../sass/inuit.css/base/_headings.scss */
-.kilo {
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 1; }
-
-/*------------------------------------*\
     $PARAGRAPHS
 \*------------------------------------*/
 /**
@@ -947,158 +865,6 @@ hgroup .hN {
   font-size: 10px;
   font-size: 0.625rem;
   line-height: 2.4; }
-
-/*------------------------------------*\
-    $QUOTES
-\*------------------------------------*/
-/**
- * If English quotes are set in `_vars.scss`, define them here.
- */
-/**
- * Big up @boblet: html5doctor.com/blockquote-q-cite
- */
-/**
- * Inline quotes.
- */
-/* line 20, ../sass/inuit.css/base/_quotes.scss */
-q {
-  quotes: "‘" "’" "“" "”"; }
-  /* line 23, ../sass/inuit.css/base/_quotes.scss */
-  q:before {
-    content: "‘";
-    content: open-quote; }
-  /* line 27, ../sass/inuit.css/base/_quotes.scss */
-  q:after {
-    content: "’";
-    content: close-quote; }
-  /* line 32, ../sass/inuit.css/base/_quotes.scss */
-  q q:before {
-    content: "“";
-    content: open-quote; }
-  /* line 36, ../sass/inuit.css/base/_quotes.scss */
-  q q:after {
-    content: "”";
-    content: close-quote; }
-
-/* line 42, ../sass/inuit.css/base/_quotes.scss */
-blockquote {
-  quotes: "“" "”"; }
-  /* line 45, ../sass/inuit.css/base/_quotes.scss */
-  blockquote p:before {
-    content: "“";
-    content: open-quote; }
-  /* line 49, ../sass/inuit.css/base/_quotes.scss */
-  blockquote p:after {
-    content: "";
-    content: no-close-quote; }
-  /* line 53, ../sass/inuit.css/base/_quotes.scss */
-  blockquote p:last-of-type:after {
-    content: "”";
-    content: close-quote; }
-  /* line 58, ../sass/inuit.css/base/_quotes.scss */
-  blockquote q:before {
-    content: "‘";
-    content: open-quote; }
-  /* line 62, ../sass/inuit.css/base/_quotes.scss */
-  blockquote q:after {
-    content: "’";
-    content: close-quote; }
-
-/**
- * 
-   <blockquote>
-       <p>Insanity: doing the same thing over and over again and expecting
-       different results.</p>
-       <b class=source>Albert Einstein</b>
-   </blockquote>
- * 
- */
-/* line 78, ../sass/inuit.css/base/_quotes.scss */
-blockquote {
-  /**
-   * .4em is roughly equal to the width of the opening “ that we wish to hang.
-   */
-  text-indent: -0.41em; }
-  /* line 84, ../sass/inuit.css/base/_quotes.scss */
-  blockquote p:last-of-type {
-    margin-bottom: 0; }
-
-/* line 89, ../sass/inuit.css/base/_quotes.scss */
-.source {
-  display: block;
-  text-indent: 0; }
-  /* line 93, ../sass/inuit.css/base/_quotes.scss */
-  .source:before {
-    content: "—"; }
-
-/*------------------------------------*\
-    $CODE
-\*------------------------------------*/
-/**
- * Use an explicit font stack to ensure browsers render correct `line-height`.
- */
-/* line 7, ../sass/inuit.css/base/_code.scss */
-pre {
-  overflow: auto; }
-
-/* line 10, ../sass/inuit.css/base/_code.scss */
-pre mark {
-  background: none;
-  border-bottom: 1px solid;
-  color: inherit; }
-
-/**
- * Add comments to your code examples, e.g.:
- * 
-   <code>&lt;/div&gt;<span class=code-comment>&lt;!-- /wrapper --&gt;</span></code>
- * 
- */
-/* line 23, ../sass/inuit.css/base/_code.scss */
-.code-comment {
-  /**
-   * Override this setting in your theme stylesheet
-   */
-  opacity: 0.75;
-  filter: alpha(opacity=75); }
-
-/**
- * You can add line numbers to your code examples but be warned, it requires
- * some pretty funky looking markup, e.g.:
- * 
-   <ol class=line-numbers>
-       <li><code>.nav{</code></li>
-       <li><code>    list-style:none;</code></li>
-       <li><code>    margin-left:0;</code></li>
-       <li><code>}</code></li>
-       <li><code>    .nav > li,</code></li>
-       <li><code>        .nav > li > a{</code></li>
-       <li><code>            display:inline-block;</code></li>
-       <li><code>           *display:inline-block;</code></li>
-       <li><code>            zoom:1;</code></li>
-       <li><code>        }</code></li>
-   </ol>
- * 
- * 1. Make the list look like code.
- * 2. Give the list flush numbers with a leading zero.
- * 3. Make sure lines of code don’t wrap.
- * 4. Give the code form by forcing the `code` to honour white-space.
- */
-/* line 54, ../sass/inuit.css/base/_code.scss */
-.line-numbers {
-  font-family: monospace, serif;
-  /* [1] */
-  list-style: decimal-leading-zero inside;
-  /* [2] */
-  white-space: nowrap;
-  /* [3] */
-  overflow: auto;
-  /* [3] */
-  margin-left: 0; }
-
-/* line 61, ../sass/inuit.css/base/_code.scss */
-.line-numbers code {
-  white-space: pre;
-  /* [4] */ }
 
 /*------------------------------------*\
     $LINKS
@@ -3999,7 +3765,7 @@ html.flexbox {
   margin-left: 0!important; }
 
 /* line 29, ../sass/inuit.css/generic/_helper.scss */
-.ir {
+.ir, .rfSlider .slideshow .nav > li > a {
   border: 0;
   font: 0/0 Arial;
   text-shadow: none;
@@ -4312,19 +4078,31 @@ html.flexbox {
   float: left;
   width: 1080px; }
 
-/* line 90, sprites/bt/*.png */
-.bt-sprite, .bt-down, .bt-enviar-login, .bt-inscreva-se, .bt-next, .bt-prev, .bt-select, .bt-up {
-  background: url('../images/sprites/bt-s058e1929f8.png') no-repeat; }
+/* line 106, sprites/bt/*.png */
+.bt-sprite, .bt-bolinha-empty, .rfSlider .slideshow .nav > li > a, .bt-bolinha-full, .rfSlider .slideshow .nav > li > a.rf-slideshownav-current-nav, .bt-down, .bt-enviar-login, .bt-inscreva-se, .bt-next, .bt-prev, .bt-select, .bt-up {
+  background: url('../images/sprites/bt-s4a3345140f.png') no-repeat; }
+
+/* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-bolinha-empty, .rfSlider .slideshow .nav > li > a {
+  background-position: -13px -117px;
+  height: 14px;
+  width: 15px; }
+
+/* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.bt-bolinha-full, .rfSlider .slideshow .nav > li > a.rf-slideshownav-current-nav {
+  background-position: -28px -117px;
+  height: 14px;
+  width: 14px; }
 
 /* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .bt-down {
-  background-position: -103px -117px;
+  background-position: -132px -117px;
   height: 34px;
   width: 57px; }
 
 /* line 60, ../../../../../../Users/lagden/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .bt-enviar-login {
-  background-position: -13px -117px;
+  background-position: -42px -117px;
   height: 33px;
   width: 90px; }
 
@@ -4667,6 +4445,86 @@ span.Styled {
   font-weight: normal;
   font-style: italic;
   text-transform: none; }
+
+/* line 289, ../sass/_geral.scss */
+.rfSlider {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 400px;
+  height: 300px;
+  padding: 10px 20px;
+  position: absolute;
+  right: -50px;
+  bottom: -103px; }
+  /* line 298, ../sass/_geral.scss */
+  .rfSlider .slideshow .slides {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 340px;
+    height: 300px; }
+    /* line 303, ../sass/_geral.scss */
+    .rfSlider .slideshow .slides div {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 340px;
+      height: 300px; }
+      /* line 307, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div h1, .rfSlider .slideshow .slides div h2, .rfSlider .slideshow .slides div p {
+        color: #7a4f66;
+        font-weight: normal;
+        font-style: italic;
+        margin: 0;
+        padding: 0; }
+      /* line 314, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div h1 {
+        font-size: 25px;
+        font-size: 1.5625rem;
+        line-height: 1.92; }
+      /* line 317, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div h2 {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.33333;
+        margin-bottom: 20px; }
+      /* line 321, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div p {
+        font-size: 15px;
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        font-style: normal;
+        margin-bottom: 20px; }
+      /* line 326, ../sass/_geral.scss */
+      .rfSlider .slideshow .slides div p.med {
+        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.33333;
+        font-style: italic; }
+        /* line 329, ../sass/_geral.scss */
+        .rfSlider .slideshow .slides div p.med a {
+          color: #7a4f66; }
+  /* line 335, ../sass/_geral.scss */
+  .rfSlider .slideshow .nav {
+    margin: 0;
+    line-height: normal;
+    height: 14px; }
+    /* line 339, ../sass/_geral.scss */
+    .rfSlider .slideshow .nav > li > a {
+      vertical-align: top; }
+  /* line 351, ../sass/_geral.scss */
+  .rfSlider .prev,
+  .rfSlider .next {
+    position: absolute;
+    top: 80px; }
+  /* line 355, ../sass/_geral.scss */
+  .rfSlider .prev {
+    left: -45px; }
+  /* line 358, ../sass/_geral.scss */
+  .rfSlider .next {
+    right: -45px; }
 
 /* line 5, ../sass/_fale.scss */
 .fale small {

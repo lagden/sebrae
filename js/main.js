@@ -3,6 +3,7 @@ var mouseStillDown = false
     ,$up
     ,$container
     ,$content
+    ,$slideshow
     ,animationOffset
     ;
 
@@ -17,6 +18,30 @@ jQuery.fn.ready(function(){
         // Custom Form
         $('select.Styled').customized();
 
+        // RF Slider
+        $slideshow = $('#slideshow');
+        $slideshow.slideshownav({
+            transition: 'push(#{direction})',
+            mode: 'horizontal',
+            navSelector: '> ul > li > a',
+            duration: 400,
+            autoPlay: false
+        });
+
+        var $rfSlider = $('div.rfSlider');
+        var slideshow = $slideshow.data('slideshownav');
+
+        $rfSlider.find('a.prev').on('click',function(ev){
+            ev.preventDefault();
+            slideshow.show('previous',{ transition:'push(right), swing' });
+        });
+
+        $rfSlider.find('a.next').on('click',function(ev){
+            ev.preventDefault();
+            slideshow.show('next',{ transition:'push(left), swing' });
+        });
+
+        // Scroll
         $down = $('#down');
         $up = $('#up');
         $container = $('.container');

@@ -73,6 +73,8 @@ else
     </footer>
     <!-- jQuery -->
     <script src="js/vendor/jquery/jquery.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery/jquery.ui.core.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery/jquery.ui.widget.js" type="text/javascript"></script>
 
     <!-- Selectivizr -->
     <!--[if (gte IE 6)&(lte IE 8)]>
@@ -86,6 +88,8 @@ else
     <script src="js/vendor/greensock/jquery.gsap.min.js" type="text/javascript"></script>
 
     <!-- plugins -->
+    <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshow.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshownav.js" type="text/javascript"></script>
 
     <!-- scripts -->
     <script src="js/helper.js" type="text/javascript"></script>
