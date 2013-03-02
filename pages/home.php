@@ -1,56 +1,6 @@
 <div class="cf">
     <div class="col-4">
 
-   <table class="table--bordered  table--striped  table--data">
-       <colgroup>
-           <col class=t10>
-           <col class=t10>
-           <col class=t10>
-           <col>
-       </colgroup>
-       <thead>
-           <tr>
-               <th colspan=3>Foo</th>
-               <th>Bar</th>
-           </tr>
-           <tr>
-               <th>Lorem</th>
-               <th>Ipsum</th>
-               <th class=numerical>Dolor</th>
-               <th>Sit</th>
-           </tr>
-       </thead>
-       <tbody>
-           <tr>
-               <th rowspan=3>Sit</th>
-               <td>Dolor</td>
-               <td class=numerical>03.788</td>
-               <td>Lorem</td>
-           </tr>
-           <tr>
-               <td>Dolor</td>
-               <td class=numerical>32.210</td>
-               <td>Lorem</td>
-           </tr>
-           <tr>
-               <td>Dolor</td>
-               <td class=numerical>47.797</td>
-               <td>Lorem</td>
-           </tr>
-           <tr>
-               <th rowspan=2>Sit</th>
-               <td>Dolor</td>
-               <td class=numerical>09.640</td>
-               <td>Lorem</td>
-           </tr>
-           <tr>
-               <td>Dolor</td>
-               <td class=numerical>12.117</td>
-               <td>Lorem</td>
-           </tr>
-       </tbody>
-   </table>
-
         <div class="container" data-resize="false">
             <div class="content">
                 <h1 class="alpha"><em><strong>Prêmio SEBRAE mulher de negócios</strong></em></h1>
