@@ -117,13 +117,13 @@ $leftPos: 80px;
             top: 26px;
             left: 20px;
         }
-        &.branco{
+        &.txtbranco{
             color: white;
             .seta{
                 @extend .icon-seta_login_branca;
             }
         }
-        &.roxo{
+        &.txtroxo{
             color: $roxo;
             .seta{
                 @extend .icon-seta_login_roxa;
@@ -301,23 +301,24 @@ h3{
     @extend .beta;
 }
 
+// Slider Home
 .rfSlider{
     @include box-sizing(border-box);
     width: 400px;
-    height: 300px;
+    height: 320px;
     padding: 10px 20px;
     position: absolute;
     right: 60px;
     bottom: 0;
     .slideshow{
         .slides{
+            @include box-sizing(border-box);
             position: relative;
-                @include box-sizing(border-box);
-                width: gridsystem-width(4) - $gutter-width;
-                height: 300px;
+            width: 360px;
+            height: 300px;
             div{
                 @include box-sizing(border-box);
-                width: gridsystem-width(4) - $gutter-width;
+                width: 360px;
                 height: 300px;
                 h2,h3,p{
                     color: $roxo;
@@ -375,25 +376,46 @@ h3{
     }
 }
 
+// Cronograma
 .box-cronograma {
-     .tbl{
-       border-collapse: separate;
-       border-spacing: 1px;
-   }
-   color:white;
-   font-style: italic;
-   text-align: center;
+    color: white;
+    font-style: italic;
+    @include font-size(14px);
+    .tbl-show{
+        margin: 0;
+        border-collapse: separate;
+        border-spacing: 1px;
+        width: 274px;
+        height: 274px;
+        table-layout: fixed;
+        td{
+            padding: 5px;
+            width: 262px;
+            height: 262px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    .tbl{
+        margin: 0;
+        border-collapse: separate;
+        border-spacing: 1px;
+        width: 240px;
+        height: 240px;
+        table-layout: fixed;
+        td{
+            padding: 5px;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
 }
-table {
-    text-align: center;
-    vertical-align: middle;
-}
+
 .rosa {background-color: #ff7f73;}
 .roxo { background-color: #7a4f66;}
 .vermelho { background-color: #fd6f62; }
 .cinza-escuro { background-color: #666666; }
 .cinza { background-color: #e5e1e1;}
 .laranja { background-color: #ee7c48;}
-
-
-

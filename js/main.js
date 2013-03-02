@@ -59,8 +59,7 @@ jQuery.fn.ready(function(){
         $container = $('.container');
         $content = $('.content');
 
-        doResize = $container.data('resize') || true;
-
+        doResize = Boolean($container.data('resize'));
         checkOffset();
 
         $down

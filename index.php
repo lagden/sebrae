@@ -27,7 +27,7 @@ else
 <head>
     <meta charset="UTF-8">
     <title>Prêmio Sebrae Mulher de Negócios</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,7 +53,7 @@ else
                         <label for="auth_senha">Senha</label>
                         <input title="Senha" type="password" name="auth[senha]" id="auth_senha">
                         <button type="submit" class="bt-enviar-login">Enviar</button>
-                        <a href="#inscreva-se" class="<?php echo (mt_rand(1,10)%2) ? "roxo" : "branco" ?>" >Inscreva-se <i class="seta ir">seta</i></a>
+                        <a href="#inscreva-se" class="<?php echo (mt_rand(1,10)%2) ? "txtroxo" : "txtbranco" ?>" >Inscreva-se <i class="seta ir">seta</i></a>
                     </form>
                 </section>
                 <!-- Miolo -->

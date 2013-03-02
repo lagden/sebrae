@@ -70,7 +70,7 @@
                 <label for="fale_comentario">Comentário*</label>
                 <textarea title="Comentário" placeholder="Escreva sua mensagem" id="fale_comentario"></textarea>
             </div>
-            <div class="blocoFrm">
+            <div class="blocoFrm act">
                 <button type="submit" class="bt-inscreva-se">Enviar</button>
             </div>
         </div>
