@@ -1,10 +1,10 @@
 <div class="boxWhite container">
     <div class="content">
-        <h1 class="alpha"><em><strong>COMO ESCREVER A HISTÓRIA</strong></em></h1>
-        <h2 class="beta">
-            <em>Sua trajetória pode abrir caminho<br>
-            para milhares de outras mulheres</em>
-        </h2>
+        <h2>COMO ESCREVER A HISTÓRIA</h2>
+        <h3>
+            Sua trajetória pode abrir caminho<br />
+            para milhares de outras mulheres
+        </h3>
         <p>O relato poder&aacute; ser feito por escrito, via formul&aacute;rio a ser retirado no SEBRAE ou pelo site.</p>
         <p>No site, o sistema controla o tamanho do relato, que deve ter, no m&iacute;nimo, 500 (quinhentas) e no m&aacute;ximo 1.200 (mizl e duzentas) palavra, incluindo o t&iacute;tulo. Textos com tamanho menor ou maior ao limite acima n&atilde;o ser&atilde;o considerados. Os relatos escritos &agrave; m&atilde;o dever&atilde;o ter, no m&iacute;nimo, 60 (sessenta) linhas, e n&atilde;o poder&atilde;o ultrapassar o limite de 120 (cento e vinte) linhas. caso contrario n&atilde;o ser&atilde;o considerados.</p>
         <p>Ao escrever o seu relato, lembra-se que a narrativa precisa &ldquo;prender&rdquo; a aten&ccedil;&atilde;o do leitor. Por isso, deve transmitir emo&ccedil;&atilde;o. A historia deve ser real e verdadeira, pois na fase de visitas as informa&ccedil;&otilde;es ser&atilde;o conferidas.</p>

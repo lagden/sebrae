@@ -1,10 +1,10 @@
 <div class="boxWhite container">
     <div class="content">
-        <h1 class="alpha"><em><strong>COMO ESCREVER A HISTÓRIA</strong></em></h1>
-        <h2 class="beta">
-            <em>Sua trajetória pode abrir caminho<br>
-            para milhares de outras mulheres</em>
-        </h2>
+        <h2>COMO ESCREVER A HISTÓRIA</h1>
+        <h3>
+            Sua trajetória pode abrir caminho<br />
+            para milhares de outras mulheres
+        </h3>
         <p><strong>Pr&ecirc;mio SEBRAE Mulher de Neg&oacute;cios</strong></p>
         <p>O Pr&ecirc;mio &eacute; uma parceria entre o Servi&ccedil;o Brasileiro de Apoio &agrave;s Micro e Pequenas Empresas<br />(SEBRAE), a Secretaria Especial de Pol&iacute;ticas para as Mulheres (SPM), a Federa&ccedil;&atilde;o das Associa&ccedil;&otilde;es de<br />Mulheres de Neg&oacute;cios e Profissionais do Brasil (BPW) e a Funda&ccedil;&atilde;o Nacional da Qualidade (FNQ).</p>
         <p><strong>Art. 1&ordm; - Objetivo</strong></p>

@@ -1,7 +1,20 @@
 <div class="boxWhite container">
-    <h2>COMO PARTICIPAR</h2>
-    <h3>sub-titulo  dolor sit amet, consectetur</h3> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus arcu, porta ac tempor id, auctor et mi. Nullam nec lorem urna. Suspendisse potenti. Curabitur porta lacus ullamcorper turpis tempor ut tristique nulla iaculis. Duis placerat justo vel eros tempor commodo lacinia elit adipiscing. In consequat imperdiet quam a dapibus. Curabitur est orci, mollis vitae tincidunt quis, tristique facilisis mi. Maecenas non magna eu est sodales dignissim. Pellentesque ut convallis felis. Mauris tristique, nibh ut imperdiet ultricies, libero turpis ullamcorper metus, a egestas metus nisl nec nulla.</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam nunc est, sodales non vulputate vel, tempor a risus. Nullam iaculis est nec dolor aliquet vulputate. Morbi cursus arcu at leo pretium eget auctor nisi consequat. Etiam id lacus velit, nec sodales lorem. Sed magna lectus, sodales in posuere nec, interdum id sapien. Morbi tincidunt leo eget risus tempus at dapibus metus luctus. Aliquam justo mauris, pellentesque eu pulvinar in, pulvinar nec diam. Sed gravida, tellus ut condimentum vehicula, quam dui tincidunt ipsum, vel commodo metus massa sed odio.</p>
-    <p>Sed ut congue massa. Aliquam erat volutpat. Integer commodo convallis auctor. Integer fringilla neque et risus posuere vitae tincidunt erat iaculis. Cras non diam at risus imperdiet porta sit amet nec nunc. Vestibulum elit augue, luctus vitae dignissim ut, ullamcorper nec ipsum. Praesent vel tellus in neque dictum condimentum. Vestibulum nisl ipsum, tempus quis aliquam non, sodales a enim. Donec convallis, odio feugiat congue tincidunt, nulla eros bibendum diam, fermentum porta massa quam a urna. Aliquam sed orci eros, vel viverra augue. Aliquam pharetra pellentesque ipsum, nec pulvinar orci semper vel. Phasellus placerat elit id mi congue cursus.</p>
+    <div class="content">
+        <h2>COMO PARTICIPAR</h2>
+        <h3>
+            Sua trajetória pode abrir caminho<br>
+            para milhares de outras mulheres
+        </h3>
+        <p><strong>Pr&ecirc;mio SEBRAE Mulher de Neg&oacute;cios</strong></p>
+        <p>O Pr&ecirc;mio &eacute; uma parceria entre o Servi&ccedil;o Brasileiro de Apoio &agrave;s Micro e Pequenas Empresas<br />(SEBRAE), a Secretaria Especial de Pol&iacute;ticas para as Mulheres (SPM), a Federa&ccedil;&atilde;o das Associa&ccedil;&otilde;es de<br />Mulheres de Neg&oacute;cios e Profissionais do Brasil (BPW) e a Funda&ccedil;&atilde;o Nacional da Qualidade (FNQ).</p>
+        <p><strong>Art. 1&ordm; - Objetivo</strong></p>
+        <p>Este regulamento estabelece normas, condi&ccedil;&otilde;es e diretrizes para selecionar e reconhecer as<br />est&oacute;rias de vida de mulheres de neg&oacute;cios, que transformaram seus sonhos em realidade e cujos<br />relatos sirvam de exemplos e est&iacute;mulo para outras mulheres desenvolverem seu comportamento<br />empreendedor.</p>
+        <p><strong>Art. 2&ordm; - P&uacute;blico-alvo</strong></p>
+        <p>O pr&ecirc;mio &eacute; dirigido a mulheres empreendedoras, com mais de 18 anos, que poder&atilde;o concorrer em<br />3 (tr&ecirc;s) categorias:</p>
+        <p>I &ndash; Pequenos Neg&oacute;cios: propriet&aacute;rias de micro e pequenas empresas que estejam<br />estabelecidas formalmente h&aacute;, no m&iacute;nimo, um ano. (data de abertura anterior a<br />01/03/2012, conforme consta no CNPJ);</p>
+    </div>
+</div>
+<div class="navegacao">
+    <a href="#" id="up"><i class="ir bt-up">up</i></a>
+    <a href="#" id="down"><i class="ir bt-down">down</i></a>
 </div>

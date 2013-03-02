@@ -28,20 +28,20 @@
                 </ul>
                 <div id="slides" class="slides">
                     <div>
-                        <h1>Seja um avaliador voluntário 1</h1>
-                        <h2>Lorem ipsum dolor</h2>
+                        <h2>Voluntário 1</h2>
+                        <h3>Lorem ipsum dolor</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
                         <p class="med"><a href="#cadastro">Preencha o cadastro <i class="i ir icon-seta_ver_mais">ver mais</i></a></p>
                     </div>
                     <div>
-                        <h1>Seja um avaliador voluntário 2</h1>
-                        <h2>Lorem ipsum dolor</h2>
+                        <h2>Voluntário 2</h2>
+                        <h3>Lorem ipsum dolor</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
                         <p class="med"><a href="#cadastro">Preencha o cadastro <i class="i ir icon-seta_ver_mais">ver mais</i></a></p>
                     </div>
                     <div>
-                        <h1>Seja um avaliador voluntário 3</h1>
-                        <h2>Lorem ipsum dolor</h2>
+                        <h2>Voluntário 3</h2>
+                        <h3>Lorem ipsum dolor</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
                         <p class="med"><a href="#cadastro">Preencha o cadastro <i class="i ir icon-seta_ver_mais">ver mais</i></a></p>
                     </div>

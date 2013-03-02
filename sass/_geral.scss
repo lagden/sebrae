@@ -319,17 +319,17 @@ h3{
                 @include box-sizing(border-box);
                 width: gridsystem-width(4) - $gutter-width;
                 height: 300px;
-                h1,h2,p{
+                h2,h3,p{
                     color: $roxo;
                     font-weight: normal;
                     font-style: italic;
                     margin: 0;
                     padding: 0;
                 }
-                h1{
+                h2{
                     @include font-size(25px);
                 }
-                h2{
+                h3{
                     @include font-size(18px);
                     margin-bottom: 20px;
                 }

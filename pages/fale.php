@@ -1,9 +1,9 @@
 <div class="fale boxWhite">
-    <h1 class="alpha"><em><strong>Fale Conosco</strong></em></h1>
-    <h2 class="beta">
-        <em>Sua trajetória pode abrir caminho<br>
-        para milhares de outras mulheres</em>
-    </h2>
+    <h2>Fale Conosco</h2>
+    <h3>
+        Sua trajetória pode abrir caminho<br />
+        para milhares de outras mulheres
+    </h3>
     <small>*Campos de preenchimento obrigatório</small>
     <form method="post" class="frm" id="frmFale" action="#">
         <div class="bloco">
