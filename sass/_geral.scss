@@ -376,13 +376,24 @@ h3{
 }
 
 .box-cronograma {
-    
-    
-
+     .tbl{
+       border-collapse: separate;
+       border-spacing: 1px;
+   }
+   color:white;
+   font-style: italic;
+   text-align: center;
+}
+table {
+    text-align: center;
+    vertical-align: middle;
 }
 .rosa {background-color: #ff7f73;}
 .roxo { background-color: #7a4f66;}
 .vermelho { background-color: #fd6f62; }
+.cinza-escuro { background-color: #666666; }
+.cinza { background-color: #e5e1e1;}
+.laranja { background-color: #ee7c48;}
 
 
 

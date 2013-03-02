@@ -4543,17 +4543,44 @@ span.Styled {
   .rfSlider .next {
     right: -45px; }
 
-/* line 383, ../sass/_geral.scss */
+/* line 378, ../sass/_geral.scss */
+.box-cronograma {
+  color: white;
+  font-style: italic;
+  text-align: center; }
+  /* line 379, ../sass/_geral.scss */
+  .box-cronograma .tbl {
+    border-collapse: separate;
+    border-spacing: 1px; }
+
+/* line 387, ../sass/_geral.scss */
+table {
+  text-align: center;
+  vertical-align: middle; }
+
+/* line 391, ../sass/_geral.scss */
 .rosa {
   background-color: #ff7f73; }
 
-/* line 384, ../sass/_geral.scss */
+/* line 392, ../sass/_geral.scss */
 .roxo {
   background-color: #7a4f66; }
 
-/* line 385, ../sass/_geral.scss */
+/* line 393, ../sass/_geral.scss */
 .vermelho {
   background-color: #fd6f62; }
+
+/* line 394, ../sass/_geral.scss */
+.cinza-escuro {
+  background-color: #666666; }
+
+/* line 395, ../sass/_geral.scss */
+.cinza {
+  background-color: #e5e1e1; }
+
+/* line 396, ../sass/_geral.scss */
+.laranja {
+  background-color: #ee7c48; }
 
 /* line 1, ../sass/_home.scss */
 .home.bt-inscreva-se {
