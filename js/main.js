@@ -6,6 +6,8 @@ var mouseStillDown = false
     ,$content
     ,$slideshow
     ,animationOffset
+    ,sizeBaseWin = 750
+    ,sizeBaseContainer = 550
     ;
 
 jQuery.fn.ready(function(){
@@ -48,12 +50,7 @@ jQuery.fn.ready(function(){
         $container = $('.container');
         $content = $('.content');
 
-        animationOffset = $container.height() - $content.height();
-        if(animationOffset > 0)
-        {
-            $up.hide();
-            $down.hide();
-        }
+        checkOffset();
 
         $down
         .mousedown(function(ev)
@@ -93,7 +90,8 @@ jQuery.fn.ready(function(){
         $win = $(window);
         $win.on('resize',function(){
             resizeBox();
-        });
+        })
+        .trigger('resize');
 
     })(jQuery);
 
@@ -101,8 +99,13 @@ jQuery.fn.ready(function(){
 
 function resizeBox()
 {
-    console.log('resizeBox');
-};
+    if ($win.height() <= sizeBaseWin )
+        $container.css({ "height": calculo() });
+    else
+        $container.css({ "height": sizeBaseContainer });
+
+    checkOffset();
+}
 
 function loop(direction)
 {
@@ -120,7 +123,30 @@ function scrolla(direction, speed)
     animationOffset = $container.height() - $content.height();
     speed = speed || 2000;
     if (direction == 'up') animationOffset = 0;
-    console.log(animationOffset);
     if(animationOffset <= 0)
         $content.animate({ "marginTop": animationOffset + "px" }, speed, "linear");
+
+    checkOffset();
+}
+
+function checkOffset()
+{
+    animationOffset = $container.height() - $content.height();
+    if(animationOffset > 0)
+    {
+        $up.hide();
+        $down.hide();
+    }
+    else
+    {
+        $up.show();
+        $down.show();
+    }
+}
+
+function calculo()
+{
+    var h = ((sizeBaseContainer * $win.height()) / sizeBaseWin) - 70;
+    h = (h <= 300) ? 300 : h;
+    return parseInt(h);
 }
