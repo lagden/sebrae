@@ -8,6 +8,7 @@ var mouseStillDown = false
     ,animationOffset
     ,sizeBaseWin = 750
     ,sizeBaseContainer = 550
+    ,doResize = true
     ;
 
 jQuery.fn.ready(function(){
@@ -20,6 +21,14 @@ jQuery.fn.ready(function(){
 
         // Custom Form
         $('select.Styled').customized();
+
+        // Show Plus
+        $('a.showPlus').click(function(ev){
+            ev.preventDefault();
+            $(this).remove();
+            $('#plus').removeClass('hidden');
+            checkOffset();
+        })
 
         // RF Slider
         $slideshow = $('#slideshow');
@@ -49,6 +58,8 @@ jQuery.fn.ready(function(){
         $up = $('#up');
         $container = $('.container');
         $content = $('.content');
+
+        doResize = $container.data('resize') || true;
 
         checkOffset();
 
@@ -97,16 +108,6 @@ jQuery.fn.ready(function(){
 
 });
 
-function resizeBox()
-{
-    if ($win.height() <= sizeBaseWin )
-        $container.css({ "height": calculo() });
-    else
-        $container.css({ "height": sizeBaseContainer });
-
-    checkOffset();
-}
-
 function loop(direction)
 {
     if (!mouseStillDown)
@@ -142,6 +143,18 @@ function checkOffset()
         $up.show();
         $down.show();
     }
+}
+
+function resizeBox()
+{
+    if(doResize)
+    {
+        if ($win.height() <= sizeBaseWin )
+            $container.css({ "height": calculo() });
+        else
+            $container.css({ "height": sizeBaseContainer - 100 });
+    }
+    checkOffset();
 }
 
 function calculo()

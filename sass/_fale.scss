@@ -1,6 +1,7 @@
 .fale{
     &.boxWhite{
         @extend %container;
+        max-height: 550px;
     }
     small{
         @extend %sass-margin-bottom;
