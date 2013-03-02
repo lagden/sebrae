@@ -1,19 +1,85 @@
 <div class="cf">
     <div class="col-4">
 
-        <div class="container">
+   <table class="table--bordered  table--striped  table--data">
+       <colgroup>
+           <col class=t10>
+           <col class=t10>
+           <col class=t10>
+           <col>
+       </colgroup>
+       <thead>
+           <tr>
+               <th colspan=3>Foo</th>
+               <th>Bar</th>
+           </tr>
+           <tr>
+               <th>Lorem</th>
+               <th>Ipsum</th>
+               <th class=numerical>Dolor</th>
+               <th>Sit</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <th rowspan=3>Sit</th>
+               <td>Dolor</td>
+               <td class=numerical>03.788</td>
+               <td>Lorem</td>
+           </tr>
+           <tr>
+               <td>Dolor</td>
+               <td class=numerical>32.210</td>
+               <td>Lorem</td>
+           </tr>
+           <tr>
+               <td>Dolor</td>
+               <td class=numerical>47.797</td>
+               <td>Lorem</td>
+           </tr>
+           <tr>
+               <th rowspan=2>Sit</th>
+               <td>Dolor</td>
+               <td class=numerical>09.640</td>
+               <td>Lorem</td>
+           </tr>
+           <tr>
+               <td>Dolor</td>
+               <td class=numerical>12.117</td>
+               <td>Lorem</td>
+           </tr>
+       </tbody>
+   </table>
+
+        <div class="container" data-resize="false">
             <div class="content">
                 <h1 class="alpha"><em><strong>Prêmio SEBRAE mulher de negócios</strong></em></h1>
                 <h2 class="beta">
                     <em>Sua trajetória pode abrir caminho<br> para milhares de outras mulheres</em>
                 </h2>
-                <p>O Prêmio SEBRAE Mulher de Negócios tem como objetivo identificar, selecionar e premiar os relatos de vida de mulheres empreendedoras de todo o país, as quais transformaram seus sonhos em realidade e cuja história de vida hoje é exemplo para outras que possuem o mesmo sonho.outras que possuem o mesmo sonho. quais transformaram seus sonhos em realidade e cuja história de vida hoje é exemplo para outras que possuem o mesmo sonho.</p>
+                <p>
+                    O Prêmio SEBRAE Mulher de Negócios tem como objetivo identificar, selecionar e premiar os relatos de vida de mulheres empreendedoras de todo o país, as quais transformaram seus sonhos em realidade e cuja história de vida hoje é exemplo para outras que possuem o mesmo sonho.outras que possuem o mesmo sonho. quais transformaram seus sonhos em realidade e cuja história de vida hoje é exemplo para outras que possuem o mesmo sonho.
+                    <a href="#plus" class="showPlus"><i class="i ir bt-bolinha-plus">+</i></a>
+                </p>
+
+                <div id="plus" class="hidden">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
             </div>
         </div>
 
         <div class="navegacao">
             <a href="#" id="up"><i class="ir bt-up">up</i></a>
             <a href="#" id="down"><i class="ir bt-down">down</i></a>
+        </div>
+
+        <div>
+            <button type="button" class="home bt-inscreva-se">Inscreva-se</button>
         </div>
 
     </div>
