@@ -4538,6 +4538,18 @@ span.Styled {
   .rfSlider .next {
     right: -45px; }
 
+/* line 383, ../sass/_geral.scss */
+.rosa {
+  background-color: #ff7f73; }
+
+/* line 384, ../sass/_geral.scss */
+.roxo {
+  background-color: #7a4f66; }
+
+/* line 385, ../sass/_geral.scss */
+.vermelho {
+  background-color: #fd6f62; }
+
 /* line 5, ../sass/_fale.scss */
 .fale small {
   display: block; }
