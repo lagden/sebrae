@@ -93,9 +93,12 @@ else
     <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshow.js" type="text/javascript"></script>
     <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshownav.js" type="text/javascript"></script>
     <script src="js/vendor/jquery/plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    
 
     <!-- scripts -->
     <script src="js/helper.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-</body>
+
+
+    </body>
 </html>
