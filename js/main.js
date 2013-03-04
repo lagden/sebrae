@@ -1,14 +1,6 @@
-var mouseStillDown = false
-    ,$win
-    ,$down
-    ,$up
+var $win
     ,$container
-    ,$content
     ,$slideshow
-    ,animationOffset
-    ,sizeBaseWin = 750
-    ,sizeBaseContainer = 550
-    ,doResize = true
     ;
 
 jQuery.fn.ready(function(){
@@ -63,115 +55,8 @@ jQuery.fn.ready(function(){
             $(this).remove();
             $('#plus').removeClass('hidden');
             $container.mCustomScrollbar("update");
-            // checkOffset();
-        })
-
-        // Scroll
-        // $down = $('#down');
-        // $up = $('#up');
-        // $container = $('.container');
-        // $content = $('.content');
-
-        // doResize = Boolean($container.data('resize'));
-        // checkOffset();
-
-        // $down
-        // .mousedown(function(ev)
-        // {
-        //     ev.preventDefault();
-        //     mouseStillDown = true;
-        //     loop('down');
-        // })
-        // .mouseup(function(ev)
-        // {
-        //     mouseStillDown = false;
-        //     $content.stop();
-        // })
-        // .click(function(ev)
-        // {
-        //     ev.preventDefault();
-        // });
-
-        // $up
-        // .mousedown(function(ev)
-        // {
-        //     ev.preventDefault();
-        //     mouseStillDown = true;
-        //     loop('up');
-        // })
-        // .mouseup(function(ev)
-        // {
-        //     mouseStillDown = false;
-        //     $content.stop();
-        // })
-        // .click(function(ev)
-        // {
-        //     ev.preventDefault();
-        // });
-
-        // // Resize
-        // $win = $(window);
-        // $win.on('resize',function(){
-        //     resizeBox();
-        // })
-        // .trigger('resize');
+        });
 
     })(jQuery);
 
 });
-
-function loop(direction)
-{
-    if (!mouseStillDown)
-        return;
-
-    if(mouseStillDown){
-        scrolla(direction);
-        setInterval(100, "loop");
-    }
-}
-
-function scrolla(direction, speed)
-{
-    animationOffset = $container.height() - $content.height();
-    speed = speed || 2000;
-    if (direction == 'up') animationOffset = 0;
-    if(animationOffset <= 0)
-        $content.animate({ "marginTop": animationOffset + "px" }, speed, "linear");
-
-    checkOffset();
-}
-
-function checkOffset()
-{
-    animationOffset = $container.height() - $content.height();
-    if(animationOffset > 0)
-    {
-        $up.hide();
-        $down.hide();
-    }
-    else
-    {
-        $up.show();
-        $down.show();
-    }
-}
-
-function resizeBox()
-{
-    if(doResize)
-    {
-        if ($win.height() <= sizeBaseWin )
-            $container.css({ "height": calculo() });
-        else
-            $container.css({ "height": sizeBaseContainer - 100 });
-    }
-    checkOffset();
-}
-
-function calculo()
-{
-    var h = ((sizeBaseContainer * $win.height()) / sizeBaseWin) - 70;
-    h = (h <= 300) ? 300 : h;
-    return parseInt(h);
-}

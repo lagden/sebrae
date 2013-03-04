@@ -27,9 +27,9 @@ else
 <head>
     <meta charset="UTF-8">
     <title>Prêmio Sebrae Mulher de Negócios</title>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="http://localhost/github/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="js/vendor/jquery/plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
 </head>
 <body>
     <main role="main" class="main">
@@ -91,7 +91,7 @@ else
     <!-- plugins -->
     <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshow.js" type="text/javascript"></script>
     <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshownav.js" type="text/javascript"></script>
-    <script src="http://localhost/github/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery/plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
 
     <!-- scripts -->
     <script src="js/helper.js" type="text/javascript"></script>
