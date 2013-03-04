@@ -5,6 +5,9 @@ var $win
     ,$cronoDescricao
     ,currDia
     ,currDescricao
+    ,sizeBaseWin = 750
+    ,sizeBaseContainer = 550
+    ,doResize = true
     ;
 
 jQuery.fn.ready(function(){
@@ -48,10 +51,12 @@ jQuery.fn.ready(function(){
         $win.load(function(){
             $container.mCustomScrollbar({
                 scrollButtons: {
-                    enable: true
+                    enable: false
                 }
+                // ,autoHideScrollbar: true
                 ,theme: "dark"
-            });
+            })
+            .find('.mCSB_scrollTools').addClass('invisible');
 
             $('#up').on('click',function(ev){
                 ev.preventDefault();
@@ -63,6 +68,12 @@ jQuery.fn.ready(function(){
             })
         });
 
+        // Resize
+        $win.on('resize',function(){
+            resizeBox();
+        })
+        .trigger('resize');
+
         // Show Plus
         $('a.showPlus').click(function(ev){
             ev.preventDefault();
@@ -70,7 +81,6 @@ jQuery.fn.ready(function(){
             $('#plus').removeClass('hidden');
             $('.navegacao').removeClass('hidden');
             $container
-            // .addClass('boxWhite')
             .mCustomScrollbar("update");
             $('.container').addClass('boxWhite')
             $rfSlider.fadeOut(200);
@@ -125,4 +135,24 @@ function scrolla(which)
         else if(which==="down")
             $container.mCustomScrollbar("scrollTo",(activeElemPos+pixelsToScroll),{scrollInertia:400,scrollEasing:Power2.easeOut});
     }
+}
+
+function resizeBox()
+{
+    if(doResize)
+    {
+        if ($win.height() <= sizeBaseWin )
+            $container.css({ "height": calculo() });
+        else
+            $container.css({ "height": sizeBaseContainer - 100 });
+    }
+    $container
+    .mCustomScrollbar("update");
+}
+
+function calculo()
+{
+    var h = ((sizeBaseContainer * $win.height()) / sizeBaseWin) - 70;
+    h = (h <= 300) ? 300 : h;
+    return parseInt(h);
 }

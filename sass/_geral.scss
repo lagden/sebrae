@@ -34,7 +34,6 @@ $resolucao: 1000px;
     margin-right: auto;
     position: relative;
     min-width: $resolucao;
-    //width: 1300px;
 }
 
 .main{
@@ -221,9 +220,7 @@ $leftPos: 80px;
 }
 
 %container{
-    // @include box-sizing(border-box);
     width: 100%;
-    // height: 100%;
     max-width: 760px;
     max-height: 500px;
     padding: 30px;
@@ -246,7 +243,7 @@ $leftPos: 80px;
             top: -30px;
             left: 0;
             &.bt-up{
-                top: -595px;
+                top: -545px;
             }
         }
     }
