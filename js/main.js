@@ -69,7 +69,9 @@ jQuery.fn.ready(function(){
             $(this).remove();
             $('#plus').removeClass('hidden');
             $('.navegacao').removeClass('hidden');
-            $container.mCustomScrollbar("update");
+            $container
+            .addClass('boxWhite');
+            .mCustomScrollbar("update");
             $rfSlider.fadeOut(200);
             $('.home.bt-inscreva-se').fadeOut(200); 
         });

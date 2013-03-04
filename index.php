@@ -96,5 +96,5 @@ else
     <!-- scripts -->
     <script src="js/helper.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-</body>
+    </body>
 </html>

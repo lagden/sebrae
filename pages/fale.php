@@ -73,6 +73,7 @@
             <div class="blocoFrm act">
                 <button type="submit" class="bt-inscreva-se">Enviar</button>
             </div>
+
         </div>
     </form>
 </div>
