@@ -1,4 +1,4 @@
-<div class="boxWhite container">
+<div id="container" class="boxWhite container">
     <div class="content">
         <h2>COMO PARTICIPAR</h2>
         <h3>
@@ -13,8 +13,4 @@
         <p>O pr&ecirc;mio &eacute; dirigido a mulheres empreendedoras, com mais de 18 anos, que poder&atilde;o concorrer em<br />3 (tr&ecirc;s) categorias:</p>
         <p>I &ndash; Pequenos Neg&oacute;cios: propriet&aacute;rias de micro e pequenas empresas que estejam<br />estabelecidas formalmente h&aacute;, no m&iacute;nimo, um ano. (data de abertura anterior a<br />01/03/2012, conforme consta no CNPJ);</p>
     </div>
-</div>
-<div class="navegacao">
-    <a href="#" id="up"><i class="ir bt-up">up</i></a>
-    <a href="#" id="down"><i class="ir bt-down">down</i></a>
 </div>

@@ -22,14 +22,6 @@ jQuery.fn.ready(function(){
         // Custom Form
         $('select.Styled').customized();
 
-        // Show Plus
-        $('a.showPlus').click(function(ev){
-            ev.preventDefault();
-            $(this).remove();
-            $('#plus').removeClass('hidden');
-            checkOffset();
-        })
-
         // RF Slider
         $slideshow = $('#slideshow');
         $slideshow.slideshownav({
@@ -54,54 +46,75 @@ jQuery.fn.ready(function(){
         });
 
         // Scroll
-        $down = $('#down');
-        $up = $('#up');
-        $container = $('.container');
-        $content = $('.content');
-
-        doResize = Boolean($container.data('resize'));
-        checkOffset();
-
-        $down
-        .mousedown(function(ev)
-        {
-            ev.preventDefault();
-            mouseStillDown = true;
-            loop('down');
-        })
-        .mouseup(function(ev)
-        {
-            mouseStillDown = false;
-            $content.stop();
-        })
-        .click(function(ev)
-        {
-            ev.preventDefault();
-        });
-
-        $up
-        .mousedown(function(ev)
-        {
-            ev.preventDefault();
-            mouseStillDown = true;
-            loop('up');
-        })
-        .mouseup(function(ev)
-        {
-            mouseStillDown = false;
-            $content.stop();
-        })
-        .click(function(ev)
-        {
-            ev.preventDefault();
-        });
-
-        // Resize
+        $container = $('#container');
         $win = $(window);
-        $win.on('resize',function(){
-            resizeBox();
+
+        $win.load(function(){
+            $container.mCustomScrollbar({
+                scrollButtons:{
+                    enable:true
+                }
+            });
+        });
+
+        // Show Plus
+        $('a.showPlus').click(function(ev){
+            ev.preventDefault();
+            $(this).remove();
+            $('#plus').removeClass('hidden');
+            $container.mCustomScrollbar("update");
+            // checkOffset();
         })
-        .trigger('resize');
+
+        // Scroll
+        // $down = $('#down');
+        // $up = $('#up');
+        // $container = $('.container');
+        // $content = $('.content');
+
+        // doResize = Boolean($container.data('resize'));
+        // checkOffset();
+
+        // $down
+        // .mousedown(function(ev)
+        // {
+        //     ev.preventDefault();
+        //     mouseStillDown = true;
+        //     loop('down');
+        // })
+        // .mouseup(function(ev)
+        // {
+        //     mouseStillDown = false;
+        //     $content.stop();
+        // })
+        // .click(function(ev)
+        // {
+        //     ev.preventDefault();
+        // });
+
+        // $up
+        // .mousedown(function(ev)
+        // {
+        //     ev.preventDefault();
+        //     mouseStillDown = true;
+        //     loop('up');
+        // })
+        // .mouseup(function(ev)
+        // {
+        //     mouseStillDown = false;
+        //     $content.stop();
+        // })
+        // .click(function(ev)
+        // {
+        //     ev.preventDefault();
+        // });
+
+        // // Resize
+        // $win = $(window);
+        // $win.on('resize',function(){
+        //     resizeBox();
+        // })
+        // .trigger('resize');
 
     })(jQuery);
 

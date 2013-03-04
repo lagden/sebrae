@@ -1,4 +1,4 @@
-<div class="boxWhite container">
+<div id="container" class="boxWhite container">
     <div class="content">
         <h2>COMO ESCREVER A HISTÓRIA</h2>
         <h3>
@@ -18,8 +18,4 @@
         <p>&bull; De que maneira aplica seus valores pessoais na administra&ccedil;&atilde;o do neg&oacute;cio? <br />&bull; Como compartilha as informa&ccedil;&otilde;es? Consulta ou envolve seus colaboradores nas tomadas de decis&atilde;o?<br />&bull; Como est&aacute; estruturado o seu neg&oacute;cio (regra de funcionamento, pessoas envolvidas, e local de suas atividades)?<br />&bull; D&ecirc; exemplos do bom uso dos recursos de que disp&otilde;e.<br />&bull; Como voc&ecirc; participa da condu&ccedil;&atilde;o das atividades do seu neg&oacute;cio, incluindo relacionamento com clientes, colaboradores, fornecedores, comunidades e parceiros?<br />&bull; Como voc&ecirc; reage diante dos desafios ou obst&aacute;culos na condu&ccedil;&atilde;o do seu neg&oacute;cio?<br />&bull; Como s&atilde;o selecionados seus colaboradores? H&aacute; uma preocupa&ccedil;&atilde;o com a redu&ccedil;&atilde;o da desigualdade social?<br />&bull; Quais benef&iacute;cios s&atilde;o oferecidos aos seus colaboradores para que sintam mais motivados?<br />&bull; O que voc&ecirc; faz para torna o ambiente de trabalho mais agrad&aacute;vel? Cite exemplos.</p>
         <p>Resultados: Realiza&ccedil;&otilde;es e Contribui&ccedil;&otilde;es:<br />&bull; Qual solu&ccedil;&atilde;o adotou como resultado do amadurecimento do neg&oacute;cio, problemas enfrentados, ou dos relacionamentos mantidos? Se voc&ecirc; pudesse voltar no tempo, faria algo diferente? Cite exemplos de melhoria realizadas que partiram de li&ccedil;&otilde;es aprendidas com os erros cometidos em seu neg&oacute;cio.<br />&bull; Como voc&ecirc; percebe que seu neg&oacute;cio esta melhorando (aumento do faturamento, de clientes, melhoria da qualidade dos produtos/servi&ccedil;os, satisfa&ccedil;&atilde;o dos colaboradores)?<br />&bull; O que pensa para o futuro do seu neg&oacute;cio?<br />&bull; Quais s&atilde;o os pr&oacute;ximos passos para assegurar o futuro do seu neg&oacute;cio ( planos e metas)?<br />&bull; Como o seu neg&oacute;cio serve de exemplo para a forma&ccedil;&atilde;o de novas empreendedoras?<br />&bull; Em sua opini&atilde;o, o que &eacute; preciso fazer para ter sucesso como empreendedora?<br />&bull; Que mensagem gostaria de passar para as mulheres que est&atilde;o iniciando o seu neg&oacute;cio?</p>
     </div>
-</div>
-<div class="navegacao">
-    <a href="#" id="up"><i class="ir bt-up">up</i></a>
-    <a href="#" id="down"><i class="ir bt-down">down</i></a>
 </div>

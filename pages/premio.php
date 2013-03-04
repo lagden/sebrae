@@ -1,4 +1,4 @@
-<div class="boxWhite container">
+<div id="container" class="boxWhite container">
     <h2>O QUE É O PRÊMIO?</h2>
     <h3>Reconhecimento estadual e nacional às ?mulheres que transformaram seus sonhos em realidade.</h3> 
     <p>É o reconhecimento estadual e nacional às mulheres que transformaram seus sonhos em realidade, e cuja vida é exemplo para tantas outras mulheres que sonham ser empreendedoras.</p>
