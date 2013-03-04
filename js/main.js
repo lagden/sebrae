@@ -48,7 +48,7 @@ jQuery.fn.ready(function(){
         $win.load(function(){
             $container.mCustomScrollbar({
                 scrollButtons: {
-                    enable: false
+                    enable: true
                 }
                 ,theme: "dark"
             });
@@ -70,7 +70,7 @@ jQuery.fn.ready(function(){
             $('#plus').removeClass('hidden');
             $('.navegacao').removeClass('hidden');
             $container
-            .addClass('boxWhite');
+            // .addClass('boxWhite')
             .mCustomScrollbar("update");
             $rfSlider.fadeOut(200);
             $('.home.bt-inscreva-se').fadeOut(200); 
