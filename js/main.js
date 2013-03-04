@@ -55,6 +55,8 @@ jQuery.fn.ready(function(){
             $(this).remove();
             $('#plus').removeClass('hidden');
             $container.mCustomScrollbar("update");
+            $('.rfSlider').fadeOut(200);
+            $('.home.bt-inscreva-se').fadeOut(200); 
         });
 
     })(jQuery);
