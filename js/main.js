@@ -72,6 +72,7 @@ jQuery.fn.ready(function(){
             $container
             // .addClass('boxWhite')
             .mCustomScrollbar("update");
+            $('.container').addClass('boxWhite')
             $rfSlider.fadeOut(200);
             $('.home.bt-inscreva-se').fadeOut(200); 
         });
