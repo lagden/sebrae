@@ -233,6 +233,7 @@ $leftPos: 80px;
     overflow: auto;
 }
 
+// Navegacao do scroll -> Setinhas
 .navegacao{
     @extend .text--center;
     a{
@@ -243,7 +244,8 @@ $leftPos: 80px;
             top: -30px;
             left: 0;
             &.bt-up{
-                top: -545px;
+                // top: -545px;
+                top: -595px;
             }
         }
     }

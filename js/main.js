@@ -139,15 +139,15 @@ function scrolla(which)
 
 function resizeBox()
 {
-    if(doResize)
-    {
-        if ($win.height() <= sizeBaseWin )
-            $container.css({ "height": calculo() });
-        else
-            $container.css({ "height": sizeBaseContainer - 100 });
-    }
-    $container
-    .mCustomScrollbar("update");
+    // if(doResize)
+    // {
+    //     if ($win.height() <= sizeBaseWin )
+    //         $container.css({ "height": calculo() });
+    //     else
+    //         $container.css({ "height": sizeBaseContainer - 100 });
+    // }
+    // $container
+    // .mCustomScrollbar("update");
 }
 
 function calculo()
