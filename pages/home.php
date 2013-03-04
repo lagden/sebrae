@@ -1,5 +1,5 @@
 <div class="cf">
-    <div class="col-4">
+    <div class="col-5">
         <div id="container" class="container">
             <h1 class="alpha"><em><strong>Prêmio SEBRAE mulher de negócios</strong></em></h1>
             <h2 class="beta">
@@ -22,7 +22,7 @@
             <button type="button" class="home bt-inscreva-se">Inscreva-se</button>
         </div>
     </div>
-    <div class="col-4">
+    <div class="col-3">
         <div class="boxWhite rfSlider">
             <div id="slideshow" class="slideshow">
                 <ul class="nav">

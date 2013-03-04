@@ -3,3 +3,82 @@
     // margin-top: 20px;
     margin-left: 30px;
 }
+
+// Slider Home
+.rfSlider{
+    $padRL: 10px;
+    $wi: 300px;
+    $he: 300px;
+    $h: 20px;
+    @include box-sizing(border-box);
+    width: $wi;
+    height: $he;
+    padding: 10px $padRL;
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    .slideshow{
+        .slides{
+            @include box-sizing(border-box);
+            position: relative;
+            width: $wi - ($padRL * 2);
+            height: $he - $h;
+            div{
+                @include box-sizing(border-box);
+                width: $wi - ($padRL * 2);
+                height: $he - $h;
+                h2,h3,p{
+                    color: $roxo;
+                    font-weight: normal;
+                    font-style: italic;
+                    margin: 0;
+                    padding: 0;
+                }
+                h2{
+                    @include font-size(24px);
+                }
+                h3{
+                    @include font-size(17px);
+                    margin-bottom: 20px;
+                }
+                p{
+                    @include font-size(14px);
+                    font-style: normal;
+                    margin-bottom: 20px;
+                }
+                p.med{
+                    @include font-size(17px);
+                    font-style: italic;
+                    a{
+                        color: $roxo;
+                    }
+                }
+            }
+        }
+        .nav{
+            margin: 0;
+            line-height: normal;
+            height: 14px;
+            > li > a{
+                vertical-align: top;
+                @extend .ir;
+                @extend .bt-bolinha-empty;
+                &.rf-slideshownav-current-nav{
+                    @extend .bt-bolinha-full;
+                }
+            }
+        }
+    }
+    $offset: -45px;
+    .prev,
+    .next{
+        position: absolute;
+        top: 80px;
+    }
+    .prev{
+        left: $offset;
+    }
+    .next{
+        right: $offset;
+    }
+}

@@ -5,12 +5,14 @@ $roxo: #7a4f66;
 
 html{
     color: $black;
-    font-size: $base-font-size;
+    font-size: 90%;
 }
 
 body{
     font-family: $brand-face;
 }
+
+$resolucao: 1024px;
 
 .wrapper{
     @include clear-floats;
@@ -18,13 +20,14 @@ body{
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 1300px;
+    width: $resolucao;
+    //width: 1300px;
 }
 
 .main{
     margin-left: auto;
     margin-right: auto;
-    width: 1300px;
+    width: $resolucao;
     height: 771px;
     overflow: hidden;
     background:{
@@ -297,81 +300,6 @@ h2{
 
 h3{
     @extend .beta;
-}
-
-// Slider Home
-.rfSlider{
-    @include box-sizing(border-box);
-    width: 400px;
-    height: 320px;
-    padding: 10px 20px;
-    position: absolute;
-    right: 60px;
-    bottom: 0;
-    .slideshow{
-        .slides{
-            @include box-sizing(border-box);
-            position: relative;
-            width: 360px;
-            height: 300px;
-            div{
-                @include box-sizing(border-box);
-                width: 360px;
-                height: 300px;
-                h2,h3,p{
-                    color: $roxo;
-                    font-weight: normal;
-                    font-style: italic;
-                    margin: 0;
-                    padding: 0;
-                }
-                h2{
-                    @include font-size(25px);
-                }
-                h3{
-                    @include font-size(18px);
-                    margin-bottom: 20px;
-                }
-                p{
-                    @include font-size(15px);
-                    font-style: normal;
-                    margin-bottom: 20px;
-                }
-                p.med{
-                    @include font-size(18px);
-                    font-style: italic;
-                    a{
-                        color: $roxo;
-                    }
-                }
-            }
-        }
-        .nav{
-            margin: 0;
-            line-height: normal;
-            height: 14px;
-            > li > a{
-                vertical-align: top;
-                @extend .ir;
-                @extend .bt-bolinha-empty;
-                &.rf-slideshownav-current-nav{
-                    @extend .bt-bolinha-full;
-                }
-            }
-        }
-    }
-    $offset: -45px;
-    .prev,
-    .next{
-        position: absolute;
-        top: 80px;
-    }
-    .prev{
-        left: $offset;
-    }
-    .next{
-        right: $offset;
-    }
 }
 
 // Cronograma
