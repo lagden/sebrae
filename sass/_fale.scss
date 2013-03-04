@@ -14,7 +14,7 @@
         }
         select,
         input[type=text]{
-            width: 210px;
+            width: 190px;
             &.ped{
                 width: 50px;
                 margin-right: 10px;
@@ -23,17 +23,19 @@
                 margin-right: 0px;
             }
             &.med{
-                width: 150px;
+                width: 131px;
             }
             &.med-rev{
                 margin-right: 10px;
             }
         }
         .act{
-            top: 27px;
+            //top: 27px;
+            top:17px;
+
         }
         .bloco{
-            margin-bottom: 20px;
+
             .blocoFrm{
                 @include inline-block;
                 font-size: 0;
