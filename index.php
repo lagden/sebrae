@@ -30,6 +30,7 @@ else
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/vendor/jquery/plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <script src="js/vendor/shiv.js" type="text/javascript"></script>
 </head>
 <body>
     <main role="main" class="main">
