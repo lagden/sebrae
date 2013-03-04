@@ -9,31 +9,31 @@
         <div class="bloco">
             <div class="blocoFrm">
                 <label for="fale_nome">Nome*</label>
-                <input title="Nome" placeholder="Nome fantasia" type="text" name="fale[nome]" id="fale_nome">
+                <input title="Nome" placeholder="Nome fantasia" type="text" name="fale[nome]" id="fale_nome" required>
             </div>
             <div class="blocoFrm">
                 <label for="fale_empresa">Empresa*</label>
-                <input title="Empresa" placeholder="Nome da empresa" type="text" name="fale[empresa]" id="fale_empresa">
+                <input title="Empresa" placeholder="Nome da empresa" type="text" name="fale[empresa]" id="fale_empresa" required>
             </div>
             <div class="blocoFrm">
                 <label for="fale_email">E-mail*</label>
-                <input title="E-mail" placeholder="@" type="text" name="fale[email]" id="fale_email">
+                <input title="E-mail" placeholder="@" type="text" name="fale[email]" id="fale_email" required>
             </div>
         </div>
         <div class="bloco">
             <div class="blocoFrm">
                 <label for="fale_ddd">Telefone*</label>
-                <input class="ped" title="DDD" placeholder="(__)" type="text" name="fale[ddd]" id="fale_ddd">
-                <input class="med" title="Telefone" placeholder="(_________)" type="text" name="fale[telefone]" id="fale_telefone">
+                <input class="ped" title="DDD" placeholder="(__)" type="text" name="fale[ddd]" id="fale_ddd" required>
+                <input class="med" title="Telefone" placeholder="(_________)" type="text" name="fale[telefone]" id="fale_telefone" required>
             </div>
             <div class="blocoFrm">
                 <label for="fale_ddd_celular">Celular*</label>
-                <input class="ped" title="DDD" placeholder="(__)" type="text" name="fale[ddd_celular]" id="fale_ddd_celular">
-                <input class="med" title="Celular" placeholder="(_________)" type="text" name="fale[celular]" id="fale_celular">
+                <input class="ped" title="DDD" placeholder="(__)" type="text" name="fale[ddd_celular]" id="fale_ddd_celular" required>
+                <input class="med" title="Celular" placeholder="(_________)" type="text" name="fale[celular]" id="fale_celular" required>
             </div>
             <div class="blocoFrm">
                 <label for="fale_cidade">Cidade/Estado*</label>
-                <input class="med med-rev" title="Cidade" type="text" name="fale[cidade]" id="fale_cidade">
+                <input class="med med-rev" title="Cidade" type="text" name="fale[cidade]" id="fale_cidade" required>
                 <select class="ped ped-rev Styled" name="fale[uf]">
                     <option value="AC">AC</option>
                     <option value="AL">AL</option>
@@ -68,7 +68,7 @@
         <div class="bloco">
             <div class="blocoFrm">
                 <label for="fale_comentario">Comentário*</label>
-                <textarea title="Comentário" placeholder="Escreva sua mensagem" id="fale_comentario"></textarea>
+                <textarea title="Comentário" placeholder="Escreva sua mensagem" id="fale_comentario" required></textarea>
             </div>
             <div class="blocoFrm act">
                 <button type="submit" class="bt-inscreva-se">Enviar</button>
