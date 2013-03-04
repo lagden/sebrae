@@ -1,5 +1,5 @@
 <div class="cf">
-    <div class="col-5">
+    <div class="home col-4">
         <div id="container" class="container">
             <h1 class="alpha"><em><strong>Prêmio SEBRAE mulher de negócios</strong></em></h1>
             <h2 class="beta">
@@ -16,7 +16,17 @@
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
+        </div>
+        <div class="navegacao hidden">
+            <a href="#" id="up"><i class="i ir bt-up">up</i></a>
+            <a href="#" id="down"><i class="i ir bt-down">down</i></a>
         </div>
         <div>
             <button type="button" class="home bt-inscreva-se">Inscreva-se</button>

@@ -1,6 +1,10 @@
 var $win
     ,$container
     ,$slideshow
+    ,$cronoDia
+    ,$cronoDescricao
+    ,currDia
+    ,currDescricao
     ;
 
 jQuery.fn.ready(function(){
@@ -43,10 +47,20 @@ jQuery.fn.ready(function(){
 
         $win.load(function(){
             $container.mCustomScrollbar({
-                scrollButtons:{
-                    enable:true
+                scrollButtons: {
+                    enable: false
                 }
+                ,theme: "dark"
             });
+
+            $('#up').on('click',function(ev){
+                ev.preventDefault();
+                scrolla("up");
+            })
+            $('#down').on('click',function(ev){
+                ev.preventDefault();
+                scrolla("down");
+            })
         });
 
         // Show Plus
@@ -54,11 +68,53 @@ jQuery.fn.ready(function(){
             ev.preventDefault();
             $(this).remove();
             $('#plus').removeClass('hidden');
+            $('.navegacao').removeClass('hidden');
             $container.mCustomScrollbar("update");
-            $('.rfSlider').fadeOut(200);
+            $rfSlider.fadeOut(200);
             $('.home.bt-inscreva-se').fadeOut(200); 
+        });
+
+        // Cronograma
+        $cronoDia = $('#showDia');
+        $cronoDescricao = $('#showDescricao');
+        currDia = $cronoDia.text();
+        currDescricao = $cronoDescricao.text();
+
+        var tds = $('.box-cronograma table.tbl td');
+        tds.on('click',function(){
+            currDia = $(this).data('dia');
+            currDescricao = $(this).data('descricao');
+            $cronoDia.text(currDia);
+            $cronoDescricao.text(currDescricao);
+        });
+        tds.on('mouseenter',function(){
+            $cronoDia.text($(this).data('dia'));
+            $cronoDescricao.text($(this).data('descricao'));
+        });
+        tds.on('mouseleave',function(){
+            $cronoDia.text(currDia);
+            $cronoDescricao.text(currDescricao);
         });
 
     })(jQuery);
 
 });
+
+function scrolla(which)
+{
+    if($container.find(".mCSB_scrollTools").css('display') == 'block')
+    {
+        var activeElemPos=Math.abs($container.find(".mCSB_container").position().top)
+            ,pixelsToScroll=60;
+
+        if(which==="up")
+        {
+            if(pixelsToScroll>activeElemPos)
+                $container.mCustomScrollbar("scrollTo","top");
+            else
+                $container.mCustomScrollbar("scrollTo",(activeElemPos-pixelsToScroll),{scrollInertia:400,scrollEasing:Power2.easeOut});
+        }
+        else if(which==="down")
+            $container.mCustomScrollbar("scrollTo",(activeElemPos+pixelsToScroll),{scrollInertia:400,scrollEasing:Power2.easeOut});
+    }
+}

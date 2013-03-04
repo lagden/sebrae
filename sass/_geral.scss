@@ -12,6 +12,19 @@ body{
     font-family: $brand-face;
 }
 
+hr{
+    border: 0;
+    border-top: 1px solid white;
+    display: block;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    &.both{
+        margin: 10px 0;
+    }
+}
+
 $resolucao: 1024px;
 
 .wrapper{
@@ -191,41 +204,6 @@ $leftPos: 80px;
     }
 }
 
-// Combobox Customizado - Styled
-.Styled{
-    vertical-align: middle;
-}
-
-select.Styled{
-    position: relative;
-    z-index: 10;
-    cursor: pointer;
-    &.hiddenStyle{
-        @include opacity(0);
-    }
-}
-
-span.Styled{
-    @include box-sizing(border-box);
-    @include font-size(12px);
-    background:{
-        image: image-url('sprites/bt/select.png');
-        position: 85% center;
-        repeat: no-repeat;
-        color: white;
-    };
-    position: absolute;
-    z-index: 9;
-    top: 0;
-    left: 0;
-    display: block;
-    padding: 0px 5px;
-    width: 42px !important;
-    height: 40px;
-    border: 1px solid $gray;
-    line-height: 40px;
-}
-
 // Footer
 .theFooter{
     background-color: white;
@@ -258,24 +236,25 @@ span.Styled{
     overflow: auto;
 }
 
-// .navegacao{
-//     @extend .text--center;
-//     a{
-//         @include inline-block;
-//         position: relative;
-//         i{
-//             position: absolute;
-//             top: -30px;
-//             left: 0;
-//             &.bt-up{
-//                 left: -40px;
-//             }
-//             &.bt-down{
-//                 left: 40px;
-//             }
-//         }
-//     }
-// }
+.navegacao{
+    @extend .text--center;
+    a{
+        @include inline-block;
+        position: relative;
+        i{
+            position: absolute;
+            top: -30px;
+            left: 0;
+            &.bt-up{
+                top: -530px;
+                left: -40px;
+            }
+            &.bt-down{
+                left: -40px;
+            }
+        }
+    }
+}
 
 // Headers
 .alpha{
@@ -320,6 +299,13 @@ h3{
             height: 262px;
             text-align: center;
             vertical-align: middle;
+            .showDia{
+                @include font-size(19px);
+            }
+            hr{
+                width: 140px;
+                margin: 10px auto;
+            }
         }
     }
     .tbl{
@@ -330,11 +316,19 @@ h3{
         height: 240px;
         table-layout: fixed;
         td{
+            cursor: pointer;
             padding: 5px;
             width: 80px;
             height: 80px;
             text-align: center;
             vertical-align: middle;
+            table{
+                margin: 0;
+            }
+            &.flush{
+                margin:       0!important;
+                padding:       0!important;
+            }
         }
     }
 }

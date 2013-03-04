@@ -41,14 +41,11 @@ if (!(window.console && console.log)) {
             var options = self.find('option');
             var title = (options.filter(":selected").val() != '') ? options.filter(":selected").text() : options.eq(0).text();
             var position = self.offset();
-            console.log(position);
             self
                 .after(
                     span
                         .attr("class", self.attr("class"))
                         .css('width', self.width() + 'px')
-                        // .css('top', position.top )
-                        // .css('left', position.left )
                         .html(title)
                 )
                 .addClass(opts.hiddenStyle)

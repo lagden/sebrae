@@ -1,3 +1,38 @@
+// Combobox Customizado - Styled
+.Styled{
+    vertical-align: middle;
+}
+
+select.Styled{
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    &.hiddenStyle{
+        @include opacity(0);
+    }
+}
+
+span.Styled{
+    @include box-sizing(border-box);
+    @include font-size(12px);
+    background:{
+        image: image-url('sprites/bt/select.png');
+        position: 85% center;
+        repeat: no-repeat;
+        color: white;
+    };
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0px 5px;
+    width: 42px !important;
+    height: 40px;
+    border: 1px solid $gray;
+    line-height: 40px;
+}
+
 .fale{
     &.boxWhite{
         @extend %container;
@@ -9,7 +44,7 @@
     }
     .frm{
         textarea{
-            width: 440px;
+            width: 380px;
             min-height: 100px;
         }
         select,
@@ -30,16 +65,15 @@
             }
         }
         .act{
-            //top: 27px;
-            top:17px;
-
+            top: 27px;
         }
         .bloco{
 
             .blocoFrm{
                 @include inline-block;
                 font-size: 0;
-                margin-right: 20px;
+                margin-right: 18px;
+                margin-bottom: 18px;
                 position: relative;
                 &:last-child{
                     margin-right: 0px;

@@ -30,7 +30,9 @@ else
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/vendor/jquery/plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
-    <script src="js/vendor/shiv.js" type="text/javascript"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+        <script src="js/vendor/shiv.js" type="text/javascript"></script>
+    <![endif]-->
 </head>
 <body>
     <main role="main" class="main">
@@ -77,7 +79,6 @@ else
     <script src="js/vendor/jquery/jquery.js" type="text/javascript"></script>
     <script src="js/vendor/jquery/jquery.ui.core.js" type="text/javascript"></script>
     <script src="js/vendor/jquery/jquery.ui.widget.js" type="text/javascript"></script>
-
     <!-- Selectivizr -->
     <!--[if (gte IE 6)&(lte IE 8)]>
         <script src="js/vendor/selectivizr.js" type="text/javascript"></script>
@@ -88,12 +89,10 @@ else
     <script src="js/vendor/greensock/easing/EasePack.min.js" type="text/javascript"></script>
     <script src="js/vendor/greensock/TweenLite.min.js" type="text/javascript"></script>
     <script src="js/vendor/greensock/jquery.gsap.min.js" type="text/javascript"></script>
-
     <!-- plugins -->
     <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshow.js" type="text/javascript"></script>
     <script src="js/vendor/jquery/plugin/rf/jquery.rf.slideshownav.js" type="text/javascript"></script>
     <script src="js/vendor/jquery/plugin/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
-
     <!-- scripts -->
     <script src="js/helper.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
