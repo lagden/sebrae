@@ -98,6 +98,11 @@ jQuery.fn.ready(function(){
             $cronoDescricao.text(currDescricao);
         });
 
+        $("#frmFale").validate({
+            errorElement: "em",
+            errorContainer: $("#warning"),
+        });
+
     })(jQuery);
 
 });

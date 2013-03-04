@@ -5,36 +5,37 @@
         para milhares de outras mulheres
     </h3>
     <small>*Campos de preenchimento obrigatório</small>
+    <h3 id="warning"></h3>
     <form method="post" class="frm" id="frmFale" action="#">
         <div class="bloco">
             <div class="blocoFrm">
                 <label for="fale_nome">Nome*</label>
-                <input title="Nome" placeholder="Nome fantasia" type="text" name="fale[nome]" id="fale_nome" required>
+                <input title="Nome" placeholder="Nome fantasia" type="text" name="fale[nome]" id="fale_nome" class="required" required>
             </div>
             <div class="blocoFrm">
                 <label for="fale_empresa">Empresa*</label>
-                <input title="Empresa" placeholder="Nome da empresa" type="text" name="fale[empresa]" id="fale_empresa" required>
+                <input title="Empresa" placeholder="Nome da empresa" type="text" name="fale[empresa]" id="fale_empresa"  class="required" required>
             </div>
             <div class="blocoFrm">
                 <label for="fale_email">E-mail*</label>
-                <input title="E-mail" placeholder="@" type="text" name="fale[email]" id="fale_email" required>
+                <input title="E-mail" placeholder="@" type="text" name="fale[email]" id="fale_email"  class="required email"required>
             </div>
         </div>
         <div class="bloco">
             <div class="blocoFrm">
                 <label for="fale_ddd">Telefone*</label>
-                <input class="ped" title="DDD" placeholder="(__)" type="text" name="fale[ddd]" id="fale_ddd" required>
-                <input class="med" title="Telefone" placeholder="(_________)" type="text" name="fale[telefone]" id="fale_telefone" required>
+                <input class="ped" title="DDD" placeholder="(__)" type="text" name="fale[ddd]" id="fale_ddd" class="required" minlength="3" required>
+                <input class="med" title="Telefone" placeholder="(_________)" type="text" name="fale[telefone]" id="fale_telefone" class="required" required>
             </div>
             <div class="blocoFrm">
                 <label for="fale_ddd_celular">Celular*</label>
-                <input class="ped" title="DDD" placeholder="(__)" type="text" name="fale[ddd_celular]" id="fale_ddd_celular" required>
-                <input class="med" title="Celular" placeholder="(_________)" type="text" name="fale[celular]" id="fale_celular" required>
+                <input class="ped" title="DDD" placeholder="(__)" type="text" name="fale[ddd_celular]" id="fale_ddd_celular" class="required" minlength="3" required>
+                <input class="med" title="Celular" placeholder="(_________)" type="text" name="fale[celular]" id="fale_celular" class="required" required>
             </div>
             <div class="blocoFrm">
                 <label for="fale_cidade">Cidade/Estado*</label>
-                <input class="med med-rev" title="Cidade" type="text" name="fale[cidade]" id="fale_cidade" required>
-                <select class="ped ped-rev Styled" name="fale[uf]">
+                <input class="med med-rev" title="Cidade" type="text" name="fale[cidade]" id="fale_cidade" class="required" required>
+                <select class="ped ped-rev Styled" name="fale[uf]" id="fale_uf" class="required" required>
                     <option value="AC">AC</option>
                     <option value="AL">AL</option>
                     <option value="AM">AM</option>
@@ -68,7 +69,7 @@
         <div class="bloco">
             <div class="blocoFrm">
                 <label for="fale_comentario">Comentário*</label>
-                <textarea title="Comentário" placeholder="Escreva sua mensagem" id="fale_comentario" required></textarea>
+                <textarea title="Comentário" placeholder="Escreva sua mensagem" id="fale_comentario" class="required" required></textarea>
             </div>
             <div class="blocoFrm act">
                 <button type="submit" class="bt-inscreva-se">Enviar</button>
