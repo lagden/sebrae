@@ -11,8 +11,8 @@
 
 // Slider Home
 .rfSlider{
-    $padRL: 10px;
-    $wi: 300px;
+    $padRL: 20px;
+    $wi: 330px;
     $he: 300px;
     $h: 20px;
     @include box-sizing(border-box);
@@ -20,7 +20,7 @@
     height: $he;
     padding: 10px $padRL;
     position: absolute;
-    left: 730px;
+    /*left: 730px;*/
     bottom: 0;
     .slideshow{
         .slides{
@@ -40,14 +40,16 @@
                     padding: 0;
                 }
                 h2{
-                    @include font-size(24px);
+                    @include font-size(25px);
+                    margin:10px 0 0 0;
+                    line-height: 25px;
                 }
                 h3{
-                    @include font-size(17px);
-                    margin-bottom: 20px;
+                    @include font-size(18px);
+                    margin-bottom: 15px;
                 }
                 p{
-                    @include font-size(14px);
+                    @include font-size(15px);
                     font-style: normal;
                     margin-bottom: 20px;
                 }

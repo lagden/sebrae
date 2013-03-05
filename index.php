@@ -49,8 +49,7 @@ else
                     </ul>
                 </nav>
             </header>
-            <div class="cell-8 customPad">
-                <section class="auth">
+            <section class="auth">
                     <form method="post" class="frm inline" id="frmLogin" action="/">
                         <label for="auth_login">Login</label>
                         <input title="Login" type="text" name="auth[login]" id="auth_login">
@@ -60,6 +59,8 @@ else
                         <a href="#inscreva-se" class="<?php echo (mt_rand(1,10)%2) ? "txtroxo" : "txtbranco" ?>" >Inscreva-se <i class="seta ir">seta</i></a>
                     </form>
                 </section>
+            <div class="cell-8 customPad">
+                
                 <!-- Miolo -->
                 <?php
                 if($include) include $filename;

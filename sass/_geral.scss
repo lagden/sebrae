@@ -6,6 +6,7 @@ $roxo: #7a4f66;
 html{
     color: $black;
     font-size: 90%;
+    outline: none;
 }
 
 body{
@@ -25,7 +26,7 @@ hr{
     }
 }
 
-$resolucao: 1000px;
+$resolucao: 981px;
 
 .wrapper{
     @include clear-floats;
@@ -63,7 +64,7 @@ $resolucao: 1000px;
     padding-left: 30px;
 }
 
-$leftPos: 80px;
+$leftPos: 60px;
 
 // Logo
 .logo{
@@ -73,7 +74,7 @@ $leftPos: 80px;
     background:{
         image: image_url('logo.png');
         repeat: no-repeat;
-        position: 0% 0%;
+        position: left tpp;
     }    
 }
 
@@ -84,12 +85,12 @@ $leftPos: 80px;
     @extend .cf;
     li{
         @include font-size(16px);
-        padding-left: $leftPos;
+        padding-left:40px;
         color: $brand-color;
         background:{
             image: image_url('linha.png');
             repeat: no-repeat;
-            position: 60px 100%;
+            position: 10px 100%;
         }
         a{
             color: $brand-color;
@@ -107,13 +108,14 @@ $leftPos: 80px;
 
 // Login
 .auth{
-    margin-bottom: 25px;
+    margin: 0 auto 30px auto;
+    width: 720px;
     position: relative;
     min-height: 50px;
     background:{
         image: image_url('auth.png');
         repeat: no-repeat;
-        position: 0% 100%;
+        position: center bottom;
     }
     label{
         color: $laranja;
@@ -123,10 +125,12 @@ $leftPos: 80px;
         @include inline-block;
         @include font-size(14px);
         @extend .caps;
-        position: relative;
-        margin-left: 10px;
+        position: absolute;
+        margin-left: 15px;
         font-weight: normal;
         font-style: italic;
+        width: 90px;
+        top:6px;
         i{
             position: absolute;
             top: 26px;
@@ -332,5 +336,14 @@ h3{
 .roxo { background-color: #7a4f66;}
 .vermelho { background-color: #fd6f62; }
 .cinza-escuro { background-color: #666666; }
-.cinza { background-color: #e5e1e1;}
+.cinza { 
+    background:{
+        image: image_url('line.png');
+        repeat: no-repeat;
+        color: #e5e1e1;
+        position: center center;
+    }
+    overflow: hidden;
+    text-indent: -99999px;
+}
 .laranja { background-color: #ee7c48;}
