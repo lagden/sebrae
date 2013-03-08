@@ -3,8 +3,12 @@ var $win
     ,$slideshow
     ,$cronoDia
     ,$cronoDescricao
+    ,$navPrevCrono
+    ,$navNextCrono
     ,currDia
     ,currDescricao
+    ,currPos = 1
+    ,maxCrono
     ,sizeBaseWin = 650
     ,sizeBaseContainer = 550
     ,doResize = true
@@ -55,19 +59,20 @@ jQuery.fn.ready(function(){
                 scrollButtons: {
                     enable: false
                 }
-                // ,autoHideScrollbar: true
                 ,theme: "dark"
             })
-            .find('.mCSB_scrollTools').addClass('invisible');
+            .find('.mCSB_scrollTools')
+            .addClass('invisible');
 
             $('#up').on('click',function(ev){
                 ev.preventDefault();
                 scrolla("up");
-            })
+            });
+
             $('#down').on('click',function(ev){
                 ev.preventDefault();
                 scrolla("down");
-            })
+            });
         });
 
         // Resize
@@ -94,25 +99,42 @@ jQuery.fn.ready(function(){
         // Cronograma
         $cronoDia = $('#showDia');
         $cronoDescricao = $('#showDescricao');
-        currDia = $cronoDia.text();
-        currDescricao = $cronoDescricao.text();
+        currDia = $cronoDia.html();
+        currDescricao = $cronoDescricao.html();
+        maxCrono = $('.tbl td[data-pos]').length;
 
         var tds = $('.box-cronograma table.tbl td');
         tds.on('click',function(){
-            currDia = $(this).data('dia');
-            currDescricao = $(this).data('descricao');
-            $cronoDia.text(currDia);
-            $cronoDescricao.text(currDescricao);
+            $this = $(this);
+            currDia = $this.data('dia');
+            currDescricao = $this.data('descricao');
+            currPos = $this.data('pos');
+            navCrono(0);
+            $cronoDia.html(currDia);
+            $cronoDescricao.html(currDescricao);
         });
         tds.on('mouseenter',function(){
-            $cronoDia.text($(this).data('dia'));
-            $cronoDescricao.text($(this).data('descricao'));
+            $this = $(this);
+            $cronoDia.html($this.data('dia'));
+            $cronoDescricao.html($this.data('descricao'));
         });
         tds.on('mouseleave',function(){
-            $cronoDia.text(currDia);
-            $cronoDescricao.text(currDescricao);
+            $cronoDia.html(currDia);
+            $cronoDescricao.html(currDescricao);
         });
 
+        $navPrevCrono = $('#prevCrono').on('click', function(ev){
+            ev.preventDefault();
+            navCrono(-1);
+        })
+        .hide();
+
+        $navNextCrono = $('#nextCrono').on('click', function(ev){
+            ev.preventDefault();
+            navCrono(1);
+        });
+
+        // Form
         $("#frmFale").validate({
             errorElement: "em",
             errorContainer: $("#warning"),
@@ -121,6 +143,26 @@ jQuery.fn.ready(function(){
     })(jQuery);
 
 });
+
+function navCrono(pos)
+{
+    currPos += pos;
+    if(currPos == maxCrono)
+        $navNextCrono.hide();
+    else
+        $navNextCrono.show();
+
+    if(currPos == 1)
+        $navPrevCrono.hide();
+    else
+        $navPrevCrono.show();
+
+    var $xxx = $('.tbl td[data-pos="'+currPos+'"]');
+    currDia = $xxx.data('dia');
+    currDescricao = $xxx.data('descricao');
+    $cronoDia.html(currDia);
+    $cronoDescricao.html(currDescricao);
+}
 
 function scrolla(which)
 {

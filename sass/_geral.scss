@@ -285,6 +285,17 @@ h3{
     color: white;
     font-style: italic;
     @include font-size(14px);
+    .prevCrono,
+    .nextCrono{
+        position: absolute;
+        top: 120px;
+    }
+    .prevCrono{
+        left: 15px;
+    }
+    .nextCrono{
+        right: 15px;
+    }
     .tbl-show{
         margin: 0;
         border-collapse: separate;
@@ -293,6 +304,7 @@ h3{
         height: 274px;
         table-layout: fixed;
         td{
+            position: relative;
             padding: 5px;
             width: 262px;
             height: 262px;
