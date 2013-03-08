@@ -190,7 +190,7 @@ function resizeBox()
         if ($win.height() <= sizeBaseWin )
             $container.css({ "height": calculo() });
         else
-            $container.css({ "height": sizeBaseContainer - 50 });
+            $container.css({ "height": sizeBaseContainer - 100 });
     }
     $container
     .mCustomScrollbar("update");
