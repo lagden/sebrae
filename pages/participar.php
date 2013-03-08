@@ -1,3 +1,6 @@
+<div class="navegacao">
+    <a href="#" id="up"><i class="i ir bt-up">up</i></a>
+</div>
 <div id="container" class="boxWhite container">
     <h2>COMO PARTICIPAR</h2>
     <h3>
@@ -13,6 +16,5 @@
     <p>I &ndash; Pequenos Neg&oacute;cios: propriet&aacute;rias de micro e pequenas empresas que estejam<br />estabelecidas formalmente h&aacute;, no m&iacute;nimo, um ano. (data de abertura anterior a<br />01/03/2012, conforme consta no CNPJ);</p>
 </div>
 <div class="navegacao">
-    <a href="#" id="up"><i class="i ir bt-up">up</i></a>
     <a href="#" id="down"><i class="i ir bt-down">down</i></a>
 </div>

@@ -5,7 +5,7 @@ var $win
     ,$cronoDescricao
     ,currDia
     ,currDescricao
-    ,sizeBaseWin = 750
+    ,sizeBaseWin = 650
     ,sizeBaseContainer = 550
     ,doResize = true
     ;
@@ -48,6 +48,8 @@ jQuery.fn.ready(function(){
         $container = $('#container');
         $win = $(window);
 
+        doResize = ($container.data('doresize') != undefined) ? $container.data('doresize') : true;
+
         $win.load(function(){
             $container.mCustomScrollbar({
                 scrollButtons: {
@@ -77,6 +79,7 @@ jQuery.fn.ready(function(){
         // Show Plus
         $('a.showPlus').click(function(ev){
             ev.preventDefault();
+            doResize = true;
             $(this).remove();
             $('#plus').removeClass('hidden');
             $('.navegacao').removeClass('hidden');
@@ -85,6 +88,7 @@ jQuery.fn.ready(function(){
             $('.container').addClass('boxWhite')
             $rfSlider.fadeOut(200);
             $('.home.bt-inscreva-se').fadeOut(200); 
+            $win.trigger('resize');
         });
 
         // Cronograma
@@ -139,20 +143,20 @@ function scrolla(which)
 
 function resizeBox()
 {
-    // if(doResize)
-    // {
-    //     if ($win.height() <= sizeBaseWin )
-    //         $container.css({ "height": calculo() });
-    //     else
-    //         $container.css({ "height": sizeBaseContainer - 100 });
-    // }
-    // $container
-    // .mCustomScrollbar("update");
+    if(doResize)
+    {
+        if ($win.height() <= sizeBaseWin )
+            $container.css({ "height": calculo() });
+        else
+            $container.css({ "height": sizeBaseContainer - 50 });
+    }
+    $container
+    .mCustomScrollbar("update");
 }
 
 function calculo()
 {
     var h = ((sizeBaseContainer * $win.height()) / sizeBaseWin) - 70;
-    h = (h <= 300) ? 300 : h;
+    h = (h <= 200) ? 200 : h;
     return parseInt(h);
 }

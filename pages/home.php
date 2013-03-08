@@ -1,6 +1,9 @@
 <div class="cf">
     <div class="home col-4">
-        <div id="container" class="container">
+        <div class="navegacao hidden">
+            <a href="#" id="up"><i class="i ir bt-up">up</i></a>
+        </div>
+        <div id="container" class="container" data-doresize="false">
             <h1 class="alpha"><em><strong>Prêmio SEBRAE mulher de negócios</strong></em></h1>
             <h2 class="beta">
                 <em>Sua trajetória pode abrir caminho<br> para milhares de outras mulheres</em>
@@ -25,7 +28,6 @@
             </div>
         </div>
         <div class="navegacao hidden">
-            <a href="#" id="up"><i class="i ir bt-up">up</i></a>
             <a href="#" id="down"><i class="i ir bt-down">down</i></a>
         </div>
         <div>

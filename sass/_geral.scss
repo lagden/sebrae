@@ -248,8 +248,8 @@ $leftPos: 60px;
             top: -30px;
             left: 0;
             &.bt-up{
-                // top: -545px;
-                top: -595px;
+                top: -16px;
+                z-index: 10;
             }
         }
     }

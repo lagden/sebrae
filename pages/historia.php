@@ -1,3 +1,6 @@
+<div class="navegacao">
+    <a href="#" id="up"><i class="i ir bt-up">up</i></a>
+</div>
 <div id="container" class="boxWhite container">
     <h2>COMO ESCREVER A HISTÓRIA</h2>
     <h3>
@@ -18,6 +21,5 @@
     <p>Resultados: Realiza&ccedil;&otilde;es e Contribui&ccedil;&otilde;es:<br />&bull; Qual solu&ccedil;&atilde;o adotou como resultado do amadurecimento do neg&oacute;cio, problemas enfrentados, ou dos relacionamentos mantidos? Se voc&ecirc; pudesse voltar no tempo, faria algo diferente? Cite exemplos de melhoria realizadas que partiram de li&ccedil;&otilde;es aprendidas com os erros cometidos em seu neg&oacute;cio.<br />&bull; Como voc&ecirc; percebe que seu neg&oacute;cio esta melhorando (aumento do faturamento, de clientes, melhoria da qualidade dos produtos/servi&ccedil;os, satisfa&ccedil;&atilde;o dos colaboradores)?<br />&bull; O que pensa para o futuro do seu neg&oacute;cio?<br />&bull; Quais s&atilde;o os pr&oacute;ximos passos para assegurar o futuro do seu neg&oacute;cio ( planos e metas)?<br />&bull; Como o seu neg&oacute;cio serve de exemplo para a forma&ccedil;&atilde;o de novas empreendedoras?<br />&bull; Em sua opini&atilde;o, o que &eacute; preciso fazer para ter sucesso como empreendedora?<br />&bull; Que mensagem gostaria de passar para as mulheres que est&atilde;o iniciando o seu neg&oacute;cio?</p>
 </div>
 <div class="navegacao">
-    <a href="#" id="up"><i class="i ir bt-up">up</i></a>
     <a href="#" id="down"><i class="i ir bt-down">down</i></a>
 </div>

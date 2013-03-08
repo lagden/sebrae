@@ -1,3 +1,6 @@
+<div class="navegacao">
+    <a href="#" id="up"><i class="i ir bt-up">up</i></a>
+</div>
 <div id="container" class="boxWhite container">
     <h2>PREMIAÇÃO</h2>
     <h3>Destaque valores positivos, que possam incentivar outras mulheres.</h3> 
@@ -26,6 +29,5 @@
     </ul>
 </div>
 <div class="navegacao">
-    <a href="#" id="up"><i class="i ir bt-up">up</i></a>
     <a href="#" id="down"><i class="i ir bt-down">down</i></a>
 </div>
